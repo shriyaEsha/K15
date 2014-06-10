@@ -1,0 +1,64 @@
+table{
+ border-spacing: 10px;
+font-family:Showcard Gothic;
+letter-spacing:2px;
+position:absolute;
+z-index:5;
+top:250px; left:200px;
+width:800px;
+height:800px;
+background:url(img/tex3.1.jpg);
+background-repeat:no-repeat;
+background-size:cover;
+border:1.4px solid black;
+z-index:-1;
+}
+tr{
+
+border:1px solid black;
+text-align:left;
+color:orange;
+font-size:1em;
+
+overflow:hidden;
+-webkit-transition:all 0.3s;
+-moz-transition:all 0.3s;
+-o-transition:all 0.3s;
+-ms-transition:all 0.3s;
+transition:all 0.3s;
+}
+tr:hover{
+border-bottom:1px solid black;
+padding-bottom:3px;
+background:url(img/peace.jpg);
+color:black;
+cursor:pointer;
+}
+th{
+padding:10px;
+border:1px solid black;
+text-align:left;
+font-size:1em;
+}
+th:nth-child(odd){
+text-align:left;
+background:url(img/tex12.jpg);
+color:black;
+-webkit-transition:all 0.3s;
+-moz-transition:all 0.3s;
+-o-transition:all 0.3s;
+-ms-transition:all 0.3s;
+transition:all 0.3s;
+}
+th:hover{
+color:white;
+background-color:black;
+cursor:pointer;
+}
+td{
+border:1px solid black;
+padding:10px;
+}
+td.user:hover, td.prob:hover, td.users:hover, td.acc:hover{
+color:red;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>My First Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    </head>
+    <body>
+	<div class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="navbar">
+              <div class="navbar-inner">
+                <div class="container">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Downloads</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+		</div>
+	<div class="jumbotron">
+    <h1>Marketing stuff!</h1>
+ 
+    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+ 
+    <a href="#" class="btn btn-large btn-success">Get Started</a>
+ </div>
+<div class="sidebar-module">
+            <h4>What we are?</h4>
+            <ol class="list-unstyled">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Our Clients</a></li>
+              <li><a href="#">Our Services</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">OUR FRIEND</a></li>
+              <li><a href="#">Google</a></li>
+              <li><a href="#">Yahoo!</a></li>
+              <li><a href="#">Bing</a></li>
+              <li><a href="#">Microsoft</a></li>
+              <li><a href="#">Gadgetic World</a></li>
+            </ol>
+          </div>
+<div class="row">
+<div class="span4">
+        <h4 class="muted text-center">Meet Our Clients</h4>
+        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+        <a href="#" class="btn"><i class="icon-star icon-red"></i> Our Clients</a>
+    </div>
+    <div class="span4">
+        <h4 class="muted text-center">Know Our Employees</h4>
+        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+        <a href="#" class="btn btn-success"><i class="icon-star icon-white"></i> Our Employees</a>
+    </div>
+    <div class="span4">
+        <h4 class="muted text-center">Reach Us</h4>
+        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+        <a href="#" class="btn btn-info">Contact Us</a>
+    </div>
+</div>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

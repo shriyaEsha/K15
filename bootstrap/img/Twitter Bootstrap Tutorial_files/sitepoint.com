@@ -1,0 +1,1 @@
+PARSELY.pInit({"apikey":"sitepoint.com","customizations":null,"bundle":"/code/slim_v05.js","settings":{"debug":false,"widget":false,"tracker":true},"uuid":"fd7b3f9e-c09c-42f5-ad5c-b4c4f1207241"});

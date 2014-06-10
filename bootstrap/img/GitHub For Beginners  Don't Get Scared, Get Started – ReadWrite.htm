@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<!-- saved from url=(0105)http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1#awesm=~oDVAmeWqK8ABdB -->
+<html xmlns:fb="http://www.facebook.com/2008/fbml" class="js no-mobile desktop no-ie 2013-section 2013-09-section 2013-09-30-section   gradient rgba opacity textshadow multiplebgs boxshadow borderimage borderradius cssreflections csstransforms csstransitions no-touch no-retina fontface domloaded responsejs  windows chrome chrome34     w-1366 gt-240 gt-320 gt-480 gt-640 gt-768 gt-800 gt-1024 gt-1280 lt-1440 lt-1680 lt-1920 no-portrait landscape" id="understanding-github-a-journey-for-beginners-part-1-page"><div class="fit-vids-style">­<style>               .fluid-width-video-wrapper {                 width: 100%;                              position: relative;                       padding: 0;                            }                                                                                   .fluid-width-video-wrapper iframe,        .fluid-width-video-wrapper object,        .fluid-width-video-wrapper embed {           position: absolute;                       top: 0;                                   left: 0;                                  width: 100%;                              height: 100%;                          }                                       </style></div><script type="text/javascript">window.script1399782144276=1;</script><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/slim_v05.js"></script><script src="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/readwrite.com"></script>
+        <meta charset="utf-8">
+    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <script src="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/quant.js" async="" type="text/javascript"></script><script async="" src="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/beacon.js"></script><script type="text/javascript" async="" src="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/tetrapak.js" id="orion-tetrapak"></script><script type="text/javascript" async="" src="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/ga.js"></script><script>
+        //<![CDATA[
+
+        var SiteSettings = {
+            awesmKey: "9d6400414144f9eecaed1850705f49642b831f5a14281d96d948c2fd6fb9f7db",
+            // DO NOT use the awesmTool from site.yaml, that one is only for orion.
+            //   we should rework how the awesm object in site.yaml is done.
+            awesmTool: "O3Incf",
+            isSocialEnabled: true,
+            articleListCount: 24,
+            isEditorial: 0
+        };
+
+        var _conf = { root: '/static/5001214b033ac368b2a3285ed77fb986bd14892e/' };
+        var _sf_startpt = (new Date()).getTime();
+        var say = { options: { jquery: true } };
+
+        //]]>
+    </script>
+
+            <script>
+            //<![CDATA[
+
+                            SiteSettings.adsDesktopURL = "/_ajax/sidebar/hack";
+            
+            //]]>
+        </script>
+    
+    <meta http-equiv="cleartype" content="on">
+
+    <title>GitHub For Beginners: Don't Get Scared, Get Started – ReadWrite</title>
+
+    <meta name="copyright" content="2014 SAY Media, Inc.">
+
+            <link rel="canonical" href="http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1">
+    
+            <meta name="description" content="GitHub is more than just a programmer&#39;s tool. If you want to collaborate on anything, you should give it a try. Part 1 of a two-part look at...">
+    
+
+        <link rel="dns-prefetch" href="http://adserver.adtechus.com/">
+    <link rel="dns-prefetch" href="http://adcontent.saymedia.com/">
+    <link rel="dns-prefetch" href="http://beacon.saymedia.com/">
+    <link rel="dns-prefetch" href="http://b.scorecardresearch.com/">
+    <link rel="dns-prefetch" href="http://core.videoegg.com/">
+    <link rel="dns-prefetch" href="http://cricket.saymedia.com/">
+    <link rel="dns-prefetch" href="http://edge.quantserve.com/">
+    <link rel="dns-prefetch" href="http://pixel.quantserve.com/">
+        <link rel="dns-prefetch" href="http://beacon.stage.saymedia.com/">
+    <link rel="dns-prefetch" href="http://stage.ads.saymedia.com/">
+
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" media="(device-height: 568px)">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="ReadWrite">
+
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+
+		    
+        
+        
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@rww">
+    <meta name="twitter:url" content="http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1">
+    <meta name="twitter:title" content="http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1">
+    <meta name="twitter:description" content="GitHub is more than just a programmer&#39;s tool. If you want to collaborate on anything, you should give it a try. Part 1 of a two-part look at...">
+    <meta name="twitter:image" content="http://readwrite.com/files/styles/110_90sc/public/fields/GitHubTutorial-Part1.jpg">
+
+            <meta name="author" content="Lauren Orsini">
+        <meta property="og:type" content="article">
+        <meta name="twitter:creator" content="@laureninspace">
+    
+        <meta name="parsely-page" content="{&quot;title&quot;: &quot;GitHub For Beginners: Don&#39;t Get Scared, Get Started&quot;,
+                &quot;link&quot;: &quot;http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1&quot;,
+                &quot;image_url&quot;: &quot;http://readwrite.com/files/styles/300_300scu/public/fields/GitHubTutorial-Part1.jpg&quot;,
+                &quot;type&quot;: &quot;article&quot;,
+                &quot;post_id&quot;: &quot;97904&quot;,
+                &quot;pub_date&quot;: &quot;2013-09-30T06:02:00-07:00&quot;,
+                &quot;section&quot;: &quot;Hack&quot;,
+                &quot;author&quot;: &quot;Lauren Orsini&quot;,
+                &quot;tags&quot;: [&quot;GitHub&quot;,&quot;How-To&quot;,&quot;version control&quot;]}">
+
+    <meta property="og:url" content="http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1">
+    <meta property="og:title" content="GitHub For Beginners: Don&#39;t Get Scared, Get Started">
+    <meta property="og:description" content="GitHub is more than just a programmer&#39;s tool. If you want to collaborate on anything, you should give it a try. Part 1 of a two-part look at getting started with GitHub.">
+    <meta property="og:image" content="http://readwrite.com/files/styles/300_300scu/public/fields/GitHubTutorial-Part1.jpg">
+	
+            <link href="https://plus.google.com/112111196451586545452" rel="publisher">
+                <meta name="google-site-verification" content="7LvbUJd-MfWpOPcF8SjWjufNuXnBRkSoJTf3-WL5UZU">
+    
+    <meta property="fb:page_id" content="65491870325">
+    <meta property="fb:app_id" content="57345927025">
+    <meta property="og:site_name" content="ReadWrite">
+
+    
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://readwrite.com/static/5001214b033ac368b2a3285ed77fb986bd14892e/site/icons/icon-57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://readwrite.com/static/5001214b033ac368b2a3285ed77fb986bd14892e/site/icons/icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://readwrite.com/static/5001214b033ac368b2a3285ed77fb986bd14892e/site/icons/icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://readwrite.com/static/5001214b033ac368b2a3285ed77fb986bd14892e/site/icons/icon-144-precomposed.png">
+
+    <meta name="msapplication-TileImage" content="http://readwrite.com/static/5001214b033ac368b2a3285ed77fb986bd14892e/site/icons/icon-114-precomposed.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+
+    <link rel="shortcut icon" href="http://readwrite.com/static/5001214b033ac368b2a3285ed77fb986bd14892e/site/icons/icon-32.png">
+    <link rel="icon" href="http://readwrite.com/static/5001214b033ac368b2a3285ed77fb986bd14892e/site/icons/icon-32.png" type="image/x-icon">
+
+    <link rel="apple-touch-startup-image" href="http://readwrite.com/static/5001214b033ac368b2a3285ed77fb986bd14892e/site/splashes/splash-ipad-landscape.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)">
+    <link rel="apple-touch-startup-image" href="http://readwrite.com/static/5001214b033ac368b2a3285ed77fb986bd14892e/site/splashes/splash-ipad-landscape-retina.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2)">
+    <link rel="apple-touch-startup-image" href="http://readwrite.com/static/5001214b033ac368b2a3285ed77fb986bd14892e/site/splashes/splash-ipad-portrait.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)">
+    <link rel="apple-touch-startup-image" href="http://readwrite.com/static/5001214b033ac368b2a3285ed77fb986bd14892e/site/splashes/splash-ipad-portrait-retina.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) and (-webkit-min-device-pixel-ratio: 2)">
+    <link rel="apple-touch-startup-image" href="http://readwrite.com/static/5001214b033ac368b2a3285ed77fb986bd14892e/site/splashes/splash-iphone-retina.png" media="screen and (max-device-width: 320px) and (max-device-height: 1136px) and (-webkit-min-device-pixel-ratio: 2)">
+    <link rel="apple-touch-startup-image" href="http://readwrite.com/static/5001214b033ac368b2a3285ed77fb986bd14892e/site/splashes/splash-iphone-old.png" media="screen and (max-device-width: 320px) and (max-device-height: 460px)">
+    <link rel="apple-touch-startup-image" href="http://readwrite.com/static/5001214b033ac368b2a3285ed77fb986bd14892e/site/splashes/splash-iphone-old-retina.png" media="screen and (max-device-width: 320px) and (max-device-height: 460px) and (-webkit-min-device-pixel-ratio: 2)">
+
+    <script src="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/jquery.min.js"></script>
+    <script src="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/header-bundle.min.js"></script>
+    
+    <script type="text/javascript" src="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/38037X1250500.skimlinks.js"></script>
+
+    <link rel="stylesheet" href="http://readwrite.com/static/5001214b033ac368b2a3285ed77fb986bd14892e/site/css/main.css">
+    <link rel="stylesheet" href="http://readwrite.com/static/5001214b033ac368b2a3285ed77fb986bd14892e/site/css/print.css" media="print"><script type="text/javascript" src="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/desktop-bundle.min.js"></script>
+
+<script type="text/javascript" src="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/widgets.js"></script><style type="text/css"></style><script src="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/b9de51bc394bfae9296e7132fc024b7a"></script><script type="text/javascript" async="" src="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/saved_resource"></script><link type="text/css" rel="stylesheet" href="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/noscript.css"><link type="text/css" rel="stylesheet" href="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/noscript.css"><link type="text/css" rel="stylesheet" href="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/noscript.css"><link type="text/css" rel="stylesheet" href="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/noscript.css"><link type="text/css" rel="stylesheet" href="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/noscript.css"><link type="text/css" rel="stylesheet" href="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/noscript.css"></head><body class="layout-detail article feature">&nbsp; &nbsp; <!--[if lt IE 9]>
+    <script src="/static/5001214b033ac368b2a3285ed77fb986bd14892e/site/js/_libs/aight.min.js"></script>
+    <script src="/static/5001214b033ac368b2a3285ed77fb986bd14892e/core/js/_libs/respond.min.js"></script>
+    <![endif]-->
+
+            <script>
+            //<![CDATA[
+
+                            SiteSettings.adsDesktopURL = "/_ajax/sidebar/hack";
+            
+            //]]>
+        </script>
+    
+	<script type="text/javascript" id="admin-bootstrap" data-sha="4f8b4e4d12ddea4521fff8fa99bfced8f601a0d5" src="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/admin-bootstrap.js">
+	</script>
+	 
+	<script type="text/javascript">
+	say.onAdminReady = function()
+	{
+		say.setPage('article', window.location.toString());
+	};
+	</script>
+
+
+
+
+
+
+    
+
+
+<div id="lyra-wrapper" data-ad-manager="https://adserver.adtechus.com/?adrawdata/3.0/5108.1/2766669/0/0/ADTECH;loc=100;noperf=1;sub1=">
+        <nav id="navbar" class="trackable">
+        <div class="grid">
+            <ul class="menu">
+                <li class="home"><a href="http://readwrite.com/#_tid=navbar&_tact=click+%3A+A&_tval=0&_tlbl=Position%3A+0" class="parsed" sl-processed="1"></a></li>
+                <li class="logo"><a href="http://readwrite.com/#_tid=navbar&_tact=click+%3A+A&_tval=1&_tlbl=Position%3A+1" class="parsed" sl-processed="1"><!--<em>Enterprise</em>--></a></li>
+                <li class="sections"><a href="http://readwrite.com/toc#_tid=navbar&_tact=click+%3A+A&_tval=2&_tlbl=Position%3A+2" class="parsed" sl-processed="1"><em>Topics</em></a></li>
+                <li class="prev"><a href="http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1#_tid=navbar&_tact=click+%3A+prev-unread-link&_tval=1&_tlbl=Position%3A+1" class="prev-unread-link parsed" sl-processed="1"></a></li>
+                <li class="next"><a href="http://readwrite.com/2014/05/07/arduino-vs-raspberry-pi-projects-diy-platform" class="next-unread-link parsed" sl-processed="1"></a></li>
+            </ul>
+
+            <ul class="menu secondary">
+                <li class="follow-facebook"><a class="social-custom" data-href="https://www.facebook.com/ReadWrite" data-medium="facebook" data-social-action="follow"></a></li>
+                <li class="follow-twitter"><a class="social-custom" data-href="http://twitter.com/rww" data-medium="twitter" data-social-action="follow"></a></li>
+                <li class="follow-linkedin"><a class="social-custom" data-href="http://www.linkedin.com/company/readwrite" data-medium="linkedin" data-social-action="follow"></a></li>
+                <li class="info"><a href="http://readwrite.com/page/about/#_tid=navbar&_tact=click+%3A+A&_tval=3&_tlbl=Position%3A+3" class="parsed" sl-processed="1"></a></li>
+                <li class="search"><a href="http://readwrite.com/search#_tid=navbar&_tact=click+%3A+A&_tval=4&_tlbl=Position%3A+4" class="parsed" sl-processed="1"></a></li>
+            </ul>
+
+                    </div>
+    </nav>
+
+            <section class="page-header" style="background-image: url(&#39;http://readwrite.com/files/styles/1400_0/public/fields/GitHubTutorial-Part1.jpg&#39;)">
+    <div class="grid">
+<!--        <section class="section-title">
+                        <a href="/hack">hack&nbsp;</a>
+                    </section>
+
+        <section class="block next-article">
+            Next Article: <a href="#" class="next-unread-link"></a>
+        </section> -->
+
+        <!-- Feature -->
+
+                <h1 class="instapaper_title" itemprop="headline">GitHub For Beginners: Don't Get Scared, Get Started</h1>
+
+        <div class="abstract" itemprop="description">
+            <p>GitHub is more than just a programmer's tool. If you want to collaborate on anything, you should give it a try. Part 1 of a two-part look at getting started with GitHub.</p>
+        </div>
+
+        <div class="meta">
+                        <span class="avatar"><img src="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/LaurenOrsini.jpg" alt="Lauren Orsini" itemprop="image"></span>
+                        <span class="author"><span class="dt">Author:</span> <span class="dd" itemprop="author"><a href="http://readwrite.com/author/lauren-orsini" rel="author" sl-processed="1">Lauren Orsini</a></span></span>
+            <span class="publish-date"><span class="dt">Publish date:</span> <span class="dd" itemprop="datePublished">September 30, 2013</span></span>
+            <span class="section"><span class="dt">Section:</span> <span class="dd" itemprop="articleSection">
+            	            		<a href="http://readwrite.com/hack" class="cloud-section-anchor" sl-processed="1">Hack</a>
+            	    								
+            	</span>
+            	</span>
+            <span class="interaction-count"><span class="dt">Interaction count:</span> <span class="dd parsed" itemprop="interactionCount">28.9K</span></span>
+        </div>
+        
+    </div>
+</section>
+
+
+<section class="page-body">
+    <div class="grid">
+        <aside class="before">
+            <section id="popular-feed" class="block feed trackable">
+                <h3>Read Next <span class="unread-count">10</span></h3><article class="view-headline story reflow" itemscope="itemscope" itemtype="http://schema.org/Article" data-series="" style="opacity: 1;">
+    <meta content="en" itemprop="inLanguage">
+
+    <header>
+        <div class="meta">
+            
+                            <span class="interaction-count"><span class="dt">Interaction count:</span> <span class="dd parsed" itemprop="interactionCount" data-interaction-count="3" data-href="/2014/05/07/arduino-vs-raspberry-pi-projects-diy-platform">3</span></span>
+                    </div>
+
+
+                                            <div class="image thumb" itemprop="image" data-image-url="http://readwrite.com/files/styles/100_100sc/public/fields/arduinopi.jpg">
+            <a href="http://readwrite.com/2014/05/07/arduino-vs-raspberry-pi-projects-diy-platform#_tid=popular-feed&_tact=click+%3A+A&_tval=1&_tlbl=Position%3A+1" class="parsed"><img alt="Arduino Vs. Raspberry Pi: Which Is The Right DIY Platform For You?" src="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/arduinopi.jpg"></a>
+        </div>
+        
+        <h1 itemprop="headline">
+            <a href="http://readwrite.com/2014/05/07/arduino-vs-raspberry-pi-projects-diy-platform#_tid=popular-feed&_tact=click+%3A+A&_tval=2&_tlbl=Position%3A+2" class="parsed">Arduino Vs. Raspberry Pi: Which Is The Right DIY Platform For You? </a>
+            <span class="dd" itemprop="sourceOrganization">
+
+                                
+                            </span>
+        </h1>
+    </header>
+</article><article class="view-headline story reflow" itemscope="itemscope" itemtype="http://schema.org/Article" data-series="" style="opacity: 1;">
+    <meta content="en" itemprop="inLanguage">
+
+    <header>
+        <div class="meta">
+            
+                            <span class="interaction-count"><span class="dt">Interaction count:</span> <span class="dd parsed" itemprop="interactionCount" data-interaction-count="12" data-href="/2014/05/09/google-oracle-java-copyright-appeals-court">12</span></span>
+                    </div>
+
+
+                                            <div class="image thumb" itemprop="image" data-image-url="http://readwrite.com/files/styles/100_100sc/public/fields/Larry%20Ellison%20Flickr%20Sen%20Chang.jpg">
+            <a href="http://readwrite.com/2014/05/09/google-oracle-java-copyright-appeals-court#_tid=popular-feed&_tact=click+%3A+A&_tval=3&_tlbl=Position%3A+3" class="parsed"><img alt="Chilling Effect: Oracle Wins Appeal to Copyright APIs" src="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/Larry Ellison Flickr Sen Chang.jpg"></a>
+        </div>
+        
+        <h1 itemprop="headline">
+            <a href="http://readwrite.com/2014/05/09/google-oracle-java-copyright-appeals-court#_tid=popular-feed&_tact=click+%3A+A&_tval=4&_tlbl=Position%3A+4" class="parsed">Chilling Effect: Oracle Wins Appeal to Copyright APIs </a>
+            <span class="dd" itemprop="sourceOrganization">
+
+                                
+                            </span>
+        </h1>
+    </header>
+</article><article class="view-headline story reflow" itemscope="itemscope" itemtype="http://schema.org/Article" data-series="" style="opacity: 1;">
+    <meta content="en" itemprop="inLanguage">
+
+    <header>
+        <div class="meta">
+            
+                            <span class="interaction-count"><span class="dt">Interaction count:</span> <span class="dd parsed" itemprop="interactionCount" data-interaction-count="5" data-href="/2014/05/06/htc-one-m8-review">5</span></span>
+                    </div>
+
+
+                                            <div class="image thumb" itemprop="image" data-image-url="http://readwrite.com/files/styles/100_100sc/public/fields/htc_one_mh_hero.jpg">
+            <a href="http://readwrite.com/2014/05/06/htc-one-m8-review#_tid=popular-feed&_tact=click+%3A+A&_tval=5&_tlbl=Position%3A+5" class="parsed"><img alt="Review: The HTC One M8 Is Android&amp;#039;s Cream Of The Crop" src="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/htc_one_mh_hero.jpg"></a>
+        </div>
+        
+        <h1 itemprop="headline">
+            <a href="http://readwrite.com/2014/05/06/htc-one-m8-review#_tid=popular-feed&_tact=click+%3A+A&_tval=6&_tlbl=Position%3A+6" class="parsed">Review: The HTC One M8 Is Android's Cream Of The Crop </a>
+            <span class="dd" itemprop="sourceOrganization">
+
+                                
+                            </span>
+        </h1>
+    </header>
+</article><article class="view-headline story reflow" itemscope="itemscope" itemtype="http://schema.org/Article" data-series="" style="opacity: 1;">
+    <meta content="en" itemprop="inLanguage">
+
+    <header>
+        <div class="meta">
+            
+                            <span class="interaction-count"><span class="dt">Interaction count:</span> <span class="dd parsed" itemprop="interactionCount" data-interaction-count="4" data-href="/2014/05/09/smart-tv-channels-apps-streaming">4</span></span>
+                    </div>
+
+
+                                            <div class="image thumb" itemprop="image" data-image-url="http://readwrite.com/files/styles/100_100sc/public/fields/tv-channels-streaming.jpg">
+            <a href="http://readwrite.com/2014/05/09/smart-tv-channels-apps-streaming#_tid=popular-feed&_tact=click+%3A+A&_tval=7&_tlbl=Position%3A+7" class="parsed"><img alt="Goodbye, TV Channels—And Hello, TV Apps" src="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/tv-channels-streaming.jpg"></a>
+        </div>
+        
+        <h1 itemprop="headline">
+            <a href="http://readwrite.com/2014/05/09/smart-tv-channels-apps-streaming#_tid=popular-feed&_tact=click+%3A+A&_tval=8&_tlbl=Position%3A+8" class="parsed">Goodbye, TV Channels—And Hello, TV Apps </a>
+            <span class="dd" itemprop="sourceOrganization">
+
+                                
+                            </span>
+        </h1>
+    </header>
+</article><article class="view-headline story reflow" itemscope="itemscope" itemtype="http://schema.org/Article" data-series="" style="opacity: 1;">
+    <meta content="en" itemprop="inLanguage">
+
+    <header>
+        <div class="meta">
+            
+                            <span class="interaction-count"><span class="dt">Interaction count:</span> <span class="dd parsed" itemprop="interactionCount" data-interaction-count="2" data-href="/2014/05/09/4g-3g-smartphone-data-price-difference">2</span></span>
+                    </div>
+
+
+                                            <div class="image thumb" itemprop="image" data-image-url="http://readwrite.com/files/styles/100_100sc/public/fields/wardenclyffe_tesla_tower.jpg">
+            <a href="http://readwrite.com/2014/05/09/4g-3g-smartphone-data-price-difference#_tid=popular-feed&_tact=click+%3A+A&_tval=9&_tlbl=Position%3A+9" class="parsed"><img alt="Why Your Cell-Phone Bill Should Be Going Down—But Isn&amp;#039;t" src="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/wardenclyffe_tesla_tower.jpg"></a>
+        </div>
+        
+        <h1 itemprop="headline">
+            <a href="http://readwrite.com/2014/05/09/4g-3g-smartphone-data-price-difference#_tid=popular-feed&_tact=click+%3A+A&_tval=10&_tlbl=Position%3A+10" class="parsed">Why Your Cell-Phone Bill Should Be Going Down—But Isn't </a>
+            <span class="dd" itemprop="sourceOrganization">
+
+                                
+                            </span>
+        </h1>
+    </header>
+</article><article class="view-headline story reflow" itemscope="itemscope" itemtype="http://schema.org/Article" data-series="" style="opacity: 1;">
+    <meta content="en" itemprop="inLanguage">
+
+    <header>
+        <div class="meta">
+            
+                            <span class="interaction-count"><span class="dt">Interaction count:</span> <span class="dd parsed" itemprop="interactionCount" data-interaction-count="2" data-href="/2014/05/08/gilt-eric-bowman-interview-scala-rails-jvm-reactive-platform">2</span></span>
+                    </div>
+
+
+                                            <div class="image thumb" itemprop="image" data-image-url="http://readwrite.com/files/styles/100_100sc/public/eric%20bowman.jpg">
+            <a href="http://readwrite.com/2014/05/08/gilt-eric-bowman-interview-scala-rails-jvm-reactive-platform#_tid=popular-feed&_tact=click+%3A+A&_tval=11&_tlbl=Position%3A+11" class="parsed"><img alt="How Gilt&amp;#039;s Insane Traffic Spikes Pushed It Off Rails To Scala" src="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/eric bowman.jpg"></a>
+        </div>
+        
+        <h1 itemprop="headline">
+            <a href="http://readwrite.com/2014/05/08/gilt-eric-bowman-interview-scala-rails-jvm-reactive-platform#_tid=popular-feed&_tact=click+%3A+A&_tval=12&_tlbl=Position%3A+12" class="parsed">How Gilt's Insane Traffic Spikes Pushed It Off Rails To Scala </a>
+            <span class="dd" itemprop="sourceOrganization">
+
+                                
+                            </span>
+        </h1>
+    </header>
+</article><article class="view-headline story reflow" itemscope="itemscope" itemtype="http://schema.org/Article" data-series="The Platform" style="opacity: 1;">
+    <meta content="en" itemprop="inLanguage">
+
+    <header>
+        <div class="meta">
+            
+                            <span class="interaction-count"><span class="dt">Interaction count:</span> <span class="dd parsed" itemprop="interactionCount" data-interaction-count="4" data-href="/2014/05/08/google-play-services-44-update-google-io">4</span></span>
+                    </div>
+
+
+                                            <div class="image thumb" itemprop="image" data-image-url="http://readwrite.com/files/styles/100_100sc/public/fields/android_kitkat_candy.jpg">
+            <a href="http://readwrite.com/2014/05/08/google-play-services-44-update-google-io#_tid=popular-feed&_tact=click+%3A+A&_tval=13&_tlbl=Position%3A+13" class="parsed"><img alt="Google&amp;#039;s Android Is Learning How To Reach Straight Into Your Wallet" src="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/android_kitkat_candy.jpg"></a>
+        </div>
+        
+        <h1 itemprop="headline">
+            <a href="http://readwrite.com/2014/05/08/google-play-services-44-update-google-io#_tid=popular-feed&_tact=click+%3A+A&_tval=14&_tlbl=Position%3A+14" class="parsed">Google's Android Is Learning How To Reach Straight Into Your Wallet </a>
+            <span class="dd" itemprop="sourceOrganization">
+
+                                
+                            </span>
+        </h1>
+    </header>
+</article><article class="view-headline story reflow" itemscope="itemscope" itemtype="http://schema.org/Article" data-series="" style="opacity: 1;">
+    <meta content="en" itemprop="inLanguage">
+
+    <header>
+        <div class="meta">
+            
+                            <span class="interaction-count"><span class="dt">Interaction count:</span> <span class="dd parsed" itemprop="interactionCount" data-interaction-count="4" data-href="/2014/05/07/apple-ios-8-release-date-features-preview">4</span></span>
+                    </div>
+
+
+                                            <div class="image thumb" itemprop="image" data-image-url="http://readwrite.com/files/styles/100_100sc/public/ios7_iphone5.jpg">
+            <a href="http://readwrite.com/2014/05/07/apple-ios-8-release-date-features-preview#_tid=popular-feed&_tact=click+%3A+A&_tval=15&_tlbl=Position%3A+15" class="parsed"><img alt="Apple iOS 8 Preview: Everything We’re Expecting" src="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/ios7_iphone5.jpg"></a>
+        </div>
+        
+        <h1 itemprop="headline">
+            <a href="http://readwrite.com/2014/05/07/apple-ios-8-release-date-features-preview#_tid=popular-feed&_tact=click+%3A+A&_tval=16&_tlbl=Position%3A+16" class="parsed">Apple iOS 8 Preview: Everything We’re Expecting </a>
+            <span class="dd" itemprop="sourceOrganization">
+
+                                
+                            </span>
+        </h1>
+    </header>
+</article><article class="view-headline story reflow" itemscope="itemscope" itemtype="http://schema.org/Article" data-series="" style="opacity: 1; margin-top: 246px;">
+    <meta content="en" itemprop="inLanguage">
+
+    <header>
+        <div class="meta">
+            
+                            <span class="interaction-count"><span class="dt">Interaction count:</span> <span class="dd parsed" itemprop="interactionCount" data-interaction-count="5" data-href="/2014/05/06/htc-one-m8-camera-review">5</span></span>
+                    </div>
+
+
+                                            <div class="image thumb" itemprop="image" data-image-url="http://readwrite.com/files/styles/100_100sc/public/fields/htc_one_m8_camera_flower_settings.jpg">
+            <a href="http://readwrite.com/2014/05/06/htc-one-m8-camera-review#_tid=popular-feed&_tact=click+%3A+A&_tval=17&_tlbl=Position%3A+17" class="parsed"><img alt="How The HTC One M8 Camera Performs In The Real World" src="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/htc_one_m8_camera_flower_settings.jpg"></a>
+        </div>
+        
+        <h1 itemprop="headline">
+            <a href="http://readwrite.com/2014/05/06/htc-one-m8-camera-review#_tid=popular-feed&_tact=click+%3A+A&_tval=18&_tlbl=Position%3A+18" class="parsed">How The HTC One M8 Camera Performs In The Real World </a>
+            <span class="dd" itemprop="sourceOrganization">
+
+                                
+                            </span>
+        </h1>
+    </header>
+</article><article class="view-headline story reflow" itemscope="itemscope" itemtype="http://schema.org/Article" data-series="" style="opacity: 1;">
+    <meta content="en" itemprop="inLanguage">
+
+    <header>
+        <div class="meta">
+            
+                            <span class="interaction-count"><span class="dt">Interaction count:</span> <span class="dd parsed" itemprop="interactionCount" data-interaction-count="1" data-href="/2014/05/08/youtube-google-preferred-ads-internet-celebrities-stars-michelle-phan">1</span></span>
+                    </div>
+
+
+                                            <div class="image thumb" itemprop="image" data-image-url="http://readwrite.com/files/styles/100_100sc/public/fields/MichellePhan_RW.jpg">
+            <a href="http://readwrite.com/2014/05/08/youtube-google-preferred-ads-internet-celebrities-stars-michelle-phan#_tid=popular-feed&_tact=click+%3A+A&_tval=19&_tlbl=Position%3A+19" class="parsed"><img alt="YouTube Wants To Be More Than Just &amp;quot;Internet Famous&amp;quot;—Here&amp;#039;s How" src="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/MichellePhan_RW.jpg"></a>
+        </div>
+        
+        <h1 itemprop="headline">
+            <a href="http://readwrite.com/2014/05/08/youtube-google-preferred-ads-internet-celebrities-stars-michelle-phan#_tid=popular-feed&_tact=click+%3A+A&_tval=20&_tlbl=Position%3A+20" class="parsed">YouTube Wants To Be More Than Just "Internet Famous"—Here's How </a>
+            <span class="dd" itemprop="sourceOrganization">
+
+                                
+                            </span>
+        </h1>
+    </header>
+</article>
+            </section>
+        <div id="ad-tiles" class="block ad-tiles reflow" data-marker="mark458783576265" style="opacity: 1;"></div></aside>
+
+        <article class="story view-full feature" id="article-content" data-id="7931047c-72cf-2234-31a2-234edcdf1660" data-content-id="97904" data-domain-id="me015f987bb43c860d" data-title="GitHub For Beginners: Don&#39;t Get Scared, Get Started" data-page-title="GitHub For Beginners: Don&#39;t Get Scared, Get Started – ReadWrite" data-series="" data-section="hack" data-author="Lauren Orsini" data-image="http://readwrite.com/files/styles/110_90sc/public/fields/GitHubTutorial-Part1.jpg" data-dek="GitHub is more than just a programmer&#39;s tool. If you want to collaborate on anything, you should give it a try. Part 1 of a two-part look at..." data-published-date="September 30, 2013" data-published-datestamp="1380546120" data-promo-title="GitHub For Beginners: Don&#39;t Get Scared, Get Started" data-tweet="GitHub For Beginners: Don&#39;t Get Scared, Get Started by @laureninspace" data-href="http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1" data-link="http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1" data-interaction-count="14" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+            <meta content="en" itemprop="inLanguage">
+
+            <header>
+                
+
+                <section id="social-tools" class="block reflow social-tools trackable" style="opacity: 1;">
+                    <ul>
+                        <li class="interaction-count parsed">28.9K</li>                         <li class="facebook"><a href="http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1#_tid=social-tools&_tact=click+%3A+facebook-social-custom&_tval=1&_tlbl=Position%3A+1" class="facebook social-custom parsed" target="_blank" data-medium="facebook_share" data-social-action="share" sl-processed="1"></a></li>
+                        <li class="twitter"><a href="http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1#_tid=social-tools&_tact=click+%3A+twitter-social-custom&_tval=1&_tlbl=Position%3A+1" class="twitter social-custom parsed" target="_blank" data-medium="twitter" data-social-action="share" sl-processed="1"></a></li>
+                        <li class="gplus"><a href="http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1#_tid=social-tools&_tact=click+%3A+gplus-social-custom&_tval=1&_tlbl=Position%3A+1" class="gplus social-custom parsed" target="_blank" data-medium="googleplus" data-social-action="share" sl-processed="1"></a></li>
+                        <li class="linkedin"><a href="http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1#_tid=social-tools&_tact=click+%3A+linkedin-social-custom&_tval=1&_tlbl=Position%3A+1" class="linkedin social-custom parsed" target="_blank" data-medium="linkedin" data-social-action="share" sl-processed="1"></a></li>
+                        <li class="reddit"><a href="http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1#_tid=social-tools&_tact=click+%3A+reddit-social-custom&_tval=1&_tlbl=Position%3A+1" class="reddit social-custom parsed" target="_blank" data-medium="reddit" data-social-action="share" sl-processed="1"></a></li>
+                        <li class="comment"><a href="http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1#disqus_anchor" class="comment" sl-processed="1"></a></li>
+                    </ul>
+                </section>
+
+            </header>
+
+            <section class="copy instapaper_body" itemprop="articleBody">
+                                <p>It's 2013, and there's no way around it: you need to learn how to use GitHub.&nbsp;</p>
+<p>Why? Because it's a social network that has completely changed the way we work. Having started as a developer's collaborative platform, GitHub is now the largest online storage space of collaborative works that exists in the world. Whether you're interested in participating in this global mind meld or in researching this massive file dump of human knowledge, you need to be here.&nbsp;</p>
+<div class="layout-object right medium">
+<blockquote><strong>See also: <a href="http://readwrite.com/2013/10/02/github-for-beginners-part-2" target="_blank" sl-processed="1">GitHub For Beginners: Commit, Push And Go</a></strong></blockquote>
+</div>
+<p>Simply by being a member, you can brush elbows with the likes of&nbsp;<a style="line-height: 1.538em;" href="https://github.com/google" sl-processed="1">Google</a> and <a style="line-height: 1.538em;" href="https://github.com/facebook" sl-processed="1">Facebook</a>.&nbsp;Before GitHub existed, major companies created their knowledge mainly in private. But when you access their GitHub accounts,&nbsp;you're free to download, study, and build upon anything they add to the network. So what are you waiting for?</p>
+<h2>Looking For GitHub Answers</h2>
+<p>As embarrassing as it is to admit, this tutorial came into being because all of the “GitHub for Beginners” articles I read were way over my head. That’s probably because I don’t have a strong programming background, like most GitHub users. I couldn’t identify with the way most tutorials suggest using GitHub, as a showcase for my programming work.</p>
+<div class="layout-object left medium">
+<blockquote><strong>See also: <a href="http://readwrite.com/2013/11/18/github-tom-preston-warner" target="_blank" sl-processed="1">Github's Tom Preston-Werner: How We Went Mainstream</a></strong></blockquote>
+</div>
+<p>What you might not know is that there are plenty of reasons to use GitHub if you’re not a programmer. According to GitHub’s educational videos, any knowledge worker can benefit, with “knowledge worker” defined as most any profession that makes use of a computer.</p>
+<p>If you’ve given up on understanding how to use GitHub, this article is for you.</p>
+<p>One of the main misconceptions about GitHub is that it’s a development tool, as much a part of coding as computer languages and compilers. However, GitHub itself isn’t much more than a social network like Facebook or Flickr. You build a profile, upload projects to share and connect with other users by “following” their accounts. And while many users store programs and code projects, there’s nothing preventing you from keeping text documents or other file types in your project folders to show off.</p>
+<div class="layout-object right medium">
+<p><span class="embedded-Media-image img-caption-c ">
+	
+			<img src="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/Screen Shot 2013-09-25 at 4.58.02 PM.png" style="" alt="The author&#39;s GitHub page. " width="2880" height="1800">
+	
+			<span class="embedded-Media-image-caption caption">The author's GitHub page. </span>
+	
+	</span>
+</p>
+</div>
+<p>You may already have a dozen other social media accounts, but here’s why you should be on GitHub anyway: it’s got the best <a href="https://help.github.com/articles/github-terms-of-service" sl-processed="1">Terms of Service</a> agreement out of the bunch. If you check out Section F of the terms, you’ll see that GitHub does everything in its power to ensure that you retain total ownership of any projects you upload to the site:</p>
+<p>“We claim no intellectual property rights over the material you provide to the Service. Your profile and materials uploaded remain yours.”</p>
+<p>What’s more, you can actually use GitHub without knowing ANY code at all. You don’t really need a tutorial to sign up and click around. But I do think that there’s merit to learning things the hard way first, by which I mean, with plain old coding in Git. After all, GitHub just happens to be one of the most effortless graphical interfaces for the Git programming language.</p>
+<h2>What Is Git?</h2>
+<p>Thank famed software developer <a href="http://en.wikipedia.org/wiki/Linus_Torvalds" sl-processed="1">Linus Torvalds</a> for Git, the software that runs at the heart of GitHub. (And while you’re at it, go ahead thank him for the Linux operating system, too.) Git is version control software, which means it manages changes to a project without overwriting any part of that project. And it’s not going away anytime soon, particularly since Torvalds and his fellow kernel developers employ Git to help develop the core kernel for Linux.</p>
+<p>Why use something like Git? Say you and a coworker are both updating pages on the same website. You make your changes, save them, and upload them back to the website. So far, so good. The problem comes when your coworker is working on the same page as you at the same time. One of you is about to have your work overwritten and erased.</p>
+<p>A <a href="http://git-scm.com/video/what-is-version-control" sl-processed="1">version control</a> application like Git keeps that from happening. You and your coworker can each upload your revisions to the same page, and Git will save two copies. Later, you can merge your changes together without losing any work along the way. You can even revert to an earlier version at any time, because Git keeps a “snapshot” of every change ever made.</p>
+<p>The problem with Git is that it’s so ancient that we have to use the command line—or Terminal if you’re a Mac user—in order to access it, typing in snippets of code like ‘90s hackers. This can be a difficult proposition for modern computer users. That’s where GitHub comes in.</p>
+<div class="layout-object right medium">
+<p><span class="embedded-Media-image img-caption-c ">
+	
+			<img src="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/Screen Shot 2013-09-25 at 4.59.17 PM.png" style="" alt="The author&#39;s Terminal screen on a Mac. " width="1232" height="802">
+	
+			<span class="embedded-Media-image-caption caption">The author's Terminal screen on a Mac. </span>
+	
+	</span>
+</p>
+</div>
+<p>GitHub makes Git easier to use in two ways. First, if you <a href="http://github.com/" sl-processed="1">download the GitHub software</a> to your computer, it provides a visual interface to help you manage your version-controlled projects locally. Second, creating an account on <span class="skimlinks-unlinked">GitHub.com</span> brings your version-controlled projects to the Web, and ties in social network features for good measure.</p>
+<p>You can browse other GitHub users’ projects, and even download copies for yourself to alter and learn from. Other users can do the same with your public projects, and even spot errors and suggest fixes. Either way, no data is lost because Git saves a “snapshot” of every change.</p>
+<p>While it’s possible to use GitHub without learning Git, there’s a big difference between using and understanding. Before I figured out Git I could use GitHub, but I didn’t really understand why. In this tutorial, we’re going to learn to use Git on the command line.</p>
+<h2>Words People Use When They Talk About Git</h2>
+<p>In this tutorial, there are a few words I’m going to use repeatedly, none of which I'd heard before I started learning. Here’s the big ones:</p>
+<p><strong>Command Line:</strong> The computer program we use to input Git commands. On a Mac, it’s called Terminal. On a PC, it’s a non-native program that you download when you download Git for the first time (we’ll do that in the next section). In both cases, you type text-based commands, known as prompts, into the screen, instead of using a mouse.</p>
+<p><strong>Repository:</strong> A directory or storage space where your projects can live. Sometimes GitHub users shorten this to “repo.” It can be local to a folder on your computer, or it can be a storage space on GitHub or another online host. You can keep code files, text files, image files, you name it, inside a repository.</p>
+<p><strong>Version Control:</strong> Basically, the purpose Git was designed to serve. When you have a Microsoft Word file, you either overwrite every saved file with a new save, or you save multiple versions. With Git, you don’t have to. It keeps “snapshots” of every point in time in the project’s history, so you can never lose or overwrite it.</p>
+<p><strong>Commit:</strong> This is the command that gives Git its power. When you commit, you are taking a “snapshot” of your repository at that point in time, giving you a checkpoint to which you can reevaluate or restore your project to any previous state.</p>
+<p><strong>Branch:</strong> How do multiple people work on a project at the same time without Git getting them confused? Usually, they “branch off” of the main project with their own versions full of changes they themselves have made. After they’re done, it’s time to “merge” that branch back with the “master,” the main directory of the project.</p>
+<h2>Git-Specific Commands</h2>
+<p>Since Git was designed with a big project like Linux in mind, there are a lot of Git commands. However, to use the basics of Git, you’ll only need to know a few terms. They all begin the same way, with the word “git.”</p>
+<p><strong><code>git init</code>:</strong> Initializes a new Git repository. Until you run this command inside a repository or directory, it’s just a regular folder. Only after you input this does it accept further Git commands.</p><div class="breakout lyra-ad say-verso-stripe" id="lyra_lite" style="display: none;"><script async="" src="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/ai016768a15fba970b0192aaafd342970d.js" id="536efb1a7628b67cb8655ada0a0200c9"></script></div>
+<p><strong><code>git config</code>:</strong> Short for “configure,” this is most useful when you’re setting up Git for the first time.</p>
+<p><strong><code>git help</code>:</strong> Forgot a command? Type this into the command line to bring up the 21 most common git commands. You can also be more specific and type “git help init” or another term to figure out how to use and configure a specific git command.</p>
+<p><strong><code>git status</code>:</strong> Check the status of your repository. See which files are inside it, which changes still need to be committed, and which branch of the repository you’re currently working on.</p>
+<p><strong><code>git add</code>:</strong> This does <em>not</em> add new files to your repository. Instead, it brings new files to Git’s attention. After you add files, they’re included in Git’s “snapshots” of the repository.</p>
+<p><strong><code>git commit</code>:</strong> Git’s most important command. After you make any sort of change, you input this in order to take a “snapshot” of the repository. Usually it goes <code>git commit -m “Message here.”</code> The <code>-m</code> indicates that the following section of the command should be read as a message.</p>
+<p><strong><code>git branch</code>:</strong> Working with multiple collaborators and want to make changes on your own? This command will let you build a new branch, or timeline of commits, of changes and file additions that are completely your own. Your title goes after the command. If you wanted a new branch called “cats,” you’d type <code>git branch cats</code>.</p>
+<p><strong><code>git checkout</code>:</strong> Literally allows you to “check out” a repository that you are not currently inside. This is a navigational command that lets you move to the repository you want to check. You can use this command as <code>git checkout master</code> to look at the master branch, or <code>git checkout cats</code> to look at another branch.</p>
+<p><strong><code>git merge</code>:</strong> When you’re done working on a branch, you can merge your changes back to the master branch, which is visible to all collaborators. <code>git merge cats</code> would take all the changes you made to the “cats” branch and add them to the master.</p>
+<p><strong><code>git push</code>:</strong> If you’re working on your local computer, and want your commits to be visible online on GitHub as well, you “push” the changes up to GitHub with this command.</p>
+<p><strong><code>git pull</code>:</strong> If you’re working on your local computer and want the most up-to-date version of your repository to work with, you “pull” the changes down from GitHub with this command.</p>
+<h2>Setting Up GitHub And Git For The First Time</h2>
+<div class="layout-object right medium">
+<p><span class="embedded-Media-image img-caption-c ">
+	
+			<img src="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/Screen Shot 2013-09-25 at 4.58.14 PM.png" style="" alt=" GitHub&#39;s signup page." width="2880" height="1800">
+	
+			<span class="embedded-Media-image-caption caption"> GitHub's signup page.</span>
+	
+	</span>
+</p>
+</div>
+<p>First, you’ll need to <a href="https://github.com/" sl-processed="1">sign up for an account</a> on <span class="skimlinks-unlinked">GitHub.com</span>. It’s as simple as signing up for any other social network. Keep the email you picked handy; we’ll be referencing it again soon.</p>
+<p>You could stop there and GitHub would work fine. But if you want to work on your project on your local computer, you need to have Git installed. In fact, GitHub won’t work on your local computer if you don’t install Git. Install Git for Windows, Mac or Linux <a href="http://git-scm.com/downloads" sl-processed="1">as needed</a>.</p>
+<div class="layout-object right medium">
+<p><span class="embedded-Media-image img-caption-c ">
+	
+			<img src="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/Screen Shot 2013-09-25 at 4.58.44 PM.png" style="" alt="http://git-scm.com/, where you download Git." width="2880" height="1800">
+	
+			<span class="embedded-Media-image-caption caption"><span class="skimlinks-unlinked">http://git-scm.com</span>/, where you download Git.</span>
+	
+	</span>
+</p>
+</div>
+<p>Now it’s time to go over to the command line. On Windows, that means starting the Git Bash app you just installed, and on OS X, it’s regular old Terminal. It’s time to introduce yourself to Git. Type in the following code:</p>
+<pre>git config --global <span class="skimlinks-unlinked">user.name</span> "Your Name Here"</pre>
+<p>Of course, you’ll need to replace “Your Name Here” with your own name in quotations. It can be your legal name, your online handle, anything. Git doesn’t care, it just needs to know to whom to credit commits and future projects.</p>
+<p>Next, tell it your email and make sure it’s the same email you used when you signed up for a <span class="skimlinks-unlinked">GitHub.com</span> account just a moment ago. Do it like this:</p>
+<pre>git config --global <span class="skimlinks-unlinked">user.email</span> "your_email@<span class="skimlinks-unlinked">youremail.com</span>"</pre>
+<p>That’s all you need to do to get started using Git on your computer. However, since you did set up a <span class="skimlinks-unlinked">GitHub.com</span> account, it’s likely you don’t just want to manage your project locally, but also online. If you want you can also set up Git so it doesn’t ask you to log in to your <span class="skimlinks-unlinked">GitHub.com</span> account every time you want to talk to it. For the purposes of this tutorial, it isn’t a big deal since we’ll only be talking to it once. The full tutorial to do this, however, is <a href="https://help.github.com/articles/set-up-git" sl-processed="1">located on GitHub</a>.</p>
+<div class="layout-object large">
+<p><span class="embedded-Media-image img-caption-c ">
+	
+			<img src="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/Screen Shot 2013-09-25 at 5.01.04 PM.png" style="" alt="Baby&#39;s first Git commands. " width="1444" height="254">
+	
+			<span class="embedded-Media-image-caption caption">Baby's first Git commands. </span>
+	
+	</span>
+</p>
+</div>
+<h2>Creating Your Online Repository</h2>
+<p>Now that you’re all set up, it’s time to create a place for your project to live. Both Git and GitHub refer to this as a repository, or “repo” for short, a digital directory or storage space where you can access your project, its files, and all the versions of its files that Git saves.</p>
+<p>Go back to <span class="skimlinks-unlinked">GitHub.com</span> and click the tiny book icon next to your username. Or, go to the <a href="https://github.com/new" sl-processed="1">new repository page</a> if all the icons look the same. Give your repository a short, memorable name. Go ahead and make it public just for kicks; why hide your attempt to learn GitHub?</p>
+<div class="layout-object large">
+<p><span class="embedded-Media-image img-caption-c ">
+	
+			<img src="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/Screen Shot 2013-09-25 at 5.06.48 PM.png" style="" alt="Creating a new repository on GitHub." width="2160" height="1282">
+	
+			<span class="embedded-Media-image-caption caption">Creating a new repository on GitHub.</span>
+	
+	</span>
+</p>
+</div>
+<p>Don’t worry about clicking the checkbox next to “Initialize this repository with a README.” A Readme file is usually a text file that explains a bit about the project. But we can make our own Readme file locally for practice.</p>
+<p>Click the green “Create Repository” button and you’re set. You now have an online space for your project to live in.</p>
+<h2>Creating Your Local Repository</h2>
+<p>So we just made a space for your project to live online, but that’s not where you’ll be working on it. The bulk of your work is going to be done on your computer. So we need to actually mirror that repository we just made as a local directory.</p>
+<p>This—where we do some heavy command line typing—is the part of every Git tutorial that really trips me up, so I’m going to go tediously, intelligence-insultingly slow.</p>
+<p>First type:</p>
+<pre>mkdir ~/MyProject</pre>
+<p><code>mkdir</code> is short for make directory. It’s not actually a Git command, but a general navigational command from the time before visual computer interfaces. The <code>~/</code> ensures that we’re building the repository at the top level of your computer’s file structure, instead of stuck inside some other directory that would be hard to find later. Actually, if you type <code>~/</code> into your browser window, it’ll bring up your local computer’s top level directory. For me, using Chrome on a Mac, it displays my Users folder.</p>
+<p>Also, notice that I called it MyProject, the very same name I called my GitHub repository that we made earlier. Keep your name consistent, too.</p>
+<p>Next, type:</p>
+<pre>cd ~/MyProject</pre>
+<p><code>cd</code> stands for change directory, and it’s also a navigational command. We just made a directory, and now we want to switch over to that directory and go inside it. Once we type this command, we are transported inside MyProject.</p>
+<p>Now we’re finally using a Git command. For your next line, type:</p>
+<pre>git init</pre>
+<p>You know you’re using a Git command because it always begins with <code>git</code>. <code>init</code> stands for “initialize.” Remember how the previous two commands we typed were general command-line terms? When we type this code in, it tells the computer to recognize this directory as a local Git repository. If you open up the folder, it won’t look any different, because this new Git directory is a hidden file inside the dedicated repository.</p>
+<div class="layout-object large">
+<p><span class="embedded-Media-image img-caption-c ">
+	
+			<img src="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/Screen Shot 2013-09-25 at 5.10.04 PM.png" style="" alt="Creating a local Git repository in three steps." width="1330" height="526">
+	
+			<span class="embedded-Media-image-caption caption">Creating a local Git repository in three steps.</span>
+	
+	</span>
+</p>
+</div>
+<p>However, your computer now realizes this directory is Git-ready, and you can start inputting Git commands. Now you’ve got both an online and a local repo for your project to live inside. In <a href="http://readwrite.com/2013/10/02/github-for-beginners-part-2" target="_blank" sl-processed="1">Part 2 of this series</a>, you will learn how to make your first commit to local and GitHub repositories, and learn about more great GitHub resources.</p>
+<p><strong>(See also: <a href="http://readwrite.com/2013/10/02/github-for-beginners-part-2" target="_blank" sl-processed="1">GitHub For Beginners: Commit, Push And Go</a>)</strong></p>
+            </section>
+
+            <footer>
+                <ul class="article-tags">
+                                        <li><a href="http://readwrite.com/hack" sl-processed="1">Hack</a></li>
+                                        <li><a href="http://readwrite.com/tag/github" sl-processed="1">GitHub</a></li>
+                                        <li><a href="http://readwrite.com/tag/how-to" sl-processed="1">How-To</a></li>
+                                        <li><a href="http://readwrite.com/tag/version+control" sl-processed="1">version control</a></li>
+                                    </ul>
+                <section class="social-tools" id="social-tools-2">
+                    <ul>
+                        <li class="interaction-count parsed">28.9K</li>                         <li class="facebook"><a href="http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1#" class="facebook social-custom" target="_blank" data-medium="facebook_share" data-social-action="share" sl-processed="1"></a></li>
+                        <li class="twitter"><a href="http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1#" class="twitter social-custom" target="_blank" data-medium="twitter" data-social-action="share" sl-processed="1"></a></li>
+                        <li class="gplus"><a href="http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1#" class="gplus social-custom" target="_blank" data-medium="googleplus" data-social-action="share" sl-processed="1"></a></li>
+                        <li class="linkedin"><a href="http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1#" class="linkedin social-custom" target="_blank" data-medium="linkedin" data-social-action="share" sl-processed="1"></a></li>
+                        <li class="reddit"><a href="http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1#" class="reddit social-custom" target="_blank" data-medium="reddit" data-social-action="share" sl-processed="1"></a></li>
+                        <li class="comment"><a href="http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1#disqus_anchor" class="comment" sl-processed="1"></a></li>
+                    </ul>
+                </section>
+            </footer>
+        </article>
+
+        <aside class="after">
+
+            
+            <span id="mark458783576265"></span>
+        </aside>
+    </div>
+</section>
+
+
+
+    <script>
+        //<![CDATA[
+
+        // 
+        // readwritenext
+
+        var disqus_shortname = 'readwritenext';
+        var disqus_title = 'GitHub For Beginners: Don&#039;t Get Scared, Get Started - by Lauren Orsini';
+
+        // var disqus_developer = 1;
+
+                    var disqus_identifier = "7931047c-72cf-2234-31a2-234edcdf1660";
+
+            // var disqus_url = 'http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1';
+        
+        //]]>
+    </script>
+
+    <div id="article-fader"><div id="article-fader-spinner"></div></div>
+    <section class="page-footer">
+        <section id="hub-listing-detail-stream" class="trackable click feed view-tile">
+        <div class="grid">
+            <h2>Read Next</h2>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+
+
+
+                        
+                    
+            
+                        
+            
+            <article id="story-1a65efc5-66a7-7064-5d93-ca28a55d01e9" class="story view-summary feature" data-id="1a65efc5-66a7-7064-5d93-ca28a55d01e9" itemscope="itemscope" itemtype="http://schema.org/Article">
+                <meta content="en" itemprop="inLanguage">
+
+                <header>
+                                                                <div class="image thumb" itemprop="image">
+                            <a href="http://readwrite.com/2014/04/04/winjs-how-to-build-app-html5-10-steps#_tid=hub-listing-detail-stream&_tact=click+%3A+A&_tval=1&_tlbl=Position%3A+1" class="parsed" sl-processed="1"><img src="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/Screen Shot 2014-04-04 at 10.28.26 AM.png" alt="How To Build A WinJS App In 10 Easy Steps"></a>
+                        </div>
+                    
+                    <div class="grid-item">
+                        <h1 itemprop="headline"><a href="http://readwrite.com/2014/04/04/winjs-how-to-build-app-html5-10-steps#_tid=hub-listing-detail-stream&_tact=click+%3A+A&_tval=2&_tlbl=Position%3A+2" class="parsed" sl-processed="1">How To Build A WinJS App In 10 Easy Steps</a></h1>
+
+                        <div class="abstract" itemprop="description">
+                            <p>Build your first HTML5 app with Microsoft's open-source JavaScript libraries in this simple tutorial.</p>
+                        </div>
+                    </div>
+
+                    <div class="meta">
+                        <span class="section"><span class="dt">Section:</span> <span class="dd" itemprop="articleSection"><a href="http://readwrite.com/hack#_tid=hub-listing-detail-stream&_tact=click+%3A+A&_tval=3&_tlbl=Position%3A+3" class="parsed" sl-processed="1">Hack</a></span></span>
+                        <span class="author"><span class="dt">Author:</span> <span class="dd" itemprop="author"><a href="http://readwrite.com/author/lauren-orsini#_tid=hub-listing-detail-stream&_tact=click+%3A+A&_tval=4&_tlbl=Position%3A+4" class="parsed" sl-processed="1">Lauren Orsini</a></span></span>
+                        <span class="publish-date"><span class="dt">Publish date:</span> <span class="dd" itemprop="datePublished">April 4, 2014</span></span>
+                        <span class="interaction-count"><span class="dt">Interaction count:</span> <span class="dd parsed" data-interaction-count="17" data-href="/2014/04/04/winjs-how-to-build-app-html5-10-steps">1.8K</span></span>
+                    </div>
+                </header>
+            </article>
+
+                    
+            
+                        
+            
+            <article id="story-69aa64a3-fd49-65a4-55df-67a5bba14520" class="story view-summary feature" data-id="69aa64a3-fd49-65a4-55df-67a5bba14520" itemscope="itemscope" itemtype="http://schema.org/Article">
+                <meta content="en" itemprop="inLanguage">
+
+                <header>
+                                                                <div class="image thumb" itemprop="image">
+                            <a href="http://readwrite.com/2014/04/24/github-women-reputation-julie-ann-horvath#_tid=hub-listing-detail-stream&_tact=click+%3A+A&_tval=5&_tlbl=Position%3A+5" class="parsed" sl-processed="1"><img src="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/femalecodertocat5.png" alt="How GitHub Could Restore A Woman-Friendly Environment"></a>
+                        </div>
+                    
+                    <div class="grid-item">
+                        <h1 itemprop="headline"><a href="http://readwrite.com/2014/04/24/github-women-reputation-julie-ann-horvath#_tid=hub-listing-detail-stream&_tact=click+%3A+A&_tval=6&_tlbl=Position%3A+6" class="parsed" sl-processed="1">How GitHub Could Restore A Woman-Friendly Environment</a></h1>
+
+                        <div class="abstract" itemprop="description">
+                            <p>Your users aren't stupid, GitHub.</p>
+                        </div>
+                    </div>
+
+                    <div class="meta">
+                        <span class="section"><span class="dt">Section:</span> <span class="dd" itemprop="articleSection"><a href="http://readwrite.com/enterprise#_tid=hub-listing-detail-stream&_tact=click+%3A+A&_tval=7&_tlbl=Position%3A+7" class="parsed" sl-processed="1">Enterprise</a></span></span>
+                        <span class="author"><span class="dt">Author:</span> <span class="dd" itemprop="author"><a href="http://readwrite.com/author/lauren-orsini#_tid=hub-listing-detail-stream&_tact=click+%3A+A&_tval=8&_tlbl=Position%3A+8" class="parsed" sl-processed="1">Lauren Orsini</a></span></span>
+                        <span class="publish-date"><span class="dt">Publish date:</span> <span class="dd" itemprop="datePublished">April 24, 2014</span></span>
+                        <span class="interaction-count"><span class="dt">Interaction count:</span> <span class="dd parsed" data-interaction-count="16" data-href="/2014/04/24/github-women-reputation-julie-ann-horvath">739</span></span>
+                    </div>
+                </header>
+            </article>
+
+                    
+            
+                        
+            
+            <article id="story-c3565e61-a628-d4b4-59df-8caa635ff051" class="story view-summary standard" data-id="c3565e61-a628-d4b4-59df-8caa635ff051" itemscope="itemscope" itemtype="http://schema.org/Article">
+                <meta content="en" itemprop="inLanguage">
+
+                <header>
+                                                                <div class="image thumb" itemprop="image">
+                            <a href="http://readwrite.com/2014/04/21/tom-preston-werner-departure-github#_tid=hub-listing-detail-stream&_tact=click+%3A+A&_tval=9&_tlbl=Position%3A+9" class="parsed" sl-processed="1"><img src="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/tom preston-warner github flickr jeffkward 5899574235_081d1c0691_b.jpg" alt="What Tom Preston-Werner&amp;#039;s Departure Means For GitHub"></a>
+                        </div>
+                    
+                    <div class="grid-item">
+                        <h1 itemprop="headline"><a href="http://readwrite.com/2014/04/21/tom-preston-werner-departure-github#_tid=hub-listing-detail-stream&_tact=click+%3A+A&_tval=10&_tlbl=Position%3A+10" class="parsed" sl-processed="1">What Tom Preston-Werner's Departure Means For GitHub</a></h1>
+
+                        <div class="abstract" itemprop="description">
+                            <p>GitHub's challenges are far from over.</p>
+                        </div>
+                    </div>
+
+                    <div class="meta">
+                        <span class="section"><span class="dt">Section:</span> <span class="dd" itemprop="articleSection"><a href="http://readwrite.com/enterprise#_tid=hub-listing-detail-stream&_tact=click+%3A+A&_tval=11&_tlbl=Position%3A+11" class="parsed" sl-processed="1">Enterprise</a></span></span>
+                        <span class="author"><span class="dt">Author:</span> <span class="dd" itemprop="author"><a href="http://readwrite.com/author/lauren-orsini#_tid=hub-listing-detail-stream&_tact=click+%3A+A&_tval=12&_tlbl=Position%3A+12" class="parsed" sl-processed="1">Lauren Orsini</a></span></span>
+                        <span class="publish-date"><span class="dt">Publish date:</span> <span class="dd" itemprop="datePublished">April 21, 2014</span></span>
+                        <span class="interaction-count"><span class="dt">Interaction count:</span> <span class="dd parsed" data-interaction-count="8" data-href="/2014/04/21/tom-preston-werner-departure-github">623</span></span>
+                    </div>
+                </header>
+            </article>
+
+        
+
+            <article class="section view-summary promo" itemscope="itemscope" itemtype="http://schema.org/Article">
+                <meta content="en" itemprop="inLanguage">
+
+                <header>
+                    <div class="image thumb" itemprop="image">
+                        <a href="http://readwrite.com/hack#_tid=hub-listing-detail-stream&_tact=click+%3A+A&_tval=13&_tlbl=Position%3A+13" class="parsed" sl-processed="1"><img src="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/Hack_grid.jpg" width="400" height="300" alt="Hack"></a>
+                    </div>
+
+                    <div class="grid-item">
+                        <h1 itemprop="headline"><a href="http://readwrite.com/hack#_tid=hub-listing-detail-stream&_tact=click+%3A+A&_tval=14&_tlbl=Position%3A+14" class="parsed" sl-processed="1">hack</a></h1>
+
+                        <div class="abstract" itemprop="description">
+                            <p>ReadWriteHack is designed to help software, Web and mobile developers learn the key trends, tools, and best practices that shape their work and careers.</p>
+                        </div>
+
+                        <ul class="section-feed">
+                                                        <li><a href="http://readwrite.com/2014/05/08/gilt-eric-bowman-interview-scala-rails-jvm-reactive-platform#_tid=hub-listing-detail-stream&_tact=click+%3A+A&_tval=0&_tlbl=Position%3A+0" class="parsed" sl-processed="1">How Gilt's Insane Traffic Spikes Pushed It Off Rails To Scala</a></li>
+                                                        <li><a href="http://readwrite.com/2014/05/07/arduino-vs-raspberry-pi-projects-diy-platform#_tid=hub-listing-detail-stream&_tact=click+%3A+A&_tval=1&_tlbl=Position%3A+1" class="parsed" sl-processed="1">Arduino Vs. Raspberry Pi: Which Is The Right DIY Platform For You?</a></li>
+                                                        <li><a href="http://readwrite.com/2014/05/06/github-atom-open-source-text-editor-beginners#_tid=hub-listing-detail-stream&_tact=click+%3A+A&_tval=2&_tlbl=Position%3A+2" class="parsed" sl-processed="1">GitHub Open Sources Atom, The Text Editor Beginners Can Use</a></li>
+                                                        <li><a href="http://readwrite.com/2014/05/05/apple-github-ios-android-developers#_tid=hub-listing-detail-stream&_tact=click+%3A+A&_tval=3&_tlbl=Position%3A+3" class="parsed" sl-processed="1">Apple Is "Nearly Invisible" On GitHub, But Does It Matter?</a></li>
+                                                    </ul>
+                    </div>
+                </header>
+            </article>
+
+        </div>
+    </section>
+
+    <div class="grid">
+        <section id="comments">
+            <a name="disqus_anchor"></a>
+            <div id="disqus_thread"></div>
+        </section>
+    </div>
+
+    <section class="colophon">
+        <div class="grid">
+            <span class="copyright">© 2014 Say Media Inc.</span>
+            <span class="links"><a href="http://readwrite.com/page/about" sl-processed="1">About</a> · <a href="http://www.saymedia.com/company-and-campaign-information" target="_blank" sl-processed="1">Advertise</a> · <a href="http://readwrite.com/page/privacy-policy" sl-processed="1">Privacy</a> · <a href="http://readwrite.com/page/contact" sl-processed="1">Contact</a></span>
+        </div>
+    </section>
+</section>
+
+    </div>
+
+
+    <script>
+        //<![CDATA[
+
+        function loadCSS(url) {
+            var link = document.createElement("link");
+            link.type = "text/css";
+            link.rel = "stylesheet";
+            link.href = url;
+            document.getElementsByTagName("head")[0].appendChild(link);
+        }
+
+        function globalErrorHandler() {
+            loadCSS(_conf.root + "site/css/noscript.css");
+        }
+
+        window.addEventListener("error", globalErrorHandler);
+        document.addEventListener("error", globalErrorHandler);
+
+        var MINIMUM_ARTICLE_HEIGHT_MULTIPLIER = {
+            'desktop': {
+                'landscape': 2.5,
+                'portrait': 2.5
+            },
+            'phone': {
+                'landscape': 5,
+                'portrait': 5
+            },
+            'tablet': {
+                'landscape': 2.5,
+                'portrait': 2
+            }
+        };
+
+        var _categorizr = Categorizr.getInstance();
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var a = AdInstantiater.getInstance();
+            if (a.pageType == CoreData.PAGE_TYPE_HUB) {
+                if (_categorizr.isDesktop()) {
+                    a.insertHubAds(false);
+                }
+                else if (_categorizr.isPhone()) {
+                    a.insertHubAds(false, 3);
+                }
+                else if (_categorizr.isTablet()) {
+                    a.insertHubAds(false, 6);
+                }
+            }
+            else if (a.pageType == CoreData.PAGE_TYPE_ARTICLE) {
+                var orientation = $(window).height() > $(window).width() ? "portrait" : "landscape";
+                var platform = false;
+                if (_categorizr.isDesktop()) {
+                    platform = "desktop";
+                }
+                else if (_categorizr.isPhone()) {
+                    platform = "phone";
+                }
+                else if (_categorizr.isTablet()) {
+                    platform = "tablet";
+                }
+                a.insertArticleAds(MINIMUM_ARTICLE_HEIGHT_MULTIPLIER[platform][orientation], false);
+            }
+        });
+
+        if(SiteSettings.overrideUserAgent) _categorizr.getDeviceInfo(SiteSettings.overrideUserAgent);
+        if(SiteSettings.isCategorizrVerbose) alert("User agent: " + _categorizr.getUserAgent() + "\n\nSlug list: " + _categorizr.getSlugList());
+
+        try {
+            if(!_categorizr.isBrowserDesktopIE6() && !_categorizr.isBrowserDesktopIE7()) {
+                if(SiteSettings.overrideFlavor === "desktop" || (!SiteSettings.overrideFlavor && (_categorizr.isDesktop() || _categorizr.isError()))) {
+                    head.js(CoreSettings.isBundleMode ? _conf.root + "core/js/bundles/min/desktop-bundle.min.js" : _conf.root + "core/js/bundles/desktop-bundle.js");
+                }
+
+                if(SiteSettings.overrideFlavor === "phone" || (!SiteSettings.overrideFlavor && _categorizr.isPhone() && !_categorizr.isError())) {
+                    head.js(CoreSettings.isBundleMode ? _conf.root + "core/js/bundles/min/phone-bundle.min.js" : _conf.root + "core/js/bundles/phone-bundle.js");
+                }
+
+                if(SiteSettings.overrideFlavor === "tablet" || (!SiteSettings.overrideFlavor && _categorizr.isTablet() && !_categorizr.isError())) {
+                    head.js(CoreSettings.isBundleMode ? _conf.root + "core/js/bundles/min/tablet-bundle.min.js" : _conf.root + "core/js/bundles/tablet-bundle.js");
+                }
+            }
+        }
+        catch(err) {
+            loadCSS(_conf.root + "site/css/noscript.css");
+        }
+
+
+
+        // KISSMETRICS
+        // -----------
+
+        var _kmq = _kmq || [];
+        var _kmk = _kmk || '0b6c986b0802e7580ed5243be2f7cb9ca54c995a';
+
+
+        // GOOGLE ANALYTICS
+        // ----------------
+
+        var _gaq = _gaq || [];
+
+        _gaq.push(['_setAccount', 'UA-421291-1']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_setAllowHash', false]);
+        _gaq.push(['_setDomainName', 'none']);
+
+        _gaq.push(['_setCustomVar',
+            1, // Slot 1 definition
+            'Type', // Slot 1 label
+            'Article Page',
+            3 // Sets the scope to page-level.
+        ]);
+
+        _gaq.push(['_setCustomVar',
+            2, // Slot 2 definition
+            'Section', // Slot 2 label
+            'Hack',
+            3 // Sets the scope to page-level.
+        ]);
+
+        _gaq.push(['_setCustomVar',
+            3, // Slot 3 definition
+            'Author', // Slot 3 label
+            'Lauren Orsini',
+            3 // Sets the scope to page-level.
+        ]);
+
+        _gaq.push(['_setCustomVar',
+            4, // Slot 4 definition
+            'Quarter', // Slot 4 label
+            '2013Q3',
+            3 // Sets the scope to page-level.
+        ]);
+
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+
+
+        // CHARTBEAT
+        // ---------
+
+        var _sf_async_config = {};
+		
+        _sf_async_config.uid = 24210;
+        _sf_async_config.domain = 'readwrite.com';
+        _sf_async_config.useCanonical = true;
+        
+               		_sf_async_config.sections = 'Hack';
+			_sf_async_config.authors = 'Lauren Orsini';
+       	       	
+        (function() {
+            function loadChartbeat() {
+                window._sf_endpt = (new Date()).getTime();
+                var e = document.createElement('script');
+                e.setAttribute('language', 'javascript');
+                e.setAttribute('type', 'text/javascript');
+                e.setAttribute('src', (('https:' == document.location.protocol) ? 'https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/' : 'http://static.chartbeat.com/') + 'js/chartbeat_pub.js');
+                document.body.appendChild(e);
+            }
+
+            var oldonload = window.onload;
+            window.onload = (typeof window.onload != 'function') ? loadChartbeat : function() {
+                oldonload();
+                loadChartbeat();
+            };
+        })();
+
+
+        // SAY - TETRAPAK
+        // --------------
+
+		var _tetra_config={};
+
+		_tetra_config._domain = "readwrite.com";
+		_tetra_config._startt = (new Date()).getTime();
+		_tetra_config.metadata = {
+			'mediapropertyid': 'me015f987bb43c860d',
+					 		'mediapropertycontentitemid':'97904',
+		        'pagetype' : 'ARTICLE',
+		    	'published': '1380546120',
+		    	'author'   : 'Lauren Orsini',
+		    	'authorid' : '1011',
+		    	'section'  : 'Hack',
+		    	'sectionid': '5262'
+		    		};
+
+		_tetra_config.pagemodel = {
+			'blockids':'navigation, header, alpha, beta, footer'
+		};
+
+	    (function() {
+	    	var tetra = document.createElement('script'); tetra.type = 'text/javascript'; tetra.async = true;
+	    	tetra.src = (document.location.protocol == "https:" ? "https://" : "http://") + "tetra.saymedia.com/latest/tetrapak.js";
+			tetra.id = 'orion-tetrapak';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(tetra, s);
+		})();
+
+
+        // COMSCORE
+        // -------
+
+        var _comscore = _comscore || [];
+        _comscore.push({c1: "2", c2: "6036036"});
+        (function() {
+            var s = document.createElement("script"), el = document.getElementsByTagName("script")[0];
+            s.async = true;
+            s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+            el.parentNode.insertBefore(s, el);
+        })();
+
+        //]]>
+    </script>
+    <noscript>&lt;img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=6036036&amp;cv=2.0&amp;cj=1" /&gt;</noscript>
+
+
+    <div id="BF_WIDGET_1"><img id="AD_TRACKER-1" width="1px" height="1px" border="0" visibility="hidden" type="image/gif" src=""><script type="text/javascript" src="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/UserWidget"></script></div>
+    <script>
+        //<![CDATA[
+
+        (function() {
+            BF_WIDGET_JS = document.createElement("script");
+            BF_WIDGET_JS.type = "text/javascript";
+            BF_WIDGET_SRC = "http://ct.buzzfeed.com/wd/UserWidget?u=readwrite.com&to=1&or=vb&wid=1&cb=" + (new Date()).getTime();
+            setTimeout(function() {
+                document.getElementById("BF_WIDGET_1").appendChild(BF_WIDGET_JS);
+                BF_WIDGET_JS.src = BF_WIDGET_SRC
+            }, 1);
+        })();
+
+        //]]>
+    </script>
+
+    <!-- Quantcast Tag -->
+    <script type="text/javascript">
+    var _qevents = _qevents || [];
+
+    (function() {
+        var elem = document.createElement('script');
+        elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+        elem.async = true;
+        elem.type = "text/javascript";
+        var scpt = document.getElementsByTagName('script')[0];
+        scpt.parentNode.insertBefore(elem, scpt);
+        })();
+
+        _qevents.push([{
+            qacct:"p-afR4Gk3hyFg-2"
+        },
+        {
+        qacct:"p-X8qQTxcj3K_W5" // ReadWrite
+    }]);
+    </script>
+
+    <noscript>
+        &lt;div style="display:none;"&gt;
+            &lt;img src="//pixel.quantserve.com/pixel/p-X8qQTxcj3K_W5.gif" border="0" height="1" width="1" alt="Quantcast"/&gt;
+        &lt;/div&gt;
+    </noscript>
+    <!-- End Quantcast tag -->
+
+    <!-- START Parse.ly Include: Standard -->
+    <div id="parsely-root" style="display: none">
+      <div id="parsely-cfg" data-parsely-site="readwrite.com"></div>
+    <script id="parsely-script" async="" src="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/p.js"></script></div>
+    <script>
+    (function(s, p, d) {
+      var h=d.location.protocol, i=p+"-"+s,
+          e=d.getElementById(i), r=d.getElementById(p+"-root"),
+          u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+          :"static."+p+".com";
+      if (e) return;
+      e = d.createElement(s); e.id = i; e.async = true;
+      e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+    })("script", "parsely", document);
+    </script>
+    <!-- END Parse.ly Include -->
+
+<!--- start SITE-783 - page tracking --->
+    <script>
+        var saytracker = {};
+        saytracker.page_tracking = '';
+        saytracker.accessTracker = function () {
+
+            // cachebuster, if required
+            var _randomNum = (new Date()).getTime();
+            var _pt = '';
+
+                                        _pt = _pt;
+            
+            // here are three instances of cachebusters in the tracking tag examples
+	    	_pt = _pt.replace( '[CACHEBUSTER]', _randomNum ).replace( '%%SSRANDOM%%', _randomNum ).replace( '[timestamp]', _randomNum );
+
+            saytracker.page_tracking = _pt;
+            return saytracker.page_tracking;
+        }
+
+        function doTrackIt () {
+            var tracker = document.createElement('img');
+            // image props
+            tracker.setAttribute('id', 'AD_TRACKER-1');
+            tracker.setAttribute('width', '1px');
+            tracker.setAttribute('height', '1px');
+	        tracker.setAttribute('border', '0');
+            tracker.setAttribute('visibility', 'hidden');
+            tracker.setAttribute('type', 'image/gif');
+            var _pageTrack = saytracker.accessTracker();
+            tracker.src = _pageTrack;
+            // write tracking img to page
+            document.getElementById('BF_WIDGET_1').appendChild(tracker);
+        }
+
+        $(document).ready(function(){
+            doTrackIt();
+        });
+    </script>
+<!--- end SITE-783 - page tracking --->
+
+
+
+
+
+
+
+
+
+
+
+<script src="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/potential_shares.json"></script><script language="javascript" type="text/javascript" src="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/chartbeat_pub.js"></script></body><script src="./GitHub For Beginners  Don't Get Scared, Get Started – ReadWrite_files/saved_resource(1)"></script></html>

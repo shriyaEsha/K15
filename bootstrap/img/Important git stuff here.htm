@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)http://opentechschool.github.io/social-coding/extras/pages.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>OpenTechSchool – Hosting static websites with GitHub Pages</title>
+  <link href="./Important git stuff here_files/css" rel="stylesheet" type="text/css">
+  <link href="http://opentechschool.github.io/social-coding/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="http://opentechschool.github.io/social-coding/css/zenburn.min.css" rel="stylesheet" media="screen">
+  <link href="http://opentechschool.github.io/social-coding/css/styles.css" rel="stylesheet" media="screen">
+
+  <link rel="icon" href="http://opentechschool.github.io/social-coding/favicon.ico" type="image/png">
+</head>
+<body>
+  <div class="navbar navbar-inverse navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <div class="span3"><a href="http://www.opentechschool.org/" target="_blank"></a><h1><a href="http://www.opentechschool.org/" target="_blank">OpenTechSchool</a></h1></div>
+          <div class="span6"><h1><a href="http://opentechschool.github.io/social-coding/"></a></h1></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="main-content" class="container-fluid">
+
+    <div class="row-fluid">
+      <h1 class="title">Hosting static websites with GitHub Pages</h1>
+      <hr>
+    </div>
+
+    <div class="row-fluid">
+
+      <div class="span3 well sidebar-nav">
+        <ul class="nav nav-list">
+          
+            <li class="nav-header">
+              
+                <a href="http://opentechschool.github.io/social-coding/" alt="Social coding with Github">Home</a>
+              
+            </li>
+            
+          
+            <li class="nav-header">
+              
+                Core
+              
+            </li>
+            
+              <li><a href="http://opentechschool.github.io/social-coding/core/setup.html" alt="What you need to configure, signup to and install!">Setting up Git &amp; Github</a></li>
+            
+              <li><a href="http://opentechschool.github.io/social-coding/core/first-repo.html" alt="Dip your toes into the slightly revisionist world of git">Your first repository!</a></li>
+            
+              <li><a href="http://opentechschool.github.io/social-coding/core/underground.html" alt="Learn to plot with others :&gt;">Social coding in the underground</a></li>
+            
+          
+            <li class="nav-header">
+              
+                Extras
+              
+            </li>
+            
+              <li><a href="http://opentechschool.github.io/social-coding/extras/exploring.html" alt="">Exploring Github</a></li>
+            
+              <li><a href="http://opentechschool.github.io/social-coding/extras/wikis.html" alt="">Project wikis</a></li>
+            
+              <li><a href="http://opentechschool.github.io/social-coding/extras/gists.html" alt="">Sharing code quickly with gists</a></li>
+            
+              <li><a href="./Important git stuff here_files/Important git stuff here.htm" alt="">Hosting websites with Github!</a></li>
+            
+              <li><a href="http://opentechschool.github.io/social-coding/extras/delete-restore.html" alt="">Losing and finding your files</a></li>
+            
+              <li><a href="http://opentechschool.github.io/social-coding/extras/delete-restore-repo.html" alt="">Delete and restore your entire repo!</a></li>
+            
+              <li><a href="http://opentechschool.github.io/social-coding/extras/heroku.html" alt="">Pushing to Heroku like a Hero</a></li>
+            
+          
+        </ul>
+      </div>
+
+      <div id="main-content" class="span9">
+        <p>A <em>static</em> website is a website that is composed entirely of HTML, CSS and JavaScript. There is no database or Ruby/Python code at the server. You can’t actually store anything aside from webpages.</p>
+
+<p><a href="http://pages.github.com/">GitHub Pages</a> allows you to host a website directly from your GitHub repository. Your site will then be hosted under your own GitHub subdomain. For example, <a href="https://github.com/OpenTechSchool">OpenTechSchool</a> has the repository <a href="https://github.com/OpenTechSchool/social-coding">social-coding</a>, which is automatically published to <a href="http://opentechschool.github.io/social-coding/">http://opentechschool.github.com/social-coding/</a>. GitHub automatically handles the publishing and serving of the site. All we have to do is push to our repository on the <code>gh-pages</code> branch and GitHub will take care of the rest.</p>
+
+<p>There are a few different ways to get started with GitHub Pages, we’ll be looking at using the GitHub Pages wizard and rolling your own with Jekyll.</p>
+
+<h1 id="the_automatic_page_generator">The Automatic Page Generator</h1>
+
+<p>GitHub provide an automated system to bootstrap an empty repository for GitHub Pages. It allows you to pick from some premade templates so you won’t even need to clone your repository to your local machine.</p>
+
+<p>Create a blank repository. Any name will do. We’ll use <code>github-for-cats</code> as an example.</p>
+
+<p><img src="./Important git stuff here_files/generator-1-small.png" alt="Create repo page"></p>
+
+<p>Then go to the <em>Settings</em> tab (in the list of buttons on the right, the old name was “Admin” - these screenshots are slightly out of date.)</p>
+
+<p><img src="./Important git stuff here_files/generator-2-small.png" alt="GitHub pages button"></p>
+
+<p>The generator will build just the front page for you, but you can get a lot done here.</p>
+
+<p><img src="./Important git stuff here_files/generator-3-small.png" alt="GitHub Pages editor"></p>
+
+<p>Then the styles are all fancy and modern and new.</p>
+
+<p><img src="./Important git stuff here_files/generator-4-small.png" alt="GitHub Pages themes 1"> <img src="./Important git stuff here_files/generator-5-small.png" alt="GitHub Pages themes 2"></p>
+
+<p>Now you can look at your site online!</p>
+
+<p><img src="./Important git stuff here_files/generator-6-small.png" alt="GitHub Pages 404"></p>
+
+<p>Oh snap! Actually, you’ll might need to wait a while for the first time. But it’s worth it! After the first time it gets much quicker at publishing.</p>
+
+<p><img src="./Important git stuff here_files/generator-7-small.png" alt="GitHub Pages done"></p>
+
+<p>And you’re done!</p>
+
+<h1 id="manual_creation">Manual Creation</h1>
+
+<p>You can actually make a GitHub Pages site yourself with just a blank repository. It’s just a little more work because you’ll need to get all your HTML/CSS/JS yourself and commit it to your repo.</p>
+
+<p>The key thing to remember is that your site <em>must</em> be on the <code>gh-pages</code> branch. If you commit to the <code>master</code> branch, which is the default branch in git, then GitHub will not care. It only looks to see if you have a <code>gh-pages</code> branch (if it watched <code>master</code> it would try to publish almost every GitHub repo).</p>
+
+<p>Start by creating a repository on GitHub and cloning it locally. Be sure to use your <strong>own</strong> URL to execute the <code>clone</code> command on.</p>
+
+<pre><code class="ruby"><span class="variable">$ </span>git clone git<span class="variable">@github</span>.<span class="symbol">com:</span>stevenfarlie/blank.git
+<span class="constant">Cloning</span> into <span class="string">'blank'</span>...
+<span class="symbol">warning:</span> <span class="constant">You</span> appear to have cloned an empty repository.</code></pre>
+
+<p>Git is correct: we have cloned a blank repository. It doesn’t even have a branch or an initial commit. Let’s start by creating a <code>gh-pages</code> branch for the initial files:</p>
+
+<pre><code class="ruby"><span class="variable">$ </span>git checkout -b gh-pages
+<span class="variable">$ </span>git status
+<span class="comment"># On branch gh-pages</span>
+<span class="comment">#</span>
+<span class="comment"># Initial commit</span>
+<span class="comment">#</span>
+nothing to commit (create/copy files <span class="keyword">and</span> use <span class="string">"git add"</span> to track)</code></pre>
+
+<p>You can download a zip file with minimal website <a href="https://github.com/stevenfarlie/blank/zipball/gh-pages">here</a>. Unzip the files into your repository, then <code>add</code> and <code>commit</code> them.</p>
+
+<pre><code class="sql">$ git add index.html site.css site.js
+$ git <span class="operator"><span class="keyword">commit</span> -m <span class="string">"Basic GitHub Pages site"</span>
+[gh-pages (root-<span class="keyword">commit</span>) <span class="number">60</span>ce662] Basic GitHub Pages site
+ <span class="number">3</span> files changed, <span class="number">46</span> insertions(+)
+ <span class="keyword">create</span> mode <span class="number">100644</span> index.html
+ <span class="keyword">create</span> mode <span class="number">100644</span> site.css
+ <span class="keyword">create</span> mode <span class="number">100644</span> site.js</span></code></pre>
+
+<p>Now we can <code>push</code> to GitHub, but remember that we are pushing to <code>gh-pages</code>, which doesn’t exist yet on our GitHub repository</p>
+
+<pre><code class="bash">$ git push origin gh-pages
+Counting objects: 5, <span class="keyword">done</span>.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (5/5), <span class="keyword">done</span>.
+Writing objects: 100% (5/5), 989 bytes, <span class="keyword">done</span>.
+Total 5 (delta 0), reused 0 (delta 0)
+To git@github.com:stevenfarlie/whatever.git
+ * [new branch]      gh-pages -&gt; gh-pages</code></pre>
+
+<p>And bask in the glorious result! You’ll find your site published at:</p>
+
+<pre><code class="cs">http:<span class="comment">//yourusername.github.com/repo-name</span></code></pre>
+
+<h1 id="jekyll__a_little_more_dynamic">Jekyll - A little more dynamic</h1>
+
+<p>Things get even fancier with <a href="http://jekyllrb.com/">Jekyll</a>. GitHub has <a href="https://help.github.com/articles/using-jekyll-with-pages">native Jekyll support</a>. It let’s you write pages in Markdown with simple templating and support for blog posts. It’s what we use at OpenTechSchool for our blog.</p>
+
+<p>You’ll need a Ruby setup to get the most out of it, and at least the <code>jekyll</code> gem installed. Maciakl has provided a simple Jekyll template <a href="https://github.com/maciakl/Sample-Jekyll-Site">here</a> which you can use to get started. But be careful to switch to the <code>gh-pages</code> branch, because their repository is using <code>master</code>.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div id="footer">
+    <p>
+      © 2013-2014 - made by <a href="http://www.opentechschool.org/">OpenTechSchool</a> and its <a href="https://github.com/OpenTechSchool/html-css-beginners/graphs/contributors">Contributors</a>&nbsp;&nbsp;||&nbsp;&nbsp;<a href="http://www.opentechschool.org/imprint.html">Impressum</a>
+    </p>
+  </div>
+
+  <script src="./Important git stuff here_files/jquery-latest.js"></script>
+  <script src="./Important git stuff here_files/bootstrap.min.js"></script>
+  <script src="./Important git stuff here_files/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+</body></html>

@@ -1,0 +1,51 @@
+@keyframes animatedBackground {
+	0% { margin-left:1000px; }
+	100% { margin-left:-1000px; }
+}
+@-moz-keyframes animatedBackground {
+	0% { margin-left: 1000px; }
+	100% { margin-left: -1000px; }
+}
+@-webkit-keyframes animatedBackground {
+	0% { margin-left: 1000px; }
+	100% { margin-left: -1000px; }
+}
+@-ms-keyframes animatedBackground {
+	0% { margin-left: 1000px; }
+	100% { margin-left: -1000px; }
+}
+@-o-keyframes animatedBackground {
+	0% { margin-left: 1000px; }
+	100% { margin-left: -1000px; }
+}
+
+#cloud1 { 
+		margin-left: 0px;
+	top:100px;
+	position:absolute;
+background-image:url(img/favicon.png) repeat 90% 110%;
+	animation: animatedBackground 10s linear infinite;
+	-moz-animation: animatedBackground 10s linear infinite;
+	-webkit-animation: animatedBackground 10s linear infinite;
+	-ms-animation: animatedBackground 10s linear infinite;
+	-o-animation: animatedBackground 10s linear infinite;
+	z-index:100;
+}
+#cloud1:hover{
+animation-play-state:paused;
+-webkit-animation-play-state:paused; /* Safari and Chrome */
+}
+#cloud2{ 
+		margin-left: 0px;
+	top:200px;
+background-image:url(img/favicon.png) repeat 20% 20%;
+position:absolute;
+	animation: animatedBackground 20s linear infinite;
+	-moz-animation: animatedBackground 20s linear infinite;
+	-webkit-animation: animatedBackground 20s linear infinite;
+	-ms-animation: animatedBackground 20s linear infinite;
+	-o-animation: animatedBackground 20s linear infinite;
+	z-index:200;
+}
+
+

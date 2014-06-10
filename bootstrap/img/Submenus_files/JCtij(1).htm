@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)http://s.codepen.io/RayM/fullgrid/JCtij?type=embed&animations=run -->
+<html class=" -webkit-"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta charset="UTF-8">
+
+  <meta name="google" value="notranslate">
+
+  <title>Marking sub-menued items (sexy version) - CodePen</title>
+
+  <script style="display: none !important;">
+    window.alert   = function(){};
+    window.confirm = function(){};
+    window.prompt  = function(){};
+    window.open    = function(){};
+    window.print   = function(){};
+  </script>
+
+  <style>nav {    
+    display: block;
+    text-align: center;
+  }
+  nav ul {
+    margin: 0;
+    padding:0;
+    list-style: none;
+  }
+  .nav a {
+    display:block; 
+    background: #111; 
+    color:#fff; 
+    text-decoration: none;
+    padding: .8em 1.8em;
+    text-transform: uppercase;
+    font-size: 80%;letter-spacing: 2px;
+    text-shadow: 0 -1px 0 #000;
+    position: relative;
+  }
+  .nav{  
+    vertical-align: top; 
+    display: inline-block;
+    box-shadow: 1px -1px -1px 1px #000, -1px 1px -1px 1px #fff, 0 0 6px 3px #fff;
+    border-radius:6px;
+  }
+  .nav li{position: relative;}
+  .nav > li { 
+    float:left; 
+    border-bottom: 4px #aaa solid; 
+    margin-right: 1px; 
+  } 
+  .nav > li > a { 
+    margin-bottom:1px;
+    box-shadow:inset 0 2em .33em -.5em #555; 
+  }
+  .nav > li:hover , .nav > li:hover >a{  border-bottom-color:orange;}
+  .nav li:hover > a { color:orange; }
+  .nav > li:first-child  { border-radius: 4px 0 0 4px;} 
+  .nav > li:first-child>a{border-radius: 4px 0 0 0;}
+  .nav > li:last-child  { 
+  	border-radius: 0 0 4px 0; 
+  	margin-right: 0;
+  } 
+  .nav > li:last-child >a{border-radius: 0 4px 0 0; }
+  .nav li li a { margin-top:1px}
+
+    .nav li a:first-child:nth-last-child(2):before { 
+     content:""; 
+     position: absolute; 
+     height:0; 
+     width: 0; 
+     border: 5px solid transparent; 
+     top: 50% ;
+     right:5px;  
+   }
+
+   /* submenu positioning*/
+.nav ul {
+  position: absolute;
+  white-space: nowrap;
+  border-bottom: 5px solid  orange;
+  z-index: 1;
+  left: -99999em;
+}
+.nav > li:hover > ul {
+  left: auto;
+  padding-top: 5px  ;
+  min-width: 100%;
+}
+.nav > li li ul {  border-left:1px solid #fff;}
+
+.nav > li li:hover > ul { 
+ /* margin-left: 1px */
+  left: 100%;
+  top: -1px;
+}
+/* arrow hover styling */
+.nav > li > a:first-child:nth-last-child(2):before { 
+  border-top-color: #aaa; 
+}
+.nav > li:hover > a:first-child:nth-last-child(2):before {
+  border: 5px solid transparent; 
+  border-bottom-color: orange; 
+  margin-top:-5px
+}
+.nav li li > a:first-child:nth-last-child(2):before {  
+  border-left-color: #aaa; 
+  margin-top: -5px
+}
+.nav li li:hover > a:first-child:nth-last-child(2):before {
+  border: 5px solid transparent; 
+  border-right-color: orange;
+  right: 10px; 
+}</style>
+
+    <script src="prefixfree.min.js"></script>
+
+</head>
+
+<body onload="_l=&#39;t&#39;;">
+
+  <nav>
+  <ul class="nav">
+    <li><a href="http://s.codepen.io/RayM/fullgrid/JCtij?type=embed&animations=run#">About</a></li>
+    <li><a href="http://s.codepen.io/RayM/fullgrid/JCtij?type=embed&animations=run#">Portfolio</a>
+      <ul>
+        <li><a href="http://s.codepen.io/RayM/fullgrid/JCtij?type=embed&animations=run#">item</a></li>
+        <li><a href="http://s.codepen.io/RayM/fullgrid/JCtij?type=embed&animations=run#">item</a></li>
+        <li><a href="http://s.codepen.io/RayM/fullgrid/JCtij?type=embed&animations=run#">item</a></li>
+        <li><a href="http://s.codepen.io/RayM/fullgrid/JCtij?type=embed&animations=run#">item</a></li>
+      </ul>
+    </li>
+    <li><a href="http://s.codepen.io/RayM/fullgrid/JCtij?type=embed&animations=run#">Resume</a>
+      <ul>
+        <li><a href="http://s.codepen.io/RayM/fullgrid/JCtij?type=embed&animations=run#">item a lonng submenu</a></li>
+        <li><a href="http://s.codepen.io/RayM/fullgrid/JCtij?type=embed&animations=run#">item</a>
+          <ul>
+            <li><a href="http://s.codepen.io/RayM/fullgrid/JCtij?type=embed&animations=run#">Ray</a></li>
+            <li><a href="http://s.codepen.io/RayM/fullgrid/JCtij?type=embed&animations=run#">Veronica</a></li>
+            <li><a href="http://s.codepen.io/RayM/fullgrid/JCtij?type=embed&animations=run#">Bushy</a></li>
+            <li><a href="http://s.codepen.io/RayM/fullgrid/JCtij?type=embed&animations=run#">Havoc</a></li>
+          </ul>
+        </li>
+        <li><a href="http://s.codepen.io/RayM/fullgrid/JCtij?type=embed&animations=run#">item</a></li>
+        <li><a href="http://s.codepen.io/RayM/fullgrid/JCtij?type=embed&animations=run#">item</a></li>
+      </ul>
+    </li>
+    <li><a href="http://s.codepen.io/RayM/fullgrid/JCtij?type=embed&animations=run#">Download</a></li>
+    <li><a href="http://s.codepen.io/RayM/fullgrid/JCtij?type=embed&animations=run#">Rants</a>
+      <ul>
+        <li><a href="http://s.codepen.io/RayM/fullgrid/JCtij?type=embed&animations=run#">item</a></li>
+        <li><a href="http://s.codepen.io/RayM/fullgrid/JCtij?type=embed&animations=run#">item</a></li>
+        <li><a href="http://s.codepen.io/RayM/fullgrid/JCtij?type=embed&animations=run#">item</a></li>
+        <li><a href="http://s.codepen.io/RayM/fullgrid/JCtij?type=embed&animations=run#">item</a></li>
+      </ul>
+    </li>
+    <li><a href="http://s.codepen.io/RayM/fullgrid/JCtij?type=embed&animations=run#">Contact</a></li>
+  </ul>
+</nav>
+
+  <script>
+    (function() {
+
+      // Once the entire pen's loaded we send a message to embeds
+      // to resize again in case they're using auto to the size the embed
+      if (document.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage('resize', "*");
+      }
+
+      // Remove all Iframes
+      var iframes = document.getElementsByTagName('iframe');
+
+      for (var i = iframes.length - 1; i >= 0; i--) {
+        iframes[i].outerHTML = "<p>remove</p>";
+      };
+
+    }());
+  </script>
+
+
+
+</body></html>

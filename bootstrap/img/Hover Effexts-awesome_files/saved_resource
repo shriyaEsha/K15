@@ -1,0 +1,1035 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Create Five Awesome Hover Effects Using CSS Multiple Backgrounds | Design Shack</title>
+	
+<meta name="description" content="Reading an article entitled Create Five Awesome Hover Effects Using CSS Multiple Backgrounds on Design Shack." />
+
+<!-- Pingback --> 
+<link rel="alternate" type="application/rss+xml" title="Design Shack RSS" href="http://feeds.designshack.net/designshack" />
+<link rel="pingback" href="http://designshack.net/xmlrpc.php" />
+
+<!-- Define the Viewport --> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+
+<!-- Load CSS --> 
+<link rel="stylesheet" href="/min/f=css/style.css" type="text/css" media="screen" />
+
+<!-- Load jQuery -->  
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+
+<!-- Load Design Shack JavaScript -->  
+<script type="text/javascript" src="/min/f=js/designshack.js"></script>
+
+<!-- Load Typekit -->
+<script type="text/javascript" src="//use.typekit.net/lpz2dcb.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+<!-- WordPress Headers -->  
+	 <link rel="image_src" href="http://designshack.designshack.netdna-cdn.com/wp-content/uploads/multibkg-f.jpg" /><link rel="alternate" type="application/rss+xml" title="Design Shack &raquo; Create Five Awesome Hover Effects Using CSS Multiple Backgrounds Comments Feed" href="http://designshack.net/articles/css/create-five-awesome-hover-effects-using-css-multiple-backgrounds/feed/" />
+<link rel='stylesheet' id='swiftype-css'  href='http://designshack.net/wp-content/plugins/swiftype-search/assets/autocomplete.css?ver=3.9' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var swiftypeParams = {"engineKey":"XXGxbaxA7yvo3bg9uzKp"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://designshack.net/wp-content/plugins/swiftype-search/assets/install_swiftype.min.js?ver=3.9'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://designshack.net/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://designshack.net/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Black Friday Web Design: The Good, Bad and Ugly' href='http://designshack.net/articles/layouts/black-friday-web-design-the-good-bad-and-ugly/' />
+<link rel='next' title='Designing a Website With IM Creator' href='http://designshack.net/articles/software/designing-a-website-with-im-creator/' />
+<meta name="generator" content="WordPress 3.9" />
+<link rel='canonical' href='http://designshack.net/articles/css/create-five-awesome-hover-effects-using-css-multiple-backgrounds/' />
+<link rel='shortlink' href='http://designshack.net/?p=26842' />
+
+<!--Plugin WP Missed Schedule 2013.1231.2013 Active - Tag 6707293c0218e2d8b7aa38d418ffa608-->
+
+<!-- This site is patched which an important unfixed problem since WordPress 2.5+ to 3.9+ -->
+
+<style type="text/css" id="syntaxhighlighteranchor"></style>
+</head>
+
+
+<body>
+
+<!-- BuySellAds.com Ad Code -->
+<script type="text/javascript">
+(function(){
+  var bsa = document.createElement('script');
+     bsa.type = 'text/javascript';
+     bsa.async = true;
+     bsa.src = '//s3.buysellads.com/ac/bsa.js';
+  (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+})();
+</script>
+<!-- END BuySellAds.com Ad Code -->
+
+
+
+<div class="container login">
+  
+  
+    <div class="row">
+    
+    <div class="col row-login-desktop">
+      <form action="/signin" class="login-bar" method="post">
+        <input value="Email Address" name="email" type="text" class="placeholder" /> 
+        <input value="Password" name="password" type="password" class="placeholder" /> 
+        <input type="submit" class="login" value="Login" /> 
+        <a href="/membership" title="Why get an account?" class="register">Register</a>
+      </form>
+    </div>
+    
+    <div class="col row-login-mobile">
+      <form action="/signin" class="login-bar" method="post">
+        <a href="javascript:void(0)" class="login login-dropdown">Login</a>
+        <a href="/membership" title="Why get an account?" class="register">Register</a>
+      </form>
+    </div>
+    
+    
+    <div class="col row-login-mobile-form">
+      <form action="/signin" class="login-bar" method="post">
+        <input value="Email Address" name="email" type="text" class="placeholder" /> 
+        <input value="Password" name="password" type="password" class="placeholder" /> 
+        <input type="submit" class="login" value="Login" /> 
+      </form>
+    </div>
+    
+  </div>
+
+  
+
+
+</div>
+
+
+<div class="container logo-search">
+
+  <div class="col search row-search-mobile">
+    <form action="/">
+      <input class="placeholder" id="s" name="s" value="search design shack" />
+    </form>
+  </div>
+
+  <div class="row" >
+    <div class="col logo">
+      <h1><a href="/">Design Shack — Web Design Gallery, Articles &amp; Community</a></h1>
+    </div>
+    <div class="col search search-desktop last">
+      <form action="/">
+        <input class="placeholder" id="s" name="s" value="search design shack" />
+      </form>
+    </div>
+  </div>
+</div>
+<div class="container navigation">
+	<div class="row">
+		<div class="col nav">
+			<ul>
+				<li><a href="/category/articles" title="Articles" class="current">Articles</a></li>
+				<li><a href="/gallery" title="Design Gallery" >Gallery</a></li>
+								<li><a href="/about" title="About Design Shack" >About</a></li>
+				
+        <a href="javascript:void(0)" class="search-reveal">Search</a>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+        <div class="container sub-navigation sub-navigation-articles">
+			<div class="row">
+				<div class="col nav-sub">
+					<ul>
+													<li class="cat-item cat-item-264"><a href="http://designshack.net/category/articles/business-articles/" title="View all posts filed under Business">Business</a>
+</li>
+	<li class="cat-item cat-item-306"><a href="http://designshack.net/category/articles/critique-articles/" title="View all posts filed under Critique">Critique</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="http://designshack.net/category/articles/css/" title="View all posts filed under CSS">CSS</a>
+</li>
+	<li class="cat-item cat-item-621"><a href="http://designshack.net/category/articles/design-dilemma-articles/" title="View all posts filed under Design Dilemma">Design Dilemma</a>
+</li>
+	<li class="cat-item cat-item-341"><a href="http://designshack.net/category/articles/freebies/" title="View all posts filed under Freebies">Freebies</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="http://designshack.net/category/articles/graphics/" title="View all posts filed under Graphics">Graphics</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="http://designshack.net/category/articles/html/" title="View all posts filed under HTML">HTML</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="http://designshack.net/category/articles/inspiration/" title="View all posts filed under Inspiration">Inspiration</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="http://designshack.net/category/articles/javascript/" title="View all posts filed under JavaScript">JavaScript</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="http://designshack.net/category/articles/layouts/" title="View all posts filed under Layouts">Layouts</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="http://designshack.net/category/articles/navigation/" title="View all posts filed under Navigation">Navigation</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="http://designshack.net/category/articles/software/" title="View all posts filed under Software">Software</a>
+</li>
+	<li class="cat-item cat-item-734"><a href="http://designshack.net/category/articles/this-week-in-design/" title="View all posts filed under This Week in Design">This Week in Design</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="http://designshack.net/category/articles/typography/" title="View all posts filed under Typography">Typography</a>
+</li>
+ 
+					</ul>	
+				</div>
+			</div>
+		</div>
+
+        
+
+
+<div class="container main">
+
+	<div class="row">
+		
+
+		<div class="col middle-column">
+			
+			<div class="article">
+
+			
+				<div class="article-heading">
+					<h2>Create Five Awesome Hover Effects Using CSS Multiple Backgrounds</h2>
+					<h3><em>by</em> <a href="http://designshack.net/author/joshuajohnson/" title="Posts by Joshua Johnson" rel="author">Joshua Johnson</a> <em>on</em> 29th November 2011 <em>with</em> <a href="#disqus_thread"><span class="dsq-postid" rel="26842 http://designshack.net/?p=26842">17 Comments</span></a></h3>
+				</div>
+	
+
+				<div class="article-body">
+
+					<div class="article-intro">
+					
+						 
+
+						<p>Today we&#8217;re going to have all kinds of fun with the CSS multiple backgrounds feature. You&#8217;ll learn how to use multiple backgrounds in a simple way and how to go much further by combining the technique with hover actions and CSS transitions to create some really cool effects.</p>
+<p>Follow along as we code five different applications of this idea that you can copy and paste to create your own awesome hovers. </p>
+<p><span id="more-26842"></span></p>
+<h2>What We&#8217;re Building</h2>
+<p>Here&#8217;s a sneak peak of what we&#8217;ll be creating today. Hover over the circles and think about how you would accomplish these effects with pure CSS. </p>
+<p><strong>Demo:</strong> <a href="http://designshack.net/tutorialexamples/multiplebackgrounds/index.html">Click here</a> to launch the demo.</p>
+<div class="tutorialimage"><a href="http://designshack.net/tutorialexamples/multiplebackgrounds/index.html"><img class="alignNone size-full wp-image-1611" src="http://designshack.co.uk/wp-content/uploads/multibkg-11.jpg" alt="screenshot" width="510"/></a></div>
+<h2>Multiple Backgrounds</h2>
+<p>Until recently, I had never really played with using multiple background images in my CSS. I knew the feature existed but I hadn&#8217;t really come up with a unique way to use it. Parallax cloudy skies are awesome, but everyone is doing those and I didn&#8217;t want to simply follow the crowd.</p>
+<p>The solution that I came up with was to figure out some great hover effects that would utilize multiple backgrounds to create a sort of opening animation. It&#8217;s a super easy trick but I haven&#8217;t seen it done before so I thought I&#8217;d show you how it works. </p>
+<p>There are a million different ways to run with it, today we&#8217;ll build five different versions so you really get a feel for what&#8217;s possible.</p>
+<h2>The Concept</h2>
+<p>Your typical CSS hover animation are pretty basic: one image slides away to reveal another, something rotates or bounces, colors fade and plus; you get the idea. </p>
+<p>When we throw multiple backgrounds into the scenario though we suddenly have quite a few variables to work with. With very little setup, we can create some seemingly complex animations using only CSS transitions, which for now still have better browser support than keyframe animations. </p>
+<p>For instance, let&#8217;s say we want to have an opening doors effect. We can animate two background images in different directions and accomplish this illusion with ease: </p>
+<div class="tutorialimage"><img class="alignNone size-full wp-image-1611" src="http://designshack.co.uk/wp-content/uploads/multibkg-1.jpg" alt="screenshot" width="510"/></div>
+<p>Now that we have the explanation out of the way. Let&#8217;s get to the fun part and start building our hover effects.</p>
+<h2>Sliding Doors: Horizontal</h2>
+<div class="tutorialimage"><img class="alignNone size-full wp-image-1611" src="http://designshack.co.uk/wp-content/uploads/multibkg-4.jpg" alt="screenshot" width="510"/></div>
+<p>Let&#8217;s take the hypothetical example from above and see if we can build something that uses this effect. To start, we need two background images.</p>
+<p>Since we&#8217;re just showing off an idea it doesn&#8217;t matter what images you use, just make sure that one of them is a texture that will tile. I&#8217;ll be using the <a href="http://subtlepatterns.com/?p=795">Dark Wood</a> texture from Subtle Patterns and a pictogram from the free <a href="http://www.dafont.com/wc-sold-out-a-bta.font">WC Sold Out A Bta</a>.</p>
+<div class="tutorialimage"><img class="alignNone size-full wp-image-1611" src="http://designshack.co.uk/wp-content/uploads/multibkg-2.jpg" alt="screenshot" width="510"/></div>
+<h3>Base CSS</h3>
+<p>Create an empty div in HTML and apply a class that uses some basic styling. We&#8217;ll apply this class to every one of the examples that we build today. </p>
+<p>I&#8217;ll be throwing a bunch of these into one document so I&#8217;ve got a few layout styles, but most important here is the border radius set to half the height/width, which will give us a nice circle.</p>
+<div style="overflow: auto; background-color: #eeeeee;">
+<pre class="brush: css;">
+.circles {
+	float: left;
+	height: 200px; width: 200px;
+	background-color: #eee;
+	margin: 0 50px 50px 0;
+	
+	/*Make it a circle*/
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+}
+</pre>
+</div>
+<p></ br> </p>
+<p>Our background images will be stacked, but here they are spread out with the border-radius applied. </p>
+<div class="tutorialimage"><img class="alignNone size-full wp-image-1611" src="http://designshack.co.uk/wp-content/uploads/multibkg-3.jpg" alt="screenshot" width="510"/></div>
+<h3>Applying Multiple Background Images</h3>
+<p>The first thing we&#8217;re going to do is apply both background images, but as a curve ball we&#8217;re going to use the wood texture twice for a total of three background image applications. </p>
+<p>Applying multiple background images in CSS is as easy as it gets, just apply one like normal, then throw in a comma and apply another. </p>
+<div style="overflow: auto; background-color: #eeeeee;">
+<pre class="brush: css;">
+#slidingDoors {
+	/*Applying Multiple Background Images*/
+	background-image: url('wood.jpg'), url('wood.jpg'), url('car.jpg');
+}
+</pre>
+</div>
+<p></ br></p>
+<p>These images will have a natural stacking order that correlates to the order in which you list them: the first being the top image and the last being the bottom.  </p>
+<div class="tutorialimage"><img class="alignNone size-full wp-image-1611" src="http://designshack.co.uk/wp-content/uploads/multibkg-5.jpg" alt="screenshot" width="510"/></div>
+<p>You can position the backgrounds with shorthand, but for this example I think it&#8217;s best to keep things separate to make things easy for readers. With this in mind, we toss in the <em>background-position</em> property so we can move our images into place. </p>
+<div style="overflow: auto; background-color: #eeeeee;">
+<pre class="brush: css;">
+/*Applying Multiple Background Images*/
+#slidingDoors {
+	background-image: url('wood.jpg'), url('wood.jpg'), url('car.jpg');
+	background-repeat: no-repeat;
+	
+	/*Positioning the Background Images*/
+	background-position: -100px 0px, 100px 0px, 0px 0px;
+}
+</pre>
+</div>
+<p></ br></p>
+<p>Obviously, each set of positioning values correlates to one of the images that we&#8217;ve applied. The first value in each set moves the picture right (positive value) and left (negative value) and the second value moves it up (positive value) and down (negative value).  </p>
+<p>As you can see, I&#8217;ve split the circle right down the middle so that one version of the wood image is on the left and one is on the right with the car image sitting right in the center. </p>
+<div class="tutorialimage"><img class="alignNone size-full wp-image-1611" src="http://designshack.co.uk/wp-content/uploads/multibkg-6.jpg" alt="screenshot" width="510"/></div>
+<p>It seems crazy to position the wood images like this because you could just use one, but this will allow us to make a nice animation. </p>
+<h3>Animating the Images</h3>
+<p>Now, since we can move each of these background images independently, we can come up with some pretty cool results if we apply transitions.</p>
+<p>To set this up, we throw in all of the various browser prefixes and create a simple transition that lasts one second or less. Then, we set up a hover selector that moves the left wood background further left and the right wood background further right. </p>
+<div style="overflow: auto; background-color: #eeeeee;">
+<pre class="brush: css;">
+#slidingDoors {
+	
+	/*Applying the Background Images*/
+	background-image: url('wood.jpg'), url('wood.jpg'), url('car.jpg');
+	background-repeat: no-repeat;
+	
+	/*Positioning the Background Images*/
+	background-position: -100px 0px, 100px 0px, 0px 0px;
+	
+	/*Transition Parameters*/
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	-ms-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+
+#slidingDoors:hover {
+	background-position: -200px 0px, 200px 0px, 0px 0px;
+}
+</pre>
+</div>
+<p></ br></p>
+<p>With that, we&#8217;re finished with the first example. Now when you hover over the wooden circle, the doors will slide open to reveal the image underneath. </p>
+<h2>Sliding Doors: Vertical</h2>
+<div class="tutorialimage"><img class="alignNone size-full wp-image-1611" src="http://designshack.co.uk/wp-content/uploads/multibkg-8.jpg" alt="screenshot" width="510"/></div>
+<p>Now that we&#8217;ve gotten through one example, changing this effect is a breeze. Here we use the same CSS transitions and background images, the only thing that changes is the positioning of the two wood texture images. This time we stack them on top of each other and move them up and down as the user hovers. </p>
+<div style="overflow: auto; background-color: #eeeeee;">
+<pre class="brush: css;">
+#slidingDoorsVert {
+	
+	/*Applying the Background Images*/
+	background-image: url('wood.jpg'), url('wood.jpg'), url('car.jpg');
+	background-repeat: no-repeat;
+	
+	/*Positioning the Background Images*/
+	background-position: 0px -100px, 0px 100px, 0px 0px;
+	
+	/*Transition Parameters*/
+	-webkit-transition: all 0.7s ease-in-out;
+	-moz-transition: all 0.7s ease-in-out;
+	-o-transition: all 0.7s ease-in-out;
+	-ms-transition: all 0.7s ease-in-out;
+	transition: all 0.7s ease-in-out;
+}
+
+#slidingDoorsVert:hover {
+	background-position: 0px -200px, 0px 200px, 0px 0px;
+}
+</pre>
+</div>
+<p></ br></p>
+<h2>Break Apart: Squared</h2>
+<div class="tutorialimage"><img class="alignNone size-full wp-image-1611" src="http://designshack.co.uk/wp-content/uploads/multibkg-7.jpg" alt="screenshot" width="510"/></div>
+<p>Let&#8217;s step things up a little bit and use a total of five images for the transition. Basically, when you hover over the circle, the image will break apart into four pieces and fly out of view.</p>
+<p>We align the top four images so that the meet vertically and horizontally right in the center of the circle. Then on hover we move each up and out. </p>
+<div style="overflow: auto; background-color: #eeeeee;">
+<pre class="brush: css;">
+#breakApart {
+	background-image: url('squares.jpg'), url('squares.jpg'), url('squares.jpg'), url('squares.jpg'), url('car.jpg');
+	background-repeat: no-repeat;
+	background-position: -100px -100px, 100px 100px, -100px 100px, 100px -100px, 0px 0px;
+	
+	/*Transition*/
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	-ms-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;	
+}
+
+#breakApart:hover {
+	background-position: -200px -200px, 200px 200px, -200px 200px, 200px -200px, 0px 0px;
+}
+</pre>
+</div>
+<p></ br></p>
+<h2>Break Apart: Rounded</h2>
+<div class="tutorialimage"><img class="alignNone size-full wp-image-1611" src="http://designshack.co.uk/wp-content/uploads/multibkg-9.jpg" alt="screenshot" width="510"/></div>
+<p>Repeating these effects with a rounded image is a little trickier because one, you have to use transparent PNGs and two, because you have to make the images overlap in the default state. The latter causes complicated issues with creating textures, but if you use something like a simple noise texture then it&#8217;s pretty easy. </p>
+<div style="overflow: auto; background-color: #eeeeee;">
+<pre class="brush: css;">
+#breakApartRounded {
+	background-image: url('circle.png'), url('circle.png'), url('circle.png'), url('circle.png'), url('car.jpg');
+	background-repeat: no-repeat;
+	background-position: -50px -50px, 50px 50px, -50px 50px, 50px -50px, 0px 0px; /*right down*/
+	
+	/*Transition*/
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	transition: all 1s ease;
+		
+}
+
+#breakApartRounded:hover {
+	background-position: -200px -200px, 200px 200px, -200px 200px, 200px -200px,  0px 0px;	
+}
+</pre>
+</div>
+<p></ br></p>
+<h2>Twist and Shout</h2>
+<div class="tutorialimage"><img class="alignNone size-full wp-image-1611" src="http://designshack.co.uk/wp-content/uploads/multibkg-10.jpg" alt="screenshot" width="510"/></div>
+<p>This one is hard to get the gist of from the picture above. Basically, it is the same as the break apart transition above, only I&#8217;ve added the extra element of a rotation that occurs before the images break apart and reveal what&#8217;s underneath.</p>
+<p>This involves a few quirks. The problem with the rotation is that it rotates all of the background images, including the car underneath. To account for this, I rotated the car beforehand so that the transition rotation actually puts it right into place. You catch glimpses of the car during the rotation, but it just adds to the effect.</p>
+<p>Another interesting thing is the timing of the transitions. Notice that I actually put different durations on the rotate and moving transitions. This shows just how incredibly complex you can get with this idea. </p>
+<div style="overflow: auto; background-color: #eeeeee;">
+<pre class="brush: css;">
+#twistAndShout {
+	background-image: url('crisscross.jpg'), url('crisscross.jpg'), url('crisscross.jpg'), url('crisscross.jpg'), url('car.jpg');
+	background-repeat: no-repeat;
+	background-position: -100px -100px, 100px 100px, -100px 100px, 100px -100px, 0px 0px;
+	
+	/*Rotate*/
+	-webkit-transform:rotate(-90deg);
+	-moz-transform:rotate(-90deg);
+	-o-transform:rotate(-90deg);
+	-ms-transform:rotate(-90deg);
+	transform:rotate(-90deg);
+	
+	/*Transition*/
+	-webkit-transition: background-position .6s ease-in-out, -webkit-transform .3s ease;
+	-moz-transition: background-position .6s ease-in-out, -moz-transform .3s ease;
+	-o-transition: background-position .6s ease-in-out, -o-transform .3s ease;
+	-ms-transition: background-position .6s ease-in-out, -ms-transform .3s ease;
+	transition: background-position .6s ease-in-out, transform .3s ease;
+}
+
+#twistAndShout:hover {
+	background-position: -200px -200px, 200px 200px, -200px 200px, 200px -200px, 0px 0px;
+	
+	/*Rotate*/
+	-webkit-transform:rotate(0deg);
+	-moz-transform:rotate(0deg);
+	-o-transform:rotate(0deg);
+	-ms-transform:rotate(0deg);
+	transform:rotate(0deg);	
+}
+</pre>
+</div>
+<p></ br></p>
+<h2>Take Another Look</h2>
+<p>Now that you&#8217;ve seen the code, take another look at the demo to see these techniques in action.</p>
+<p><strong>Demo:</strong> <a href="http://designshack.net/tutorialexamples/multiplebackgrounds/index.html">Click here</a> to launch the demo.</p>
+<div class="tutorialimage"><a href="http://designshack.net/tutorialexamples/multiplebackgrounds/index.html"><img class="alignNone size-full wp-image-1611" src="http://designshack.co.uk/wp-content/uploads/multibkg-11.jpg" alt="screenshot" width="510"/></a></div>
+<h2>Conclusion</h2>
+<p>The point of this article was to get you thinking beyond parallax  effects for how to apply multiple backgrounds in an interesting way.</p>
+<p>Leave a comment and let us know what you think of the examples above. Have you done anything with multiple background images? We want to see it!</p>
+
+<!-- Quick Adsense WordPress Plugin: http://quicksense.net/ -->
+<div style="float:none;margin:10px 0 10px 0;text-align:center;">
+<div class="tutorialimage lower-ad-block" style="text-align:center; height:250px;"><!-- BuySellAds.com Zone Code -->
+<div id="bsap_1263926" class="bsarocks bsap_77051ce6de3ab92c764d3a1bc9c332a7"></div>
+<!-- End BuySellAds.com Zone Code --></div>
+</div>
+
+<div style="font-size:0px;height:0px;line-height:0px;margin:0;padding:0;clear:both"></div>
+						<div class="content-ad-728">
+
+							<script type="text/javascript" src="http://ap.lijit.com///www/delivery/fpi.js?z=237920&u=compactcreative&width=728&height=90"></script>
+								
+						</div>
+					
+				</div>
+				
+				
+					
+				
+			</div>
+	
+
+	
+			
+			<div class="comments" id="comments">
+
+			<div class="comments-heading">
+				<h2>Comments & Discussion</h2>
+				<h3><span class="dsq-postid" rel="26842 http://designshack.net/?p=26842">17 Comments</span></h3>
+			</div>
+
+			<div class="comments-body">
+				
+<div id="disqus_thread">
+                    <div id="dsq-content">
+
+
+            <ul id="dsq-comments">
+                    <li class="comment even thread-even depth-1" id="dsq-comment-39856">
+        <div id="dsq-comment-header-39856" class="dsq-comment-header">
+            <cite id="dsq-cite-39856">
+http://www.raimond.lv                <span id="dsq-author-user-39856">Raymond</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39856" class="dsq-comment-body">
+            <div id="dsq-comment-message-39856" class="dsq-comment-message"><p>It&#8217;s super cool! Thanks!</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-39869">
+        <div id="dsq-comment-header-39869" class="dsq-comment-header">
+            <cite id="dsq-cite-39869">
+http://web2studios.com                <span id="dsq-author-user-39869">Michael Salem</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39869" class="dsq-comment-body">
+            <div id="dsq-comment-message-39869" class="dsq-comment-message"><p>Totally awesome. These hover effects could definitely come in handy. Thank you!</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-39874">
+        <div id="dsq-comment-header-39874" class="dsq-comment-header">
+            <cite id="dsq-cite-39874">
+                <span id="dsq-author-user-39874">Char</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39874" class="dsq-comment-body">
+            <div id="dsq-comment-message-39874" class="dsq-comment-message"><p>..annnd, of course they don&#8217;t work in IE&#8230; silly IE :)</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment byuser comment-author-joshuajohnson bypostauthor odd alt thread-odd thread-alt depth-1" id="dsq-comment-39875">
+        <div id="dsq-comment-header-39875" class="dsq-comment-header">
+            <cite id="dsq-cite-39875">
+                <span id="dsq-author-user-39875">Joshua Johnson</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39875" class="dsq-comment-body">
+            <div id="dsq-comment-message-39875" class="dsq-comment-message"><p>Multiple backgrounds are supposed to be supported in IE9 and I&#8217;ve included the transition prefix for IE&#8230; I hate that browser so much.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-39877">
+        <div id="dsq-comment-header-39877" class="dsq-comment-header">
+            <cite id="dsq-cite-39877">
+                <span id="dsq-author-user-39877">Nee Ma</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39877" class="dsq-comment-body">
+            <div id="dsq-comment-message-39877" class="dsq-comment-message"><p>What&#8217;s up with twist and shout? It is really suppose to blink when you hover and then when you hover out it transitions to the break apart animation? Or is it just me? X&lt;</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment byuser comment-author-joshuajohnson bypostauthor odd alt depth-2" id="dsq-comment-39900">
+        <div id="dsq-comment-header-39900" class="dsq-comment-header">
+            <cite id="dsq-cite-39900">
+                <span id="dsq-author-user-39900">Joshua Johnson</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39900" class="dsq-comment-body">
+            <div id="dsq-comment-message-39900" class="dsq-comment-message"><p>It should rotate, not blink. Which browser are you using?</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-39880">
+        <div id="dsq-comment-header-39880" class="dsq-comment-header">
+            <cite id="dsq-cite-39880">
+http://www.usarora.com                <span id="dsq-author-user-39880">Umashankar Arora</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39880" class="dsq-comment-body">
+            <div id="dsq-comment-message-39880" class="dsq-comment-message"><p>Awesome!!!</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-even depth-1" id="dsq-comment-40142">
+        <div id="dsq-comment-header-40142" class="dsq-comment-header">
+            <cite id="dsq-cite-40142">
+                <span id="dsq-author-user-40142">Leopold</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-40142" class="dsq-comment-body">
+            <div id="dsq-comment-message-40142" class="dsq-comment-message"><p>Shall I create another div #slidingDoors in the div .circle in html document and position them one over another? &#8211; regarding the first example&#8230; It would be great if you provide html code as well in your tutorials ;)</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-40150">
+        <div id="dsq-comment-header-40150" class="dsq-comment-header">
+            <cite id="dsq-cite-40150">
+                <span id="dsq-author-user-40150">Conexion</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-40150" class="dsq-comment-body">
+            <div id="dsq-comment-message-40150" class="dsq-comment-message"><p>@Leopold</p>
+<p>Right Click -&gt; View Source ;)</p>
+<p>Or if you have FireBug installed, F12.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment byuser comment-author-joshuajohnson bypostauthor odd alt thread-even depth-1" id="dsq-comment-40203">
+        <div id="dsq-comment-header-40203" class="dsq-comment-header">
+            <cite id="dsq-cite-40203">
+                <span id="dsq-author-user-40203">Joshua Johnson</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-40203" class="dsq-comment-body">
+            <div id="dsq-comment-message-40203" class="dsq-comment-message"><p>Leopold: &#8220;Create an empty div in HTML and apply a class that uses some basic styling.&#8221;</p>
+<p>Sounds too simple but that&#8217;s really all there is to it!</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-40212">
+        <div id="dsq-comment-header-40212" class="dsq-comment-header">
+            <cite id="dsq-cite-40212">
+http://orangegroup.uz                <span id="dsq-author-user-40212">Eugen</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-40212" class="dsq-comment-body">
+            <div id="dsq-comment-message-40212" class="dsq-comment-message"><p>Thanks! It is very useful for me, i saw same html5 source in site i liked.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-even depth-1" id="dsq-comment-41826">
+        <div id="dsq-comment-header-41826" class="dsq-comment-header">
+            <cite id="dsq-cite-41826">
+                <span id="dsq-author-user-41826">Jeremy</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-41826" class="dsq-comment-body">
+            <div id="dsq-comment-message-41826" class="dsq-comment-message"><p>I tried to do this and I couldn&#8217;t get it to work. I typed everything as it should be (I even copied and pasted the code too), but I can&#8217;t get it to do the animation. It&#8217;s just two circle images.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-44628">
+        <div id="dsq-comment-header-44628" class="dsq-comment-header">
+            <cite id="dsq-cite-44628">
+http://geekzlobby.com/drups                <span id="dsq-author-user-44628">pradeesh</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-44628" class="dsq-comment-body">
+            <div id="dsq-comment-message-44628" class="dsq-comment-message"><p>This code goes in html &#8230;. </p>
+<p>Moreover background position in css ve to be modified. so that u can get working the transition effects</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-even depth-1" id="dsq-comment-44629">
+        <div id="dsq-comment-header-44629" class="dsq-comment-header">
+            <cite id="dsq-cite-44629">
+http://pradeesh18.blogspot.com                <span id="dsq-author-user-44629">pradeesh</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-44629" class="dsq-comment-body">
+            <div id="dsq-comment-message-44629" class="dsq-comment-message"><p>mail me @ <a href="mailto:pradeeshmarzo18@gmail.com">pradeeshmarzo18@gmail.com</a></p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-46094">
+        <div id="dsq-comment-header-46094" class="dsq-comment-header">
+            <cite id="dsq-cite-46094">
+                <span id="dsq-author-user-46094">fastjakeo@hotmail.com</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-46094" class="dsq-comment-body">
+            <div id="dsq-comment-message-46094" class="dsq-comment-message"><p>Hi guys,</p>
+<p>Could someone PLEASE explain to me how i can get this to work on a PC (Internet Explorer). Thanks so Much!</p>
+<p>-Jake</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-even depth-1" id="dsq-comment-48814">
+        <div id="dsq-comment-header-48814" class="dsq-comment-header">
+            <cite id="dsq-cite-48814">
+http://zulkhamsyahmh.blogspot.com                <span id="dsq-author-user-48814">Muhammad H. Zulkhamsyah</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-48814" class="dsq-comment-body">
+            <div id="dsq-comment-message-48814" class="dsq-comment-message"><p>Wow, cool<br />
+i&#8217;ll try it  one by one</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-64978">
+        <div id="dsq-comment-header-64978" class="dsq-comment-header">
+            <cite id="dsq-cite-64978">
+http://www.spektredesign.net                <span id="dsq-author-user-64978">mike</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-64978" class="dsq-comment-body">
+            <div id="dsq-comment-message-64978" class="dsq-comment-message"><p>All those people who ranted when Steve Jobs decided to not support Flash on the iPhone need to read this! Great article, and fantastic use of CSS transitions!</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+            </ul>
+
+
+        </div>
+
+    </div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var disqus_url = 'http://designshack.net/articles/css/create-five-awesome-hover-effects-using-css-multiple-backgrounds/';
+    var disqus_identifier = '26842 http://designshack.net/?p=26842';
+    var disqus_container_id = 'disqus_thread';
+    var disqus_domain = 'disqus.com';
+    var disqus_shortname = 'design-shack';
+    var disqus_title = "Create Five Awesome Hover Effects Using CSS Multiple Backgrounds";
+        var disqus_config = function () {
+        var config = this; // Access to the config object
+        config.language = '';
+
+        /*
+           All currently supported events:
+            * preData — fires just before we request for initial data
+            * preInit - fires after we get initial data but before we load any dependencies
+            * onInit  - fires when all dependencies are resolved but before dtpl template is rendered
+            * afterRender - fires when template is rendered but before we show it
+            * onReady - everything is done
+         */
+
+        config.callbacks.preData.push(function() {
+            // clear out the container (its filled for SEO/legacy purposes)
+            document.getElementById(disqus_container_id).innerHTML = '';
+        });
+                config.callbacks.onReady.push(function() {
+            // sync comments in the background so we don't block the page
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = '?cf_action=sync_comments&post_id=26842';
+
+            var firstScript = document.getElementsByTagName( "script" )[0];
+            firstScript.parentNode.insertBefore(script, firstScript);
+        });
+                    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var DsqLocal = {
+        'trackbacks': [
+        ],
+        'trackback_url': "http:\/\/designshack.net\/articles\/css\/create-five-awesome-hover-effects-using-css-multiple-backgrounds\/trackback\/"    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.' + 'disqus.com' + '/embed.js?pname=wordpress&pver=2.74';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+/* ]]> */
+</script>
+			</div>
+
+
+
+	
+				
+	
+			</div>
+
+		</div>
+
+			
+		</div>
+<div class="fivecol last right-column">
+	
+	<div class="tab tab-light-blue">Subscribe</div>
+	<div class="sidebar-box">
+		
+		<div class="socialicons">
+			<a href="http://twitter.com/designshack" class="twitter">Follow @designshack on Twitter</a>
+			<a href="http://facebook.com/designshack" class="facebook">Like Design Shack on Facebook</a>
+			<a href="https://plus.google.com/+designshack?rel=publisher" class="googleplus">Find us on Google+</a>
+			<a href="http://feeds.designshack.net/designshack" class="rss">Subscribe to the Design Shack RSS Feed</a>
+			<a href="/membership" class="email">Join our email newsletter</a>
+		</div>
+		
+	</div>
+	
+	
+		<div class="tab tab-brown">Membership</div>
+		<div class="sidebar-box">
+			
+			<p>Join the community as a Design Shack member, and you'll be able to:</p>
+			
+			<ul class="membership">
+				<li>Feature your designs in the gallery</li>
+				<li>Save your favourite designs into a collection</li>
+				<li>Receive our weekly newsletter for designers</li>
+				<li>Use keyboard navigation</li>
+				<li>Gain early access to new features</li>
+			</ul>
+			
+			<form action="/membership" method="post">
+				<input type="submit" class="button-green" value="Become a Member" />
+			</form>
+			
+		</div>
+
+	
+	<div class="sidebar-box ad-box ad-box-large">
+		<div class="ad-300250">
+			<div id="bsap_1243577" class="bsarocks bsap_77051ce6de3ab92c764d3a1bc9c332a7"></div>
+		</div>
+	</div>
+
+	<div class="sidebar-box ad-box ad-box-premium">
+		<div class="ad-premium">
+			<div id="bsap_1252589" class="bsarocks bsap_77051ce6de3ab92c764d3a1bc9c332a7"></div>
+			<div id="bsap_1252589" class="bsap_1252589 bsap"><a href="https://creativevip.net/?utm_campaign=sidebar_260x125_v1&utm_source=designshack&utm_medium=banner" class="ad1 odd" title="Creative VIP" id="bsa_1189703"><img src="http://creativevip.s3.amazonaws.com/ads/dsad2v3.png" width="260" height="125" alt="Creative VIP"></a></div>
+		</div>
+	</div>
+
+
+	
+	<div class="sidebar-box small-ads">
+		
+		<!-- BuySellAds Zone Code -->
+		<div id="bsap_1764" class="bsarocks bsap_77051ce6de3ab92c764d3a1bc9c332a7"></div>
+		<!-- End BuySellAds Zone Code -->
+		
+	</div>
+	
+	<div class="sidebar-box advertise-here">
+		<a href="http://buysellads.com/buy/detail/83">Advertise Here</a>
+	</div>
+
+</div>
+<div class="fivecol last right-column">
+	
+	<div class="tab tab-light-blue">About the Author</div>
+	<div class="sidebar-box about-author">
+		
+
+				
+
+			
+
+			
+				<div class="article-body author-archive-intro">
+
+					
+
+					<h3 class="heading">Joshua Johnson</h3>
+
+					<div class="author-archive-profileimage" style="float:right; width:30%;"><img alt='' src='http://1.gravatar.com/avatar/fe57710fac9365df9ec8d3cda0857f13?s=100&amp;d=http%3A%2F%2Fdesignshack.net%2Fimages%2Fgravatar.gif%3Fs%3D100&amp;r=G' class='avatar avatar-100 photo' height='100' width='100' /></div>
+
+					<p>Equal parts editor, writer, designer, &amp; photographer. Hit me up on <a href="https://twitter.com/secondfret">Twitter</a>, read my <a href="http://mac.tutsplus.com/author/josh-johnson/">Mac tutorials</a> or check out my <a href="http://500px.com/secondfret">photos</a>.</p>
+
+					<ul class="author-social-links">
+						<li class="twitter">Twitter: <a href="http://twitter.com/secondfret">@secondfret</a></li>						<li class="googleplus">Google+: <a href="https://plus.google.com/105708548958164068918?rel=author">Joshua Johnson</a></li>						<li class="dribbble">Dribbble: <a href="http://dribbble.com/secondfret">secondfret</a></li>						<li class="fivehundredpx">500px: <a href="http://500px.com/secondfret">secondfret</a></li>					</ul>
+					
+				</div>
+
+
+
+		
+	</div>
+
+</div>	</div> 	
+</div> 
+
+<div class="container footer">
+		
+		<div class="row">
+			<div class="col copyright">
+				<p><a href="http://compactcreative.com">Made by Compact Creative</a> &copy; 2014</p>
+			</div>
+
+			<div class="col footer-nav">
+				<p><a href="/" title="Home">Home</a> / <a href="/gallery" title="Design Gallery">Gallery</a> / <a href="/articles" title="Design Articles &amp; Tutorials">Articles</a> / <a href="/about" title="About Design Shack">About</a> / <a href="/membership" title="Design Shack Membership">Membership</a></p>
+			</div>
+
+			<div class="col mediatemple last">
+					<a class="mediatemple-link" href="http://www.mediatemple.net/#a_aid=4e2dbbb0a0a4d"><span>In Partnership with</span></a>
+					<a class="maxcdn-link" href="http://maxcdn.com"><span>and</span></a>
+			</div>
+		</div>
+		
+</div>
+
+
+	
+
+	
+
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+
+	<script type="text/javascript">
+	try {
+	var pageTracker = _gat._getTracker("UA-2121991-2");
+	pageTracker._trackPageview();
+	} catch(err) {}</script>
+
+
+					<script type='text/javascript'><!--
+			var seriesdropdown = document.getElementById("orgseries_dropdown");
+			if (seriesdropdown) { 
+			 function onSeriesChange() {
+					if ( seriesdropdown.options[seriesdropdown.selectedIndex].value != ( 0 || -1 ) ) {
+						location.href = "http://designshack.net/series/"+seriesdropdown.options[seriesdropdown.selectedIndex].value;
+					}
+				}
+				seriesdropdown.onchange = onSeriesChange;
+			}
+			--></script>
+			    <script type="text/javascript">
+    // <![CDATA[
+        var disqus_shortname = 'design-shack';
+        (function () {
+            var nodes = document.getElementsByTagName('span');
+            for (var i = 0, url; i < nodes.length; i++) {
+                if (nodes[i].className.indexOf('dsq-postid') != -1) {
+                    nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('rel'));
+                    url = nodes[i].parentNode.href.split('#', 1);
+                    if (url.length == 1) url = url[0];
+                    else url = url[1]
+                    nodes[i].parentNode.href = url + '#disqus_thread';
+                }
+            }
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + 'disqus.com/forums/' + disqus_shortname + '/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    //]]>
+    </script>
+
+<!--Plugin WP Missed Schedule 2013.1231.2013 Active - Tag 6707293c0218e2d8b7aa38d418ffa608-->
+
+<!-- This site is patched which an important unfixed problem since WordPress 2.5+ to 3.9+ -->
+
+<script type='text/javascript' src='http://designshack.net/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shCore.js?ver=3.0.9'></script>
+<script type='text/javascript' src='http://designshack.net/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushAS3.js?ver=3.0.9'></script>
+<script type='text/javascript' src='http://designshack.net/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushBash.js?ver=3.0.9'></script>
+<script type='text/javascript' src='http://designshack.net/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushColdFusion.js?ver=3.0.9'></script>
+<script type='text/javascript' src='http://designshack.net/wp-content/plugins/syntaxhighlighter/third-party-brushes/shBrushClojure.js?ver=20090602'></script>
+<script type='text/javascript' src='http://designshack.net/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushCpp.js?ver=3.0.9'></script>
+<script type='text/javascript' src='http://designshack.net/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushCSharp.js?ver=3.0.9'></script>
+<script type='text/javascript' src='http://designshack.net/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushCss.js?ver=3.0.9'></script>
+<script type='text/javascript' src='http://designshack.net/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushDelphi.js?ver=3.0.9'></script>
+<script type='text/javascript' src='http://designshack.net/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushDiff.js?ver=3.0.9'></script>
+<script type='text/javascript' src='http://designshack.net/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushErlang.js?ver=3.0.9'></script>
+<script type='text/javascript' src='http://designshack.net/wp-content/plugins/syntaxhighlighter/third-party-brushes/shBrushFSharp.js?ver=20091003'></script>
+<script type='text/javascript' src='http://designshack.net/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushGroovy.js?ver=3.0.9'></script>
+<script type='text/javascript' src='http://designshack.net/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushJava.js?ver=3.0.9'></script>
+<script type='text/javascript' src='http://designshack.net/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushJavaFX.js?ver=3.0.9'></script>
+<script type='text/javascript' src='http://designshack.net/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushJScript.js?ver=3.0.9'></script>
+<script type='text/javascript' src='http://designshack.net/wp-content/plugins/syntaxhighlighter/third-party-brushes/shBrushLatex.js?ver=20090613'></script>
+<script type='text/javascript' src='http://designshack.net/wp-content/plugins/syntaxhighlighter/third-party-brushes/shBrushMatlabKey.js?ver=20091209'></script>
+<script type='text/javascript' src='http://designshack.net/wp-content/plugins/syntaxhighlighter/third-party-brushes/shBrushObjC.js?ver=20091207'></script>
+<script type='text/javascript' src='http://designshack.net/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPerl.js?ver=3.0.9'></script>
+<script type='text/javascript' src='http://designshack.net/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPhp.js?ver=3.0.9'></script>
+<script type='text/javascript' src='http://designshack.net/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPlain.js?ver=3.0.9'></script>
+<script type='text/javascript' src='http://designshack.net/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPowerShell.js?ver=3.0.9'></script>
+<script type='text/javascript' src='http://designshack.net/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPython.js?ver=3.0.9'></script>
+<script type='text/javascript' src='http://designshack.net/wp-content/plugins/syntaxhighlighter/third-party-brushes/shBrushR.js?ver=20100919'></script>
+<script type='text/javascript' src='http://designshack.net/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushRuby.js?ver=3.0.9'></script>
+<script type='text/javascript' src='http://designshack.net/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushScala.js?ver=3.0.9'></script>
+<script type='text/javascript' src='http://designshack.net/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushSql.js?ver=3.0.9'></script>
+<script type='text/javascript' src='http://designshack.net/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushVb.js?ver=3.0.9'></script>
+<script type='text/javascript' src='http://designshack.net/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushXml.js?ver=3.0.9'></script>
+<script type='text/javascript'>
+	(function(){
+		var corecss = document.createElement('link');
+		var themecss = document.createElement('link');
+		var corecssurl = "http://designshack.net/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shCore.css?ver=3.0.9";
+		if ( corecss.setAttribute ) {
+				corecss.setAttribute( "rel", "stylesheet" );
+				corecss.setAttribute( "type", "text/css" );
+				corecss.setAttribute( "href", corecssurl );
+		} else {
+				corecss.rel = "stylesheet";
+				corecss.href = corecssurl;
+		}
+		document.getElementsByTagName("head")[0].insertBefore( corecss, document.getElementById("syntaxhighlighteranchor") );
+		var themecssurl = "http://designshack.net/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shThemeDefault.css?ver=3.0.9";
+		if ( themecss.setAttribute ) {
+				themecss.setAttribute( "rel", "stylesheet" );
+				themecss.setAttribute( "type", "text/css" );
+				themecss.setAttribute( "href", themecssurl );
+		} else {
+				themecss.rel = "stylesheet";
+				themecss.href = themecssurl;
+		}
+		//document.getElementById("syntaxhighlighteranchor").appendChild(themecss);
+		document.getElementsByTagName("head")[0].insertBefore( themecss, document.getElementById("syntaxhighlighteranchor") );
+	})();
+	SyntaxHighlighter.config.strings.expandSource = '+ expand source';
+	SyntaxHighlighter.config.strings.help = '?';
+	SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+	SyntaxHighlighter.config.strings.noBrush = 'Can\'t find brush for: ';
+	SyntaxHighlighter.config.strings.brushNotHtmlScript = 'Brush wasn\'t configured for html-script option: ';
+	SyntaxHighlighter.defaults['class-name'] = 'code-display';
+	SyntaxHighlighter.defaults['pad-line-numbers'] = true;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+	SyntaxHighlighter.all();
+</script>
+
+
+<script type="text/javascript">
+var disqus_shortname = 'design-shack'; // required: replace example with your forum shortname
+
+(function () {
+   var s = document.createElement('script'); s.async = true;
+   s.type = 'text/javascript';
+   s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+   (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+ }());
+</script>
+
+<script type="text/javascript">
+  (function() {
+    window._pa = window._pa || {};
+    var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.async = true;
+    pa.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + "//tag.perfectaudience.com/serve/50f04008e541d50002000406.js";
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(pa, s);
+  })();
+</script>
+
+
+</body>
+
+</html>
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using disk: enhanced
+Content Delivery Network via designshack.designshack.netdna-cdn.com
+
+ Served from: designshack.net @ 2014-05-07 09:19:10 by W3 Total Cache -->

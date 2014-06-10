@@ -1,0 +1,389 @@
+<html>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+<link rel="stylesheet" href="footer.css">
+<link rel="stylesheet" href="navbar.css">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+//updates
+$(".updates ul").css({'list-style':"none"});
+$(".updates ul li a").css({'font-size':"2em",'color':"gold", 'font-family':"GoodDog",'text-decoration':"none"});
+$(".updates ul li a").hover(function(){
+$(this).css({'color':"white",'font-size':"2.3em"}).addClass("shake-class");
+},function(){
+$(".updates ul li a").css({'font-size':"2em",'color':"gold"}).removeClass("shake-class");
+});
+
+});
+</script>
+
+<style>
+
+.login-form{
+position:absolute;
+left:260px; top:250px;
+width:800px; height:600px;
+background:url(img/tex1.1.jpg);
+-webkit-border-radius:20px;
+-webkit-transform-origin:50% 50%;
+-webkit-animation:fadeup 1s linear 0.5s forwards;
+opacity:0;
+-webkit-transform:scale(0);
+z-index:-1;
+border:2px solid black;
+box-shadow:3px 3px 5px black;
+
+}
+@-webkit-keyframes fadeup{
+0%{ -webkit-transform: scale(0.1) rotate(0deg);}
+33%{ -webkit-transform:  rotate(240deg) scale(0.2); opacity:0.04;}
+66%{-webkit-transform:  rotate(480deg) scale(0.5); opacity:0.04;}
+100%{ opacity:1;-webkit-transform:  rotate(720deg) scale(1) ; }
+}
+
+.login-form .details{
+position:absolute;
+margin-left:20px;
+}
+.login-form .details h3{
+margin-left:10px;
+font-size:2.5em;
+font-family:GoodDog;
+color:black;
+letter-spacing:2px;
+}
+.login-form .details h3:after{
+content:'*';
+color:red;
+font-size:1em;
+}
+.login-form .details .text{
+font-family:GoodDog;
+display:block;
+float:right;
+font-size:2em;
+color:purple;
+letter-spacing:2px;
+background:#ffffff;
+width:400px; height:60px;
+-webkit-border-radius:20px;
+border:1px dashed black;
+
+}
+.login-form .details .text:focus{
+-webkit-box-shadow:2px 4px 3px rgba(0,0,0,0.3);
+background:#ccffff;
+}
+.login-form .btn{
+display:block;
+position:relative;
+top:-350px; left:600px;
+height:50px; width:150px;
+background-color:#cc0066;
+color:white;
+margin-top:400px;
+box-shadow:2px 4px 5px black;
+-webkit-transition:all 0.2s;
+}
+.login-form .btn .elem{
+font-size:2em;
+font-family:Stencil;
+
+-webkit-transition:all 0.2s;
+}
+.login-form .btn:hover .elem{
+color:gold;
+}
+.login-form .btn:hover{
+cursor:pointer;}
+</style>
+
+
+<style>
+
+body{
+background:url(img/tex3.1.jpg);
+
+background-size:cover;
+-webkit-perspective:8000;
+}
+.container{
+ -webkit-transform: scale(0.9);
+}
+
+.box{
+position:absolute;
+-webkit-border-radius:200px;
+-webkit-box-shadow:0 3px 0 #ffcc66;
+text-align:center;
+color:white;
+font-size:2.2em;
+line-height:6;
+width:400px; height:400px;
+z-index:-2;
+}
+
+#circle{
+background-image:url('img/tex1.jpg'),url('img/tex1.jpg'),url('img/tex9.jpg');
+background-size:400px 400px;
+background-repeat:no-repeat;
+background-position:-200px 0px,200px 0px,0px 0px;
+-webkit-animation:roll 1s linear forwards; 
+}
+@-webkit-keyframes roll{
+0%{
+background-position:-100px 0px,100px 0px,0px 0px;
+-webkit-transform:translate(100px) rotate(90deg) scale(1.5) ;
+}
+33%{
+background-position:-200px 0px,200px 0px,0px 0px;
+-webkit-transform: translate(200px) rotate(180deg) scale(1.9);
+}
+66%{
+background-position:-300px 0px,300px 0px,0px 0px;
+-webkit-transform: translate(350px) rotate(270deg) scale(2.3);
+}
+100%{
+background-position:-400px 0px,400px 0px,0px 0px;
+-webkit-transform: translate(400px) rotate(360deg) scale(2.7);
+}
+}
+a:hover{
+cursor:pointer;
+}
+</style>
+
+<style>
+
+
+@-webkit-keyframes flash{
+0%{ -webkit-transform:translateY(0) rotate(0deg);
+    color:red;
+	}
+33%{ -webkit-transform: translate(25px,-20px) rotate(25deg); color:orange;}
+66%{ -webkit-transform: translate(0px,10px);}
+100%{ -webkit-transform:translateY(-10px); color:yellow;}
+}	
+.updates{
+position:absolute;
+left:-160px; top:280px;
+overflow:hidden;
+font-family:GoodDog;
+width:400px; height:500px;
+border:2px solid black;
+background-color:coral;
+z-index:4;
+-webkit-transition:all 1s ease-in-out;
+
+-webkit-box-shadow:2px 3px 3px rgba(0,0,0,0.3);
+}
+
+.img-dark-wood{
+background-image:url(img/dark_wood.png),url(img/dark_wood.png);
+background-size:400px 300px;
+background-repeat:no-repeat;
+background-position:0px -90px,0px 300px;
+z-index:-2;
+-webkit-animation:close 8s infinite ease-in-out 0.2s;
+}
+
+@-webkit-keyframes close{
+0%{background-position:0px -90px,0px 300px; }
+33%{ background-position:0px -135px,0px 232.5px;background-color:#009999;}
+66%{background-position:0px -270px,0px 465px;  background-color:#00cc66;}
+100%{ background-position:0px -135px,0px 232.5px;}
+}
+
+.updates:hover{
+-webkit-animation-play-state:paused;
+}
+.update-info a{
+color:gold;
+text-decoration:none;
+}
+@-webkit-keyframes blink{
+0%{ color:#66ffff;}
+100%{ color:white;}
+}
+</style>
+
+<script>
+var tex="CODEGEEKS INC.";
+var len2=tex.length;
+var i=0;
+function disp(i)
+{
+if(i==(len2))
+{
+document.getElementById("main-header").innerHTML="";
+i=0;
+window.setTimeout("to()",500);
+}
+else
+
+document.getElementById("main-header").innerHTML+=tex[i]
+}
+
+function type2(p,i)
+{
+setTimeout(function(){disp(i)},p);
+}
+
+function to(){
+var p=200
+for(i=0;i<=len2;p+=200)
+{
+type2(p,i)
+i=(i+1)
+}
+}
+to()
+
+function validate(){
+//just inserting name into profile
+var myName=document.getElementById("user").value;
+document.getElementById("mine").style.color="white";
+document.getElementById("mine").innerHTML=myName;
+}
+
+</script>
+
+<body>
+
+<div class="container">
+<a href="#"><div class="main-header" id="main-header" style="color:white;border:1.5px dashed white"></div></a>
+
+<div class="box" id="circle" style="top:420px"></div>
+
+
+<!--navbar-->
+
+
+<div class="black-circle" style="top:170px; left:-160px"></div>
+<div class="black-circle" style="top:200px; left:-160px"></div>
+<div class="black-circle" style="top:200px; right:-135px"></div>
+<div class="black-circle" style="top:170px; right:-135px"></div>
+<div class="navbar img-1">
+<ul>
+<li class="nav-element" ><a href="status.html"><div class="nav-text">STATUS</div></a></li>
+<li class="nav-element"><a href="#"><div class="nav-text">HONE YOUR SKILLS</div></a>
+	<ul>
+		<li class="dd"><a href="problems.html"><div class="nav-text">EASY</div></a></li>
+		<li class="dd"><a href="#"><div class="nav-text">MEDIUM</div></a></li>
+		<li class="dd"><a href="#"><div class="nav-text">HARD</div></a></li>
+		<li class="dd"><a href="#"><div class="nav-text">CHALLENGE</div></a></li>
+   </ul>
+</li>
+<li class="nav-element"><a href="#"><div class="nav-text">THE ARENA</div></a></li>
+<li class="nav-element"><a href="#"><div class="nav-text">COMMUNICODERS</div></a>
+<ul>
+	<li class="dd"><a href="#"><div class="nav-text">BLOG POSTS</div></a></li>
+	<li class="dd"><a href="#"><div class="nav-text">FORUM</div></a></li>
+</ul>
+
+</li>
+<li class="nav-element"><a href="tutorials.html"><div class="nav-text">TUTORIALS</div></a></li>
+<li class="nav-element"><a href="ranks.html"><div class="nav-text">LEADERBOARD</div></a></li>
+<li class="nav-element"><div class="nav-text"><input type="text" id="searchbox" placeholder="FIND SOMETHING"/></div></li>
+
+
+</ul>
+</div>
+
+
+<!--updates-->
+
+<div class="updates img-dark-wood">
+	<h3 style="color:#330099; margin-left:75px; font-size:3em; -webkit-animation:blink 0.6s infinite; -webkit-transition:all 0.4s;
+	">LATEST PROBLEMS<i class="fa fa-flash fa-2x fa-animated" style="-webkit-animation:flash 0.8s infinite"></i></h3>
+	<ul>
+		<li class="update-info"><a href="#">PUT SOME CRAZY STUFF HERE!</a></li>
+		<li class="update-info"><a href="#">PUT SOME CRAZY STUFF HERE!</a></li>
+		<li class="update-info"><a href="#">PUT SOME CRAZY STUFF HERE!</a></li>
+		<li class="update-info"><a href="#">PUT SOME CRAZY STUFF HERE!</a></li>
+	</ul>
+</div>
+
+
+
+<!--social icons-->
+
+<div class="cube" style="top:20px; right:-140px">
+	<div class="flip"><font color=#6666ff>Twitter</font></div>
+	<div class="flop"><i class="fa fa-twitter fa-3x" id="twitter"></i></div>
+</div>
+
+<div class="cube" style="top:20px; right:-45px">
+	<div class="flip"><font color=#0000cc>Facebook</font></div>
+	<div class="flop"><i class="fa fa-facebook fa-3x" id="facebook"></i></div>
+</div>
+
+<div class="cube" style="top:20px; right:50px">
+	<div class="flip"><font color=red>Google+</font></div>
+	<div class="flop"><i class="fa fa-google-plus fa-3x" id="google"></i></div>
+</div>
+
+<!--login-form-->
+<div class="login-form">
+	<div class="details">
+		<form name="loginForm" action="#" method="post">
+		<h3>EMAIL ID:</h3> <input type="text" class="text" id="username"/>
+		<h3>USERNAME:</h3> <input type="text" class="text" id="user"/>
+		<h3>PASSWORD:</h3> <input type="password" class="text" id="password"/>
+		<h3>NAME :D	:</h3> <input type="text" class="text" />
+		<h3>COUNTRY	:</h3> <input type="text" class="text"/>
+	</div>
+	<div class="btn" onclick="validate()">
+	<div class="elem">SIGN UP!</div>
+	</div>	
+	</form>
+</div>
+
+<!--place-->
+<h1 class="tada" style="top:250px;right:-120px">JUMP IN!</h1>
+
+
+<!--profile-->
+<ul class="ch-grid" style="top:300px; left:600px">
+					<li>
+						<div class="ch-item ch-img-1">				
+							<div class="ch-info-wrap">
+								<div class="ch-info">
+									<div class="ch-info-front ch-img-1">PROFILE</div>
+									<div class="ch-info-back">
+										<h3>username</h3>
+										<h3 id="mine" style="font-size:2em; color:white">myname</h3>
+									</div>	
+								</div>
+							</div>
+						</div>
+					</li>
+					</ul>
+<!--sticky note-->
+<ul id="sticky" style="position:absolute;top:630px; left:1000px;">
+	<li><a href="#">After you've filled in the form, check your profile for your username!</a></li>
+	
+</ul>
+
+					
+					
+<div class="footer">
+
+		<h3>CodeGeeks Inc.</h3>
+			<p>It's a place where you can let your brain go wild with exciting challenges.</p>
+			<p>Train yourself with the best problems pooled in by the best minds on the planet!</p>
+			<p>And for all you newbies out there, it can be a jumping-off point for your genius to take flight!</p>
+			<p>So, don't be scared! Jump right in and explore!</p>
+			<a href="#">CODEGEEKS INC. </a>
+</div>
+</div>
+</body>
+</html>

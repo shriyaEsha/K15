@@ -1,0 +1,82 @@
+<html>
+<script>
+
+function validate()
+{
+//alert("in validate");
+var uname=document.loginForm.username.value;
+var lenu=uname.length;
+if(uname=="")
+   {
+     alert( "Please provide your name!" );
+     document.loginForm.username.focus() ;
+     return false;
+   }
+    var atpos = uname.indexOf("@");
+   var dotpos = uname.lastIndexOf(".");
+   if (atpos < 1 || ( dotpos - atpos < 2 ) || (uname.substring(lenu-3,lenu)!="com")) 
+   {
+       alert("Please enter a valid email id!")
+       document.loginForm.username.focus() ;
+       return false;
+   }
+//chk_pwd();
+
+var pwd=document.loginForm.pass.value;
+var len=pwd.length;
+if(len<7)
+{
+alert("PASSWORD IS TOO SMALL!"+"\n"+"MINIMUM LENGTH: 8 -- MAXIMUM LENGTH: 24");
+document.loginForm.pass.focus() ;
+
+return false;
+}
+if(len>24)
+{
+alert("PASSWORD IS TOO LONG!"+"\n"+" MINIMUM LENGTH: 8 -- MAXIMUM LENGTH: 24");
+document.loginForm.pass.focus() ;
+
+return false;
+}
+
+//upper,lower,num,special
+if( (pwd.search(/[A-Z]/)==-1) ){
+alert("PASSWORD NEEDS ATLEAST 1 UPPER-CASE ALPHABET");
+document.loginForm.pass.focus() ;
+
+return false;
+}
+if(pwd.search(/[a-z]/)==-1)
+{
+alert("PASSWORD NEEDS ATLEAST 1 LOWER-CASE ALPHABET");
+document.loginForm.pass.focus() ;
+
+return false;
+}
+if(pwd.search(/[0-9]/)==-1)
+{
+alert("PASSWORD NEEDS ATLEAST 1 NUMERIC CHARACTER");
+document.loginForm.pass.focus() ;
+
+return false;
+}
+if( pwd.search(/[$#!_&@%*+=:'?|-~`\^{}()<>]/)==-1)
+{
+alert("PASSWORD NEEDS ATLEAST 1 SPECIAL CHARACTER");
+document.loginForm.pass.focus() ;
+
+return false;
+}
+alert("Hallelujah! Everything seems to be in order. Submitting form...");
+return true;
+}
+
+</script>
+
+<form name="loginForm" id="loginForm" method="post" action="#" >
+USERNAME	:<input type="text" size="30" name="username" id="username"/><br><br>
+PASSWORD	:<input type="password" size="30" name="pass" id="pass"/><br><br>
+<hr color=orange></hr>
+<input type="button" value="SUBMIT" onclick="return validate()"/>
+</form>
+</html>

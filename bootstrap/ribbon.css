@@ -1,0 +1,137 @@
+.ribbon {
+
+   width: 700px;
+	height:70px;
+   position: absolute;
+  z-index:-1;
+   text-align: center;
+
+  
+   background: #f00000;
+
+   background: -webkit-gradient(linear, left top, left bottom, from(#f00000), to(#f80000));
+
+   background: -webkit-linear-gradient(top, #f00000 #f80000);
+
+   background: -moz-linear-gradient(top, #f00000, #f800000);
+
+   background: -ms-linear-gradient(top, #f00000, #f80000);
+
+   background: -o-linear-gradient(top, #f00000, #f80000);
+
+   background-image: -ms-linear-gradient(top, #f00000 0%, #f80000 100%);
+
+   -webkit-box-shadow: rgba(000,000,000,0.3) 0 1px 1px;
+
+   -moz-box-shadow: rgba(000,000,000,0.3) 0 1px 1px;
+
+   box-shadow: rgba(000,000,000,0.3) 0 1px 1px;
+
+   font-family: 'Helvetica Neue',Helvetica, sans-serif;
+   
+   border:2.5px dashed black;
+
+   -webkit-transition:all 0.5s;
+   -moz-transition:all 0.5s;
+   -o-transition:all 0.5s;
+   -ms-transition:all 0.5s;
+   transition:all 0.5s;
+
+   }
+   
+   .ribbon h1 {
+ font-size: 2.6em;
+
+	font-family:Stencil;
+   color: #ffff99;
+
+   text-shadow: 1.5px 2.5px 3px black;
+
+   margin:0px;
+
+   padding: 15px 10px;
+
+   }
+ .ribbon:before, .ribbon:after {
+
+   content: '';
+
+   position: absolute;
+
+   display: block;
+
+   bottom: -1em;
+
+   border: 1.5em solid #e80000;
+
+   z-index: -1;
+
+   }
+
+.ribbon:before {
+
+   left: -2em;
+
+   border-right-width: 1.5em;
+
+   border-left-color: transparent;
+
+   -webkit-box-shadow: rgba(000,000,000,0.4) 1px 1px 1px;
+
+   -moz-box-shadow: rgba(000,000,000,0.4) 1px 1px 1px;
+
+   box-shadow: rgba(000,000,000,0.4) 1px 1px 1px;
+
+   }
+
+.ribbon:after {
+
+   right: -2em;
+
+   border-left-width: 1.5em;
+
+   border-right-color: transparent;
+
+   -webkit-box-shadow: rgba(000,000,000,0.4) -1px 1px 1px;
+
+   -moz-box-shadow: rgba(000,000,000,0.4) -1px 1px 1px;
+
+   box-shadow: rgba(000,000,000,0.4) -1px 1px 1px;
+
+   }
+   .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+
+   border-color: #700000 transparent transparent transparent;
+
+   position: absolute;
+
+   display: block;
+
+   border-style: solid;
+
+   bottom: -1em;
+
+   content: '';
+
+   }
+
+.ribbon .ribbon-content:before {
+
+   left: 0;
+
+   border-width: 1em 0 0 1em;
+
+   }
+
+.ribbon .ribbon-content:after {
+
+   right: 0;
+
+   border-width: 1em 1em 0 0;
+
+   }
+ 
+ .ribbon:hover .ribbon-content h1{
+ color: #99ff99;
+text-shadow:2px 2px 2px black;
+ }

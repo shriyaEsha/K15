@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<!-- saved from url=(0077)http://www.sitepoint.com/twitter-bootstrap-tutorial-handling-complex-designs/ -->
+<html class=" js no-touch svg inlinesvg svgclippaths no-ie8compat" lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="./Twitter Bootstrap Tutorial_files/saved_resource"></script><script src="./Twitter Bootstrap Tutorial_files/slim_v05.js"></script><script src="./Twitter Bootstrap Tutorial_files/sitepoint.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:image" content="http://www.sitepoint.com/wp-content/themes/sitepoint/assets/images/icon.css.png">
+        
+    <link rel="shortcut icon" href="http://www.sitepoint.com/favicon.ico">
+
+    <link rel="apple-touch-icon-precomposed" href="http://www.sitepoint.com/wp-content/themes/sitepoint/assets/images/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://www.sitepoint.com/wp-content/themes/sitepoint/assets/images/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://www.sitepoint.com/wp-content/themes/sitepoint/assets/images/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.sitepoint.com/wp-content/themes/sitepoint/assets/images/apple-touch-icon-144x144-precomposed.png">
+
+        <link href="https://plus.google.com/+sitepoint" rel="publisher">
+        <meta property="twitter:account_id" content="15743570">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <script async="" type="text/javascript" src="./Twitter Bootstrap Tutorial_files/gpt.js"></script><script type="text/javascript" async="" src="./Twitter Bootstrap Tutorial_files/ga.js"></script><script type="text/javascript">
+    function r(f){/in/.test(document.readyState)?setTimeout(r,9,f):f()}
+    </script>
+
+    
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30131-1']);
+  _gaq.push(['_setCustomVar', 1, 'Context', 'post', 3]);
+_gaq.push(['_setCustomVar', 2, 'Channel', 'CSS', 3]);
+_gaq.push(['_setCustomVar', 3, 'Primary Category', 'Bootstrap', 3]);
+_gaq.push(['_setCustomVar', 4, 'Published date', '2013-07-15', 3]);
+_gaq.push(['_setCustomVar', 5, 'Author', 'Syed Fazle Rahman', 3 ]);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+    <script type="text/javascript">
+      var googletag = googletag || {};
+      googletag.cmd = googletag.cmd || [];
+      (function() {
+      var gads = document.createElement('script');
+      gads.async = true;
+      gads.type = 'text/javascript';
+      var useSSL = 'https:' == document.location.protocol;
+      gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+      var node = document.getElementsByTagName('script')[0];
+      node.parentNode.insertBefore(gads, node);
+      })();
+    </script>
+    
+<!-- This site is optimized with the Yoast WordPress SEO plugin v1.4.24 - http://yoast.com/wordpress/seo/ -->
+<title>Twitter Bootstrap Tutorial</title>
+<link rel="canonical" href="./Twitter Bootstrap Tutorial_files/Twitter Bootstrap Tutorial.htm">
+<link rel="author" href="https://plus.google.com/+SyedFazleRahman">
+<link rel="publisher" href="https://plus.google.com/+sitepoint/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Twitter Bootstrap Tutorial">
+<meta property="og:description" content="Syed Fazle Rahman&#39;s tutorial leads us into the merry world of Twitter Bootstrap, where the CSS is mostly provided and you just have to get the markup right. ">
+<meta property="og:url" content="http://www.sitepoint.com/twitter-bootstrap-tutorial-handling-complex-designs/">
+<meta property="og:site_name" content="SitePoint">
+<meta property="article:publisher" content="https://www.facebook.com/sitepoint">
+<meta property="article:author" content="rahman.syedfazle">
+<meta property="article:section" content="Bootstrap">
+<meta property="article:section" content="CSS">
+<meta property="article:section" content="CSS3">
+<meta property="article:published_time" content="2013-07-15T05:59:09+00:00">
+<meta property="article:modified_time" content="2013-10-21T21:35:10+00:00">
+<meta property="og:image" content="http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2013/07/bootstrap.png">
+<meta property="og:image" content="http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2013/07/sitepoint1.jpg">
+<meta property="og:image" content="http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2013/07/sitepoint2.jpg">
+<meta property="og:image" content="http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2013/07/sitepoint3.jpg">
+<meta property="og:image" content="http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2013/07/sitepoint5.jpg">
+<meta property="og:image" content="http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2013/07/sitepoint5b.jpg">
+<meta property="og:image" content="http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2013/07/sitepoint6.jpg">
+<meta property="og:image" content="http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2013/07/sitepoint7.jpg">
+<meta property="og:image" content="http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2013/07/sitepoint8.jpg">
+<meta property="og:image" content="http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2013/07/sitepoint9.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:domain" content="SitePoint">
+<meta name="twitter:creator" content="@fazlerocks">
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="SitePoint » Twitter Bootstrap Tutorial – Handling Complex Designs Comments Feed" href="http://www.sitepoint.com/twitter-bootstrap-tutorial-handling-complex-designs/feed/">
+<link rel="stylesheet" id="sitepoint-fonts-css" href="./Twitter Bootstrap Tutorial_files/css" type="text/css" media="all">
+<link rel="stylesheet" id="sitepoint-styles-css" href="./Twitter Bootstrap Tutorial_files/styles-ba8c5dc40b46d8e58c971f0c54ac568d.css" type="text/css" media="all">
+<script type="text/javascript" src="./Twitter Bootstrap Tutorial_files/scripts-head-e4a2be27db699092d2993e42901cedf6.js"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.sitepoint.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.sitepoint.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 3.9">
+<link rel="shortlink" href="http://www.sitepoint.com/?p=68194">
+
+<!--Plugin WP Missed Schedule 2013.1231.2013 Active - Tag 6707293c0218e2d8b7aa38d418ffa608-->
+
+<!-- This site is patched which an important unfixed problem since WordPress 2.5+ to 3.9+ -->
+
+<!-- wp-parsely Plugin Version 1.5 -->
+<meta name="wp-parsely_version" id="wp-parsely_version" content="1.5">
+<meta name="parsely-page" id="parsely-page" content="{&quot;title&quot;:&quot;Twitter Bootstrap Tutorial – Handling Complex Designs&quot;,&quot;link&quot;:&quot;http:\/\/www.sitepoint.com\/twitter-bootstrap-tutorial-handling-complex-designs\/&quot;,&quot;image_url&quot;:null,&quot;type&quot;:&quot;post&quot;,&quot;post_id&quot;:&quot;68194&quot;,&quot;pub_date&quot;:&quot;2013-07-15T12:59:09Z&quot;,&quot;section&quot;:&quot;CSS&quot;,&quot;author&quot;:&quot;Syed Fazle Rahman&quot;,&quot;tags&quot;:[&quot;css\/bootstrap&quot;,&quot;css\/css3&quot;]}">
+<script type="text/javascript">
+    googletag.cmd.push(function() {
+		googletag.defineSlot("/7448792/SP2013_Articles_300x250_1", [300, 250], "div-gpt-ad-1392428092543-0").addService(googletag.pubads());
+		googletag.defineSlot("/7448792/SP2013_Articles_728x90_1", [728, 90], "div-gpt-ad-article-header").addService(googletag.pubads());
+		googletag.defineSlot("/7448792/SP2013_Articles_300x600_1", [300, 600], "div-gpt-ad-1392428092543-4").addService(googletag.pubads());
+		googletag.defineSlot("/7448792/Sitepoint_125x125_1", [125, 125], "div-gpt-ad-1398796977286-0").addService(googletag.pubads());
+		googletag.defineSlot("/7448792/Sitepoint_125x125_2", [125, 125], "div-gpt-ad-1398885102914-0").addService(googletag.pubads());
+		googletag.defineSlot("/7448792/Sitepoint_125x125_3", [125, 125], "div-gpt-ad-1399402885093Â­-0").addService(googletag.pubads());
+		googletag.defineSlot("/7448792/Sitepoint_125x125_4", [125, 125], "div-gpt-ad-Â­1399402967001Â­-0").addService(googletag.pubads());
+		googletag.defineSlot("/7448792/Sitepoint_125x125_5", [125, 125], "div-gpt-ad-1399403011406-Â­0").addService(googletag.pubads());
+		googletag.defineSlot("/7448792/Sitepoint_125x125_6", [125, 125], "div-gpt-ad-1399403050173-Â­0").addService(googletag.pubads());
+		googletag.pubads().setTargeting("channel", "CSS");
+		googletag.pubads().setTargeting("post_id", "68194");
+		googletag.pubads().setTargeting("OpenX",["true", "false"]);
+		googletag.pubads().setTargeting("Tribal",["true", "false"]);
+		googletag.pubads().enableSingleRequest();
+        googletag.pubads().collapseEmptyDivs();
+        googletag.enableServices();
+    });
+</script><script async="" type="text/javascript" src="./Twitter Bootstrap Tutorial_files/pubads_impl_39.js"></script>
+        <link rel="stylesheet" type="text/css" href="./Twitter Bootstrap Tutorial_files/shCore.css"><link rel="stylesheet" type="text/css" href="./Twitter Bootstrap Tutorial_files/shThemeDefault.css"><style type="text/css" id="syntaxhighlighteranchor"></style>
+    <!--[if lt IE 9]>
+      <script src="/wp-content/themes/sitepoint/assets/javascripts/vendor/respond.custom.min.js"></script>
+    <![endif]-->
+  <script type="text/javascript" async="" src="./Twitter Bootstrap Tutorial_files/embed.js"></script><style type="text/css"></style><script async="" src="./Twitter Bootstrap Tutorial_files/count-data.js"></script><script type="text/javascript" src="./Twitter Bootstrap Tutorial_files/osd.js"></script><script src="./Twitter Bootstrap Tutorial_files/alfie.f51946af45e0b561c60f768335c9eb79.js" async="" charset="UTF-8"></script></head>
+
+  <body>
+
+    <header class="main-header" role="banner">
+      <nav class="top-bar" role="navigation">
+        <ul class="title-area">
+          <li class="name">
+            <div class="logo">
+              <a class="logomark" href="http://www.sitepoint.com/" tabindex="1">
+                <img src="./Twitter Bootstrap Tutorial_files/sitepoint.svg" alt="SitePoint">
+              </a>
+            </div>
+          </li>
+          <li class="toggle-topbar menu-icon">
+            <a href="http://www.sitepoint.com/twitter-bootstrap-tutorial-handling-complex-designs/#"><span>Menu</span></a>
+          </li>
+        </ul>
+
+        
+      <section class="top-bar-section">
+          <ul class="right">
+            <li class="has-dropdown">
+              <a href="http://www.sitepoint.com/twitter-bootstrap-tutorial-handling-complex-designs/#" tabindex="-1">Topics</a>
+              <ul class="dropdown"><li class="title back js-generated"><h5><a href="http://www.sitepoint.com/twitter-bootstrap-tutorial-handling-complex-designs/#">« Back</a></h5></li>
+                <li>
+                  <a class="category-html menuitem" href="http://www.sitepoint.com/html/">HTML</a>
+                </li>
+                <li>
+                  <a class="category-css menuitem" href="http://www.sitepoint.com/css/">CSS</a>
+                </li>
+                <li>
+                  <a class="category-javascript menuitem" href="http://www.sitepoint.com/javascript/">JS</a>
+                </li>
+                <li>
+                  <a class="category-php menuitem" href="http://www.sitepoint.com/php/">PHP</a>
+                </li>
+                <li>
+                  <a class="category-ruby menuitem" href="http://www.sitepoint.com/ruby/">Ruby</a>
+                </li>
+                <li>
+                  <a class="category-mobile menuitem" href="http://www.sitepoint.com/mobile/">Mobile</a>
+                </li>
+                <li>
+                  <a class="category-ux menuitem" href="http://www.sitepoint.com/ux/">UX</a>
+                </li>
+                <li>
+                  <a class="category-design menuitem" href="http://www.sitepoint.com/design/">Design</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="https://learnable.com/topics/all/book?utm_source=sitepoint&utm_medium=link&utm_content=top-nav" target="_blank" tabindex="2">Books</a>
+            </li>
+            <li>
+              <a href="https://learnable.com/topics/all/course?utm_source=sitepoint&utm_medium=link&utm_content=top-nav" target="_blank" tabindex="3">Courses</a>
+            </li>
+<!--             <li>
+              <a href="/store/" tabindex="2">Store</a>
+            </li>
+ -->            <li>
+              <a href="http://www.sitepoint.com/forums/" tabindex="4">Forums</a>
+            </li>
+            <li>
+              <a href="http://www.sitepoint.com/newsletter" tabindex="5">Subscribe</a>
+            </li>
+            <li class="top-bar_search">
+              <form method="get" action="http://www.sitepoint.com/">
+                <input autocomplete="off" class="searchquery" id="search-box" name="s" placeholder="Search…" type="text" tabindex="4">
+                <button tabindex="-1"></button>
+              </form>
+            </li>
+          </ul>
+        </section></nav>
+    </header>
+<div class="awesome-bar js show" data-campaign="newrelic" style="background:#038D98;">
+  <a class="awesome-bar_container" target="_blank" href="http://newrelic.com/lp/brand2?utm_source=SITE&utm_medium=banner_ad&utm_content=hellobar&utm_campaign=q2banners&mpc=BA-SITE-RPM-en-100-nerdlife-hellobar">
+    <img class="awesome-bar_brand" src="./Twitter Bootstrap Tutorial_files/NewRelic-logo-w.png" alt="New Relic" style="height:22px;">
+    <span class="awesome-bar_message" style="color:#fff;">URGENT NERD ALERT: Optimize your apps now to get a nerdtastic t-shirt.</span>
+    <span class="button small radius awesome-bar_action" style="background:#78cbd1;">nerd me now</span>
+  </a>
+  <span class="awesome-bar_close">x</span>
+</div><main role="main" class="page page--primary category-css">
+
+  <header role="banner" class="page_banner page_banner--category">
+    <h2 class="page_banner_title">
+      <a href="http://www.sitepoint.com/css/" class="page_banner_title_category"><i class="icon-category"></i>CSS</a>
+              <a href="http://www.sitepoint.com/css/bootstrap/" class="page_banner_title_sub-category">Bootstrap</a>
+          </h2>
+    <div class="page_banner_adspot">
+      <div class="widget maestro maestro-content-type-ad hide-for-mobile-SP" id="maestro-product-37"><!-- SP2013_Articles_728x90_1 -->
+<div id="div-gpt-ad-article-header" style="width:728px; height:90px;" class="adspot">
+    <script type="text/javascript">googletag.cmd.push(function() { googletag.display("div-gpt-ad-article-header"); });</script>
+ <div id="google_ads_iframe_/7448792/SP2013_Articles_728x90_1_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/7448792/SP2013_Articles_728x90_1_0" name="google_ads_iframe_/7448792/SP2013_Articles_728x90_1_0" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:"<html><body style='background:transparent'></body></html>"" style="border: 0px; vertical-align: bottom;"></iframe></div></div></div>          </div>
+
+    <div class="page_banner_divider-container">
+      <hr>
+    </div>
+  </header>
+
+      <div class="page_content">
+      <article class="article" id="post-68194">
+        <header class="article_header">
+          <h1 class="article_title">Twitter Bootstrap Tutorial – Handling Complex Designs</h1>
+
+          
+    <div class="contributor article_contributor">
+
+          <figure class="contributor_avatar">
+      <a href="http://www.sitepoint.com/author/sfrahman/">
+        <img src="./Twitter Bootstrap Tutorial_files/fazle-96x96.png" width="96" height="96" alt="Syed Fazle Rahman" class="avatar avatar-96 wp-user-avatar wp-user-avatar-96 alignnone photo">      </a>
+    </figure>
+  
+      <div class="contributor_details">
+          <div class="contributor_name">
+    <a href="http://www.sitepoint.com/author/sfrahman/">Syed Fazle Rahman</a>
+  </div>
+
+  
+    <div class="contributor_title">
+      A programmer, a designer and a non-traditional Engineer..    </div>
+
+        </div>
+
+    </div>
+
+    
+          <div class="article_meta-data">
+            <p class="article_pub-date">Published <time datetime="2013-07-15" pubdate="">July 15, 2013</time></p>
+          </div>
+          <div class="article_header__buttons">
+            
+            <!-- make sure to update trackTweetsAndSubscriptions in scripts.js if the Tweet button DOM path changes in the future -->
+            <a class="button small transparent radius twitter-share-button" target="_blank" href="https://twitter.com/share?text=Twitter+Bootstrap+Tutorial+%26%238211%3B+Handling+Complex+Designs&via=sitepointdotcom">
+              <i class="icon-twitter"></i>
+              Tweet
+            </a>
+            
+            <!-- make sure to update trackTweetsAndSubscriptions in scripts.js if the Subscribe button DOM path changes in the future -->
+            <a class="button small transparent radius subscribe-button" target="_blank" href="https://confirmsubscription.com/h/y/D46DD8C9BD8A0B5D">
+              <!--<i class="icon-envelope-alt"></i>-->
+              Subscribe
+            </a>
+            
+          </div>
+
+        </header>
+
+        <section class="article_body">
+
+            <p>Much has been said and written about Twitter Bootstrap these days in the world of web designing and development. Some people call it a boon for web developers with zero designing knowledge, while others call it a blessing for the designers. Whatever it may be, it does things easier and faster.</p>
+<p><img class="alignnone size-full wp-image-67443" alt="Bootstrap" src="./Twitter Bootstrap Tutorial_files/bootstrap.png" width="602" height="266"></p>
+<p>In many scenarios web developers have the entire setup ready with them but they can’t proceed due to absence of the design of the project they are going to work on. They have to rely on the designers to complete the client side of their project. This process consumes a hell lot of time and is a serious wastage of time for a developer who needs his/her ideas to be implementing as quickly as possible. In such scenarios, Twitter Bootstrap comes to the rescue in the super-heroic fashion!</p>
+<p>Twitter Bootstrap is a CSS framework that helps in designing web applications. It is one of the easiest CSS frameworks to use in the Industry today. It assumes you have no designing knowledge and all you want to do is write some HTML as per the Bootstrap specifications. In short, Twitter Bootstrap has already written a CSS style sheet for you, has inbuilt jQuery support and also has some popular JavaScript tools. Wooh! Isn’t that great? You get a bunch of popular tools ready to use. All you have to do is just place the right HTML mark-up at correct place.</p>
+<p>In this tutorial, I will explain how you can start using Twitter Bootstrap by showcasing a demo layout page, and how you can explore the framework and customize it for your own requirements.</p>
+<h2>Getting Started</h2>
+<p>To start using Twitter Bootstrap, you have to download bootstrap.zip from their official <a href="http://twitter.github.io/bootstrap/index.html">github page</a>. It contains a set of files, namely <b>css</b>, <b>js</b> and <b>img</b> that we need to start building websites with Twitter Bootstrap. The <b>“css”</b> folder has style sheet for both non-responsive and responsive designs and also their minimized versions. You will use the minimized version for making the site faster when the design has been finalized and the project is ready for the launch. The <b>“js”</b> folder has bootstrap.js and its minimized version. These JavaScript files contain various JavaScript components that we will use in our website designs. The last folder, <b>“img” </b>contains two set of Halflings images, both are exactly the same except for their foreground color. The halflings images are supplied by <b>glyphicons</b> who were very generous enough to provide the images for free in the Twitter Bootstrap project.</p>
+<p>So let us get our hands dirty. Before we start, open your text editor and create the first file named “index.html” and save it in the home folder of your project.</p>
+<p><img class="alignnone size-full wp-image-67444" alt="sitepoint1" src="./Twitter Bootstrap Tutorial_files/sitepoint1.jpg" width="521" height="166"></p>
+<p><b>Basic HTML Template for Bootstrap to work</b></p>
+<p>In order to activate the Bootstrap framework, you need to include all the appropriate files and follow a proper HTML structure. Here, we will build the structure first and then see which files are required. The first thing that you should note is that it requires an HTML5 doctype declaration at the top:</p>
+<pre><code>&lt;!DOCTYPE html&gt;</code></pre>
+<p>We will set the <b>meta</b> character to utf-8 because we will be using special characters in our project and we want the browser to parse them correctly. Twitter Bootstrap also specifies the use of utf-8 in their documentations for better compatibility.</p>
+<pre><code>&lt;meta charset=”utf-8”&gt; </code></pre>
+<p>Then we will set normal html tags like &lt;html&gt;, &lt;head&gt; and &lt;body&gt; which are basic tags of html. Your index.html page should look as below.</p>
+<p><img class="alignnone size-full wp-image-67461" alt="index page " src="./Twitter Bootstrap Tutorial_files/sitepoint2.jpg" width="672" height="263"></p>
+<p>We will now proceed to include the necessary style sheet which is <b>bootstrap.css</b>.</p>
+<pre><code>&lt;link rel=”stylesheet” href=”css/bootstrap.css” &nbsp;type=”text/css”/&gt;</code></pre>
+<p>Now that we have our CSS ready, we will include all the required JavaScript files. Firstly, you need to include a jQuery file, for this I will suggest including from the jQuery CDN, as below.</p>
+<pre><code>&lt;script src="http://code.jquery.com/jquery-1.10.1.min.js"&gt;&lt;/script&gt;</code></pre>
+<p>Then we will include the Bootstrap file.</p>
+<pre><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;script src=”js/bootstrap.js”&gt;&lt;/script&gt;</code></pre>
+<p>All these scripts should lie just above the end body tag <code>&lt;/body&gt;,</code> in consideration of the performance of your web page.</p>
+<p>Finally, we are done with the process of including all the necessary files. You are now set to start building the various components of your website. Your index.html should look like this.</p>
+<p><img class="alignnone size-full wp-image-67462" alt="final index file" src="./Twitter Bootstrap Tutorial_files/sitepoint3.jpg" width="710" height="280"></p>
+<h2>Understanding how it works</h2>
+<p>Firstly, we need to understand that Twitter Bootstrap is largely dependent on 12 grids. So, what are grids?</p>
+<p>Suppose you want two large equal divisions inside the body of your index.html. You have to give a class of “span6” to each of div element. This tells Bootstrap to make two equal divisions that should span six grids on each side. &nbsp;Hopefully, this gives you an idea of how Bootstrap works. It has a set of predefined classes for each element. You have to give appropriate classes to each when needed.</p>
+<p>To better understand what we are going to build today, here’s the first <a href="http://www.zetiz.com/sitepoint/">demo page</a>. Have a look and come back. We will start building it.</p>
+<h2>Coding with Bootstrap</h2>
+<p>Let us divide the demo page into five major parts:</p>
+<ol>
+<li>The header</li>
+<li>The marketing area</li>
+<li>The leftside bar</li>
+<li>The contents area</li>
+<li>The footer</li>
+</ol>
+<p><img class="alignnone size-full wp-image-67464" alt="sitepoint5" src="./Twitter Bootstrap Tutorial_files/sitepoint5.jpg" width="488" height="678"></p>
+<p>To wrap everything contained in our website, we will create a container class that should be centered to the middle of the screen and also have a decent amount of padding on all sides. For this, Bootstrap has a class called “container”, which we will use as our parent wrapper. So go ahead and write the following piece of code:</p>
+<div><div id="highlighter_197" class="syntaxhighlighter  xml"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">div</code> <code class="xml color1">class</code><code class="xml plain">=</code><code class="xml string">"”container”"</code><code class="xml plain">&gt;</code></div></div></td></tr></tbody></table></div></div>
+<p>Now inside the container div, first we will jot down the title of the website. For this we will use, h1 heading tag.</p>
+<div><div id="highlighter_480253" class="syntaxhighlighter  xml"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">h1</code><code class="xml plain">&gt;&lt;</code><code class="xml keyword">a</code> <code class="xml color1">href</code><code class="xml plain">=</code><code class="xml string">"”#”"</code><code class="xml plain">&gt;Bootstrap Site&lt;/</code><code class="xml keyword">a</code><code class="xml plain">&gt;&lt;/</code><code class="xml keyword">h1</code><code class="xml plain">&gt;</code></div></div></td></tr></tbody></table></div></div>
+<p>Check your index.html in the browser, it will be centered beautifully. It’s time for the navigation bar. Twitter Bootstrap specifies following markup for the navigation bar:</p>
+<div><div id="highlighter_423166" class="syntaxhighlighter  xml"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">div</code> <code class="xml color1">class</code><code class="xml plain">=</code><code class="xml string">"navbar"</code><code class="xml plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">div</code> <code class="xml color1">class</code><code class="xml plain">=</code><code class="xml string">"navbar-inner"</code><code class="xml plain">&gt;</code></div><div class="line number3 index2 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">div</code> <code class="xml color1">class</code><code class="xml plain">=</code><code class="xml string">"container"</code><code class="xml plain">&gt;</code></div><div class="line number4 index3 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">ul</code> <code class="xml color1">class</code><code class="xml plain">=</code><code class="xml string">"nav"</code><code class="xml plain">&gt;</code></div><div class="line number5 index4 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">li</code> <code class="xml color1">class</code><code class="xml plain">=</code><code class="xml string">"active"</code><code class="xml plain">&gt;&lt;</code><code class="xml keyword">a</code> <code class="xml color1">href</code><code class="xml plain">=</code><code class="xml string">"#"</code><code class="xml plain">&gt;Home&lt;/</code><code class="xml keyword">a</code><code class="xml plain">&gt;&lt;/</code><code class="xml keyword">li</code><code class="xml plain">&gt;</code></div><div class="line number6 index5 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">li</code><code class="xml plain">&gt;&lt;</code><code class="xml keyword">a</code> <code class="xml color1">href</code><code class="xml plain">=</code><code class="xml string">"#"</code><code class="xml plain">&gt;Projects&lt;/</code><code class="xml keyword">a</code><code class="xml plain">&gt;&lt;/</code><code class="xml keyword">li</code><code class="xml plain">&gt;</code></div><div class="line number7 index6 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">li</code><code class="xml plain">&gt;&lt;</code><code class="xml keyword">a</code> <code class="xml color1">href</code><code class="xml plain">=</code><code class="xml string">"#"</code><code class="xml plain">&gt;Services&lt;/</code><code class="xml keyword">a</code><code class="xml plain">&gt;&lt;/</code><code class="xml keyword">li</code><code class="xml plain">&gt;</code></div><div class="line number8 index7 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">li</code><code class="xml plain">&gt;&lt;</code><code class="xml keyword">a</code> <code class="xml color1">href</code><code class="xml plain">=</code><code class="xml string">"#"</code><code class="xml plain">&gt;Downloads&lt;/</code><code class="xml keyword">a</code><code class="xml plain">&gt;&lt;/</code><code class="xml keyword">li</code><code class="xml plain">&gt;</code></div><div class="line number9 index8 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">li</code><code class="xml plain">&gt;&lt;</code><code class="xml keyword">a</code> <code class="xml color1">href</code><code class="xml plain">=</code><code class="xml string">"#"</code><code class="xml plain">&gt;About&lt;/</code><code class="xml keyword">a</code><code class="xml plain">&gt;&lt;/</code><code class="xml keyword">li</code><code class="xml plain">&gt;</code></div><div class="line number10 index9 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">li</code><code class="xml plain">&gt;&lt;</code><code class="xml keyword">a</code> <code class="xml color1">href</code><code class="xml plain">=</code><code class="xml string">"#"</code><code class="xml plain">&gt;Contact&lt;/</code><code class="xml keyword">a</code><code class="xml plain">&gt;&lt;/</code><code class="xml keyword">li</code><code class="xml plain">&gt;</code></div><div class="line number11 index10 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;/</code><code class="xml keyword">ul</code><code class="xml plain">&gt;</code></div><div class="line number12 index11 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;/</code><code class="xml keyword">div</code><code class="xml plain">&gt;</code></div><div class="line number13 index12 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;/</code><code class="xml keyword">div</code><code class="xml plain">&gt;</code></div><div class="line number14 index13 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;/</code><code class="xml keyword">div</code><code class="xml plain">&gt;</code></div></div></td></tr></tbody></table></div></div>
+<p>“navbar” should be the class given to the main div of the navigation. You have to follow the above markup for the navigation to appear as per Twitter Bootstrap style. Place the above code just below the h1 tag. Make sure you are placing everything inside our parent wrapper class, i.e. “container”. &nbsp;Go to the browser and check your page, you will see a beautiful navigation bar just below the site title.</p>
+<p><img class="alignnone size-full wp-image-67521" alt="navbar" src="./Twitter Bootstrap Tutorial_files/sitepoint5b.jpg" width="710" height="88"></p>
+<p>Obviously, you would want your header to look a bit different to this. At the end of this tutorial, we will look at how we can add our own styles to the existing Bootstrap styles and add a bit more CSS to design the header area. Let’s move on to make the second part, which we’ve called “The marketing area”.</p>
+<p>There is a beautiful predefined class supplied by Twitter Bootstrap for a marketing area. They have given it a class of “hero-unit”. Go ahead and copy the code given below and paste it below the navigation div.</p>
+<div><div id="highlighter_476980" class="syntaxhighlighter  xml"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">div</code> <code class="xml color1">class</code><code class="xml plain">=</code><code class="xml string">"hero-unit"</code><code class="xml plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">h1</code><code class="xml plain">&gt;Marketing stuff!&lt;/</code><code class="xml keyword">h1</code><code class="xml plain">&gt;</code></div><div class="line number3 index2 alt2">&nbsp;</div><div class="line number4 index3 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">p</code><code class="xml plain">&gt;Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.&lt;/</code><code class="xml keyword">p</code><code class="xml plain">&gt;</code></div><div class="line number5 index4 alt2">&nbsp;</div><div class="line number6 index5 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">a</code> <code class="xml color1">href</code><code class="xml plain">=</code><code class="xml string">"#"</code> <code class="xml color1">class</code><code class="xml plain">=</code><code class="xml string">"btn btn-large btn-success"</code><code class="xml plain">&gt;Get Started&lt;/</code><code class="xml keyword">a</code><code class="xml plain">&gt;</code></div><div class="line number7 index6 alt2"><code class="xml spaces">&nbsp;</code><code class="xml plain">&lt;/</code><code class="xml keyword">div</code><code class="xml plain">&gt;</code></div></div></td></tr></tbody></table></div></div>
+<p>Check your page in the browser; it should now look like below:</p>
+<p><img class="alignnone size-full wp-image-67465" alt="marketing area" src="./Twitter Bootstrap Tutorial_files/sitepoint6.jpg" width="710" height="317"></p>
+<p>Isn’t that amazing? Without writing a single piece of CSS, you have such a beautiful marketing area. OK, let’s explore the above code. The “hero-unit” has a CSS designed for an h1 tag. So anything you write in an h1 heading will look bold and stand out from rest of the body elements. Next we have general <code>&lt;p&gt;</code> paragraph tag to describe our marketing or our product.</p>
+<p>Here comes the interesting part, <b>the links and buttons</b>. You can make any link look like a button by adding a class “<b>btn</b>” and then vary its size by adding some more additional classes like <b><code>btn-large/btn-small/btn-mini</code></b>. To change the colors of the buttons, add classes like <b>btn-success</b> (green), <b>btn-info </b>(light blue), <b>btn-warning</b> (yellow) and <b>btn-danger</b> (red). More about buttons and decorating links can be found in the Twitter Bootstrap’s <a href="http://twitter.github.io/bootstrap/base-css.html#buttons">Base CSS section</a>. These classes are applicable to the HTML button element.</p>
+<p>I hope so far your journey has been interesting. Twitter Bootstrap is so easy that it doesn’t let you do anything inside CSS stylesheets. You have to just use the resources it provides. This is what makes it one of the most powerful CSS frameworks in the industry.</p>
+<p>We will now proceed to the next sections, the left side bar and the contents section. You will understand how I was able to divide the area into two unequal vertical areas and how can we do more such divisions. As stated earlier, Twitter Bootstrap is a 12 grid system. You have to remember this, always. This means you can make at most 12 vertical grids inside any parent grid.</p>
+<p>Currently we are working inside our parent wrapper class “container”. So we will divide the section into two unequal parts using the 12 grids. For the left side bar, we will use the class “span4” and for the rightside content section we will use “span8”. The class names reflect my intention that the left side should span to four grids and the right side should span across remaining the eight grids.</p>
+<div><div id="highlighter_872791" class="syntaxhighlighter  xml"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">div</code> <code class="xml color1">class</code><code class="xml plain">=</code><code class="xml string">"row"</code><code class="xml plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">div</code> <code class="xml color1">class</code><code class="xml plain">=</code><code class="xml string">"span4"</code><code class="xml plain">&gt;</code></div><div class="line number3 index2 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">p</code><code class="xml plain">&gt;Dummy Text&lt;/</code><code class="xml keyword">p</code><code class="xml plain">&gt;</code></div><div class="line number4 index3 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;/</code><code class="xml keyword">div</code><code class="xml plain">&gt;</code></div><div class="line number5 index4 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">div</code> <code class="xml color1">class</code><code class="xml plain">=</code><code class="xml string">"span8"</code><code class="xml plain">&gt;</code></div><div class="line number6 index5 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">p</code><code class="xml plain">&gt;Dummy Text&lt;/</code><code class="xml keyword">p</code><code class="xml plain">&gt;</code></div><div class="line number7 index6 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;/</code><code class="xml keyword">div</code><code class="xml plain">&gt;</code></div><div class="line number8 index7 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;/</code><code class="xml keyword">div</code><code class="xml plain">&gt;</code></div></div></td></tr></tbody></table></div></div>
+<p>Your webpage should now appear as below.</p>
+<p><img class="alignnone size-full wp-image-67466" alt="sitepoint7" src="./Twitter Bootstrap Tutorial_files/sitepoint7.jpg" width="710" height="421"></p>
+<p>There should be two separate columns standing side by side. You must be now thinking about the extra wrapper div that I have added above with class “row”. Well, the reason is span* classes are by default floated left. To force both columns to be present below all the contents above we have added the “row” div. It acts like the traditional “&lt;tr&gt;” row of tables. Now you should delete the dummy paragraph elements from your code. We will now fill the left column with navigation list.</p>
+<p>For the navigation list you have to follow the following markup.</p>
+<div><div id="highlighter_578529" class="syntaxhighlighter  xml"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">ul</code> <code class="xml color1">class</code><code class="xml plain">=</code><code class="xml string">"nav nav-list"</code><code class="xml plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">li</code> <code class="xml color1">class</code><code class="xml plain">=</code><code class="xml string">"nav-header"</code><code class="xml plain">&gt;What we are?&lt;/</code><code class="xml keyword">li</code><code class="xml plain">&gt;</code></div><div class="line number3 index2 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">li</code> <code class="xml color1">class</code><code class="xml plain">=</code><code class="xml string">"active"</code><code class="xml plain">&gt;&lt;</code><code class="xml keyword">a</code> <code class="xml color1">href</code><code class="xml plain">=</code><code class="xml string">"#"</code><code class="xml plain">&gt;Home&lt;/</code><code class="xml keyword">a</code><code class="xml plain">&gt;&lt;/</code><code class="xml keyword">li</code><code class="xml plain">&gt;</code></div><div class="line number4 index3 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">li</code><code class="xml plain">&gt;&lt;</code><code class="xml keyword">a</code> <code class="xml color1">href</code><code class="xml plain">=</code><code class="xml string">"#"</code><code class="xml plain">&gt;Our Clients&lt;/</code><code class="xml keyword">a</code><code class="xml plain">&gt;&lt;/</code><code class="xml keyword">li</code><code class="xml plain">&gt;</code></div><div class="line number5 index4 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">li</code><code class="xml plain">&gt;&lt;</code><code class="xml keyword">a</code> <code class="xml color1">href</code><code class="xml plain">=</code><code class="xml string">"#"</code><code class="xml plain">&gt;Our Services&lt;/</code><code class="xml keyword">a</code><code class="xml plain">&gt;&lt;/</code><code class="xml keyword">li</code><code class="xml plain">&gt;</code></div><div class="line number6 index5 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">li</code><code class="xml plain">&gt;&lt;</code><code class="xml keyword">a</code> <code class="xml color1">href</code><code class="xml plain">=</code><code class="xml string">"#"</code><code class="xml plain">&gt;About Us&lt;/</code><code class="xml keyword">a</code><code class="xml plain">&gt;&lt;/</code><code class="xml keyword">li</code><code class="xml plain">&gt;</code></div><div class="line number7 index6 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">li</code><code class="xml plain">&gt;&lt;</code><code class="xml keyword">a</code> <code class="xml color1">href</code><code class="xml plain">=</code><code class="xml string">"#"</code><code class="xml plain">&gt;Contact Us&lt;/</code><code class="xml keyword">a</code><code class="xml plain">&gt;&lt;/</code><code class="xml keyword">li</code><code class="xml plain">&gt;</code></div><div class="line number8 index7 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">li</code> <code class="xml color1">class</code><code class="xml plain">=</code><code class="xml string">"nav-header"</code><code class="xml plain">&gt;Our Friend&lt;/</code><code class="xml keyword">li</code><code class="xml plain">&gt;</code></div><div class="line number9 index8 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">li</code><code class="xml plain">&gt;&lt;</code><code class="xml keyword">a</code> <code class="xml color1">href</code><code class="xml plain">=</code><code class="xml string">"#"</code><code class="xml plain">&gt;Google&lt;/</code><code class="xml keyword">a</code><code class="xml plain">&gt;&lt;/</code><code class="xml keyword">li</code><code class="xml plain">&gt;</code></div><div class="line number10 index9 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">li</code><code class="xml plain">&gt;&lt;</code><code class="xml keyword">a</code> <code class="xml color1">href</code><code class="xml plain">=</code><code class="xml string">"#"</code><code class="xml plain">&gt;Yahoo!&lt;/</code><code class="xml keyword">a</code><code class="xml plain">&gt;&lt;/</code><code class="xml keyword">li</code><code class="xml plain">&gt;</code></div><div class="line number11 index10 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">li</code><code class="xml plain">&gt;&lt;</code><code class="xml keyword">a</code> <code class="xml color1">href</code><code class="xml plain">=</code><code class="xml string">"#"</code><code class="xml plain">&gt;Bing&lt;/</code><code class="xml keyword">a</code><code class="xml plain">&gt;&lt;/</code><code class="xml keyword">li</code><code class="xml plain">&gt;</code></div><div class="line number12 index11 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">li</code><code class="xml plain">&gt;&lt;</code><code class="xml keyword">a</code> <code class="xml color1">href</code><code class="xml plain">=</code><code class="xml string">"#"</code><code class="xml plain">&gt;Microsoft&lt;/</code><code class="xml keyword">a</code><code class="xml plain">&gt;&lt;/</code><code class="xml keyword">li</code><code class="xml plain">&gt;</code></div><div class="line number13 index12 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">li</code><code class="xml plain">&gt;&lt;</code><code class="xml keyword">a</code> <code class="xml color1">href</code><code class="xml plain">=</code><code class="xml string">"#"</code><code class="xml plain">&gt;Gadgetic World&lt;/</code><code class="xml keyword">a</code><code class="xml plain">&gt;&lt;/</code><code class="xml keyword">li</code><code class="xml plain">&gt;</code></div><div class="line number14 index13 alt1"><code class="xml plain">&lt;/</code><code class="xml keyword">ul</code><code class="xml plain">&gt;</code></div></div></td></tr></tbody></table></div></div>
+<p>You have to add “nav-list” class in addition to “nav” class which will make it look like a list. Adding class “nav-header” to any “li” element of “nav” class will make it look like a heading to the section of links. Go ahead and see how it looks in the browser.</p>
+<p><img class="alignnone size-full wp-image-67467" alt="sitepoint8" src="./Twitter Bootstrap Tutorial_files/sitepoint8.jpg" width="314" height="350"></p>
+<p>Moving to the content area, we will be just filling it up with general h3 tags and paragraph tags. No extra classes are needed as we want them to appear one below the other. Below is the code that I will be placing inside “span8”.</p>
+<div><div id="highlighter_570897" class="syntaxhighlighter  xml"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">h3</code><code class="xml plain">&gt;How we started ?&lt;/</code><code class="xml keyword">h3</code><code class="xml plain">&gt;</code></div><div class="line number2 index1 alt1">&nbsp;</div><div class="line number3 index2 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">p</code><code class="xml plain">&gt;Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.&lt;/</code><code class="xml keyword">p</code><code class="xml plain">&gt;</code></div><div class="line number4 index3 alt1">&nbsp;</div><div class="line number5 index4 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">p</code><code class="xml plain">&gt;Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.&lt;/</code><code class="xml keyword">p</code><code class="xml plain">&gt;</code></div><div class="line number6 index5 alt1">&nbsp;</div><div class="line number7 index6 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">h3</code><code class="xml plain">&gt;How do we market?&lt;/</code><code class="xml keyword">h3</code><code class="xml plain">&gt;</code></div><div class="line number8 index7 alt1">&nbsp;</div><div class="line number9 index8 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">p</code><code class="xml plain">&gt;Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.&lt;/</code><code class="xml keyword">p</code><code class="xml plain">&gt;</code></div><div class="line number10 index9 alt1">&nbsp;</div><div class="line number11 index10 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">p</code><code class="xml plain">&gt;Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.&lt;/</code><code class="xml keyword">p</code><code class="xml plain">&gt;</code></div></div></td></tr></tbody></table></div></div>
+<p>Refresh your browser and it should now look like below:</p>
+<p><img class="alignnone size-full wp-image-67469" alt="sitepoint9" src="./Twitter Bootstrap Tutorial_files/sitepoint9.jpg" width="710" height="633"></p>
+<p>As you can see, we are very close to achieving our final design. We are just left with the footer portion.</p>
+<p>For the footer, we will again divide the “row” into three parts as you can see in the demo page. This time the division will be in equal portions, which is “span4”. So we will create another “row” div just below the “row” div of the above left sidebar and content area. Follow the code below:</p>
+<div><div id="highlighter_76923" class="syntaxhighlighter  xml"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div><div class="line number16 index15 alt1">16</div><div class="line number17 index16 alt2">17</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">div</code> <code class="xml color1">class</code><code class="xml plain">=</code><code class="xml string">"row"</code><code class="xml plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="xml plain">&lt;</code><code class="xml keyword">div</code> <code class="xml color1">class</code><code class="xml plain">=</code><code class="xml string">"span4"</code><code class="xml plain">&gt;</code></div><div class="line number3 index2 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">h4</code> <code class="xml color1">class</code><code class="xml plain">=</code><code class="xml string">"muted text-center"</code><code class="xml plain">&gt;Meet Our Clients&lt;/</code><code class="xml keyword">h4</code><code class="xml plain">&gt;</code></div><div class="line number4 index3 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">p</code><code class="xml plain">&gt;Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.&lt;/</code><code class="xml keyword">p</code><code class="xml plain">&gt;</code></div><div class="line number5 index4 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">a</code> <code class="xml color1">href</code><code class="xml plain">=</code><code class="xml string">"#"</code> <code class="xml color1">class</code><code class="xml plain">=</code><code class="xml string">"btn"</code><code class="xml plain">&gt;&lt;</code><code class="xml keyword">i</code> <code class="xml color1">class</code><code class="xml plain">=</code><code class="xml string">"icon-user"</code><code class="xml plain">&gt;&lt;/</code><code class="xml keyword">i</code><code class="xml plain">&gt; Our Clients&lt;/</code><code class="xml keyword">a</code><code class="xml plain">&gt;</code></div><div class="line number6 index5 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;/</code><code class="xml keyword">div</code><code class="xml plain">&gt;</code></div><div class="line number7 index6 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">div</code> <code class="xml color1">class</code><code class="xml plain">=</code><code class="xml string">"span4"</code><code class="xml plain">&gt;</code></div><div class="line number8 index7 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">h4</code> <code class="xml color1">class</code><code class="xml plain">=</code><code class="xml string">"muted text-center"</code><code class="xml plain">&gt;Know Our Employees&lt;/</code><code class="xml keyword">h4</code><code class="xml plain">&gt;</code></div><div class="line number9 index8 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">p</code><code class="xml plain">&gt;Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.&lt;/</code><code class="xml keyword">p</code><code class="xml plain">&gt;</code></div><div class="line number10 index9 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">a</code> <code class="xml color1">href</code><code class="xml plain">=</code><code class="xml string">"#"</code> <code class="xml color1">class</code><code class="xml plain">=</code><code class="xml string">"btn btn-success"</code><code class="xml plain">&gt;&lt;</code><code class="xml keyword">i</code> <code class="xml color1">class</code><code class="xml plain">=</code><code class="xml string">"icon-star icon-white"</code><code class="xml plain">&gt;&lt;/</code><code class="xml keyword">i</code><code class="xml plain">&gt; Our Employees&lt;/</code><code class="xml keyword">a</code><code class="xml plain">&gt;</code></div><div class="line number11 index10 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;/</code><code class="xml keyword">div</code><code class="xml plain">&gt;</code></div><div class="line number12 index11 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">div</code> <code class="xml color1">class</code><code class="xml plain">=</code><code class="xml string">"span4"</code><code class="xml plain">&gt;</code></div><div class="line number13 index12 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">h4</code> <code class="xml color1">class</code><code class="xml plain">=</code><code class="xml string">"muted text-center"</code><code class="xml plain">&gt;Reach Us&lt;/</code><code class="xml keyword">h4</code><code class="xml plain">&gt;</code></div><div class="line number14 index13 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">p</code><code class="xml plain">&gt;Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.&lt;/</code><code class="xml keyword">p</code><code class="xml plain">&gt;</code></div><div class="line number15 index14 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">a</code> <code class="xml color1">href</code><code class="xml plain">=</code><code class="xml string">"#"</code> <code class="xml color1">class</code><code class="xml plain">=</code><code class="xml string">"btn btn-info"</code><code class="xml plain">&gt;Contact Us&lt;/</code><code class="xml keyword">a</code><code class="xml plain">&gt;</code></div><div class="line number16 index15 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;/</code><code class="xml keyword">div</code><code class="xml plain">&gt;</code></div><div class="line number17 index16 alt2"><code class="xml plain">&lt;/</code><code class="xml keyword">div</code><code class="xml plain">&gt;</code></div></div></td></tr></tbody></table></div></div>
+<p>Simple enough! We have divided the row into three equal parts using “span4” class and then filled each one of them using h4 tags, paragraph tags and links that look like buttons. Check the output in your browser. You should be seeing little images inside the link buttons, Our Clients and Our Employees. You have to take help of &lt;i&gt; tag and add appropriate image classes like icon-user, icon-star, icon-glass etc. To change the icon to white, use class icon-white along with icon-user and icon-star classes. A full list of icon classes can be found in the Bootstrap’s documentation <a href="http://twitter.github.io/bootstrap/base-css.html#icons">here</a>.</p>
+<p>To give a little spacing between the footer area and the above content, we will add a &lt;hr&gt; tag between each “row” div. Go ahead insert &lt;hr&gt; tag and compare it with the demo page.</p>
+<p>Now for the copyright area, we will add the following code:</p>
+<div><div id="highlighter_710230" class="syntaxhighlighter  xml"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">hr</code><code class="xml plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="xml plain">&lt;</code><code class="xml keyword">div</code> <code class="xml color1">class</code><code class="xml plain">=</code><code class="xml string">"footer"</code><code class="xml plain">&gt;</code></div><div class="line number3 index2 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">p</code><code class="xml plain">&gt;&amp;copy; 2013&lt;/</code><code class="xml keyword">p</code><code class="xml plain">&gt;</code></div><div class="line number4 index3 alt1"><code class="xml plain">&lt;/</code><code class="xml keyword">div</code><code class="xml plain">&gt;</code></div></div></td></tr></tbody></table></div></div>
+<p>So finally, we have built a simple yet decent landing page using purely the Twitter Bootstrap framework.</p>
+<h2>Adding Custom Styles to Twitter Bootstrap</h2>
+<p>If you have a little knowledge of CSS and you want to tweak Bootstrap’s default styles, then the best way is to build your own custom style sheet, import Bootstrap’s Style sheets at the top and then override the styles in your own CSS file. Make sure to link to your custom style sheet and not to the Bootstrap’s CSS files. If you are happy with Twitter Bootstrap’s default style then obviously you don’t have to create a custom style sheet. But as many websites will use this framework, it will become a common style which can be seen in every other websites built with Bootstrap. So it is better if you add your own flavor of CSS on top of the Bootstrap’s CSS.</p>
+<div><div id="highlighter_877666" class="syntaxhighlighter  xml"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="xml plain">@import url("bootstrap.min.css");</code></div></div></td></tr></tbody></table></div></div>
+<h2>Some more Important Components of Twitter Bootstrap</h2>
+<h3>Lead Paragraphs</h3>
+<p>To make a paragraph stand out in the middle of long document, you can add class “lead” to it. It will make the fonts of that particular paragraph a bit bigger than the rest of the document.</p>
+<h3>Emphasis Tags</h3>
+<p>You can also use the default Emphasis tags like &lt;small&gt;, &lt;strong&gt; and &lt;em&gt; inside your html page. Tags like &lt;b&gt; and &lt;i&gt; are still valid.</p>
+<h3>Text aligning</h3>
+<p>Text aligning inside any paragraph or a div tag can be done using the classes: “text-left”, “text-center” and “text-right”.</p>
+<h3>Text colors</h3>
+<p>You can set the default color for paragraph text by using various text color emphasis classes like “muted” for grey, “text-warning” for red, “text-error” for deep maroon, “text-info” for light blue and “text-success” for green color.</p>
+<h3>Styling Tables</h3>
+<p>Twitter Bootstrap also designs the default tables. Follow the following markup:</p>
+<div><div id="highlighter_588373" class="syntaxhighlighter  xml"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">table</code> <code class="xml color1">class</code><code class="xml plain">=</code><code class="xml string">"table"</code><code class="xml plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">tr</code><code class="xml plain">&gt;</code></div><div class="line number3 index2 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">td</code><code class="xml plain">&gt;&lt;/</code><code class="xml keyword">td</code><code class="xml plain">&gt;</code></div><div class="line number4 index3 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">td</code><code class="xml plain">&gt;&lt;/</code><code class="xml keyword">td</code><code class="xml plain">&gt;</code></div><div class="line number5 index4 alt2"><code class="xml plain">&lt;/</code><code class="xml keyword">tr</code><code class="xml plain">&gt;</code></div><div class="line number6 index5 alt1"><code class="xml plain">…..</code></div><div class="line number7 index6 alt2"><code class="xml plain">&lt;/</code><code class="xml keyword">table</code><code class="xml plain">&gt;</code></div></div></td></tr></tbody></table></div></div>
+<h3>Playing with images</h3>
+<p>You can add images using the normal &lt;img src=”demo.jpg”/&gt; tag. To make your designs a bit more interesting, add classes like “img-rounded” for rounded corners, “img-circle” for circling the image and “img-polaroid” to give box-shadow and border radius to the image.</p>
+<h3>Drop down menu</h3>
+<p>To add a drop down menu to the existing navigation bar as shown in the demo page, you have to add the following markup inside a “li” element.</p>
+<div><div id="highlighter_413650" class="syntaxhighlighter  xml"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">li</code> <code class="xml color1">class</code><code class="xml plain">=</code><code class="xml string">"dropdown"</code><code class="xml plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">a</code> <code class="xml color1">href</code><code class="xml plain">=</code><code class="xml string">"#"</code> <code class="xml color1">class</code><code class="xml plain">=</code><code class="xml string">"dropdown-toggle"</code> <code class="xml color1">data-toggle</code><code class="xml plain">=</code><code class="xml string">"dropdown"</code><code class="xml plain">&gt;</code></div><div class="line number3 index2 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">i</code> <code class="xml color1">class</code><code class="xml plain">=</code><code class="xml string">"icon-th-large"</code><code class="xml plain">&gt;&lt;/</code><code class="xml keyword">i</code><code class="xml plain">&gt; Drop Down</code></div><div class="line number4 index3 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">b</code> <code class="xml color1">class</code><code class="xml plain">=</code><code class="xml string">"caret"</code><code class="xml plain">&gt;&lt;/</code><code class="xml keyword">b</code><code class="xml plain">&gt;</code></div><div class="line number5 index4 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;/</code><code class="xml keyword">a</code><code class="xml plain">&gt;</code></div><div class="line number6 index5 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">ul</code> <code class="xml color1">class</code><code class="xml plain">=</code><code class="xml string">"dropdown-menu"</code><code class="xml plain">&gt;</code></div><div class="line number7 index6 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">li</code><code class="xml plain">&gt;&lt;</code><code class="xml keyword">a</code> <code class="xml color1">href</code><code class="xml plain">=</code><code class="xml string">"#"</code><code class="xml plain">&gt;Item1&lt;/</code><code class="xml keyword">a</code><code class="xml plain">&gt;&lt;/</code><code class="xml keyword">li</code><code class="xml plain">&gt;</code></div><div class="line number8 index7 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">li</code><code class="xml plain">&gt;&lt;</code><code class="xml keyword">a</code> <code class="xml color1">href</code><code class="xml plain">=</code><code class="xml string">"#"</code><code class="xml plain">&gt;Item2&lt;/</code><code class="xml keyword">a</code><code class="xml plain">&gt;&lt;/</code><code class="xml keyword">li</code><code class="xml plain">&gt;</code></div><div class="line number9 index8 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">li</code><code class="xml plain">&gt;&lt;</code><code class="xml keyword">a</code> <code class="xml color1">href</code><code class="xml plain">=</code><code class="xml string">"#"</code><code class="xml plain">&gt;Item3&lt;/</code><code class="xml keyword">a</code><code class="xml plain">&gt;&lt;/</code><code class="xml keyword">li</code><code class="xml plain">&gt;</code></div><div class="line number10 index9 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;/</code><code class="xml keyword">ul</code><code class="xml plain">&gt;</code></div><div class="line number11 index10 alt2"><code class="xml plain">&lt;/</code><code class="xml keyword">li</code><code class="xml plain">&gt;</code></div></div></td></tr></tbody></table></div></div>
+<p>For a dropdown, you have to wrap the parent element using the “dropdown” class and then use the default “a” markup for the caret and then nest another ul element with the items.</p>
+<p>I have shown you the basics of using Twitter Bootstrap and how can you get started with it. Now that you have understood how it works, I hope it will be easier for you to understand their original documentations. Go through it and you will definitely find a lots of new features as you explore.</p>
+<p>In my next tutorial, I will aim at building responsive websites using Twitter Bootstrap. So stay in touch with us and <a href="http://www.sitepoint.com/newsletter/">subscribe to our newsletter</a> if you don’t want to miss my next tutorial, which will be twice as exciting this one.</p>
+<p><em>Comments on this article are closed. Have a question about Twitter Bootstrap? Why not ask it on our <a href="http://www.sitepoint.com/forums/forumdisplay.php?53-CSS-amp-Page-Layout?utm_source=sitepoint&utm_medium=link&utm_campaign=forumlink">forums</a>? </em></p>
+
+        </section>
+
+        <div class="article__author-bios">
+          
+    <div class="contributor contributor--large">
+
+          <figure class="contributor_avatar">
+      <a href="http://www.sitepoint.com/author/sfrahman/">
+        <img src="./Twitter Bootstrap Tutorial_files/fazle-96x96.png" width="96" height="96" alt="Syed Fazle Rahman" class="avatar avatar-96 wp-user-avatar wp-user-avatar-96 alignnone photo">      </a>
+    </figure>
+  
+      <div class="contributor_details">
+
+          <div class="contributor_name">
+    <a href="http://www.sitepoint.com/author/sfrahman/">Syed Fazle Rahman</a>
+  </div>
+
+  
+    <div class="contributor_title">
+      A programmer, a designer and a non-traditional Engineer..    </div>
+
+  
+        <p class="contributor_longdesc">"It only ends once. Anything that happens before that is just progress". 
+
+I am a Computer Science Engineer from India with great interest in Web designing and User Experiences. I love to read and explore technical stuffs when free. I am also a part time freelancer and love to do designing related work.</p>
+
+        <ul class="contributor_social">
+          <li><a href="https://twitter.com/fazlerocks" target="_blank"><i class="icon-twitter"></i></a></li><li><a href="http://facebook.com/rahman.syedfazle" target="_blank"><i class="icon-facebook"></i></a></li><li><a href="http://www.linkedin.com/in/syedfazlerahman" target="_blank"><i class="icon-linkedin"></i></a></li><li><a href="https://plus.google.com/+SyedFazleRahman" target="_blank"><i class="icon-google-plus"></i></a></li>        </ul>
+      </div>
+    </div>
+
+          </div>
+
+                  <div class="related-content">
+            <h2>Related Articles</h2>
+            <ul class="article-list article-list--related">
+              <li class="article-list_item  tile post-tile">
+  <article class="article article--micro article--micro--related category-css " data-disqus-id="http://www.sitepoint.com/understanding-twitter-bootstrap-3/">
+    <header class="article_category"><h2 class="article_category_title"><a href="http://www.sitepoint.com/css/">CSS</a><a class="comment-info" href="http://www.sitepoint.com/understanding-twitter-bootstrap-3/#comments"><span class="comment-info__count">56</span><span class="comment-info__icon icon-comment"></span></a></h2></header>
+    
+    <section class="article_header">
+      <h1 class="article_title"><a href="http://www.sitepoint.com/understanding-twitter-bootstrap-3/">Understanding Twitter Bootstrap 3</a></h1>
+      <div class="contributor article_contributor">
+        <p class="contributor_name article_author-name">by <a href="http://www.sitepoint.com/author/sfrahman/">Syed Fazle Rahman</a></p>
+      </div>
+      
+      <div class="article_meta-data"><p class="article_pub-date"><time datetime="2013-09-19 07:57:14" pubdate="">Sep 19, 2013</time></p></div>
+      </section>
+  </article>
+</li><li class="article-list_item  tile post-tile">
+  <article class="article article--micro article--micro--related category-css " data-disqus-id="http://www.sitepoint.com/whats-new-bootstrap-3/">
+    <header class="article_category"><h2 class="article_category_title"><a href="http://www.sitepoint.com/css/">CSS</a><a class="comment-info" href="http://www.sitepoint.com/whats-new-bootstrap-3/#comments"><span class="comment-info__count">11</span><span class="comment-info__icon icon-comment"></span></a></h2></header>
+    
+    <section class="article_header">
+      <h1 class="article_title"><a href="http://www.sitepoint.com/whats-new-bootstrap-3/">What's New in Bootstrap 3</a></h1>
+      <div class="contributor article_contributor">
+        <p class="contributor_name article_author-name">by <a href="http://www.sitepoint.com/author/igerchev/">Ivaylo Gerchev</a></p>
+      </div>
+      
+      <div class="article_meta-data"><p class="article_pub-date"><time datetime="2013-09-05 06:20:28" pubdate="">Sep 05, 2013</time></p></div>
+      </section>
+  </article>
+</li><li class="article-list_item  tile post-tile">
+  <article class="article article--micro article--micro--related category-css " data-disqus-id="http://www.sitepoint.com/building-responsive-websites-using-twitter-bootstrap/">
+    <header class="article_category"><h2 class="article_category_title"><a href="http://www.sitepoint.com/css/">CSS</a><a class="comment-info" href="http://www.sitepoint.com/building-responsive-websites-using-twitter-bootstrap/#comments"><span class="comment-info__count">40</span><span class="comment-info__icon icon-comment"></span></a></h2></header>
+    
+    <section class="article_header">
+      <h1 class="article_title"><a href="http://www.sitepoint.com/building-responsive-websites-using-twitter-bootstrap/">Building Responsive Websites Using Twitter BootStrap</a></h1>
+      <div class="contributor article_contributor">
+        <p class="contributor_name article_author-name">by <a href="http://www.sitepoint.com/author/sfrahman/">Syed Fazle Rahman</a></p>
+      </div>
+      
+      <div class="article_meta-data"><p class="article_pub-date"><time datetime="2013-08-22 08:00:09" pubdate="">Aug 22, 2013</time></p></div>
+      </section>
+  </article>
+</li>          </ul>
+        </div>
+        
+        <div class="promo-panel">
+          <div class="widget maestro maestro-content-type-product " id="maestro-product-29"><div class="promo-panel_media-object"><img src="./Twitter Bootstrap Tutorial_files/jshtml-basics1_medium_3d.png"></div>
+<div class="promo-panel_content">
+  <h1 class="promo-panel_title">
+    Free book: Jump Start HTML5 Basics
+  </h1>
+  <p>Grab a free copy of one our latest ebooks! Packed with hints and tips on HTML5's most powerful new features.</p>
+  <form class="promo-panel_action"><input type="email" name="email" class="promo-panel_email" placeholder="email address"><input type="hidden" name="content" value="29"><button class="button radius">Claim Book<div class="spinner" role="progressbar" style="position: relative; width: 0px; z-index: 2000000000;"><div style="position: absolute; top: -1px; opacity: 0.25; -webkit-animation: opacity-72-25-0-13 1.4285714285714286s linear infinite;"><div style="position: absolute; width: 5px; height: 2px; background-color: rgb(0, 0, 0); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(0deg) translate(7px, 0px); border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px; background-position: initial initial; background-repeat: initial initial;"></div></div><div style="position: absolute; top: -1px; opacity: 0.25; -webkit-animation: opacity-72-25-1-13 1.4285714285714286s linear infinite;"><div style="position: absolute; width: 5px; height: 2px; background-color: rgb(0, 0, 0); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(27deg) translate(7px, 0px); border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px; background-position: initial initial; background-repeat: initial initial;"></div></div><div style="position: absolute; top: -1px; opacity: 0.25; -webkit-animation: opacity-72-25-2-13 1.4285714285714286s linear infinite;"><div style="position: absolute; width: 5px; height: 2px; background-color: rgb(0, 0, 0); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(55deg) translate(7px, 0px); border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px; background-position: initial initial; background-repeat: initial initial;"></div></div><div style="position: absolute; top: -1px; opacity: 0.25; -webkit-animation: opacity-72-25-3-13 1.4285714285714286s linear infinite;"><div style="position: absolute; width: 5px; height: 2px; background-color: rgb(0, 0, 0); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(83deg) translate(7px, 0px); border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px; background-position: initial initial; background-repeat: initial initial;"></div></div><div style="position: absolute; top: -1px; opacity: 0.25; -webkit-animation: opacity-72-25-4-13 1.4285714285714286s linear infinite;"><div style="position: absolute; width: 5px; height: 2px; background-color: rgb(0, 0, 0); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(110deg) translate(7px, 0px); border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px; background-position: initial initial; background-repeat: initial initial;"></div></div><div style="position: absolute; top: -1px; opacity: 0.25; -webkit-animation: opacity-72-25-5-13 1.4285714285714286s linear infinite;"><div style="position: absolute; width: 5px; height: 2px; background-color: rgb(0, 0, 0); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(138deg) translate(7px, 0px); border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px; background-position: initial initial; background-repeat: initial initial;"></div></div><div style="position: absolute; top: -1px; opacity: 0.25; -webkit-animation: opacity-72-25-6-13 1.4285714285714286s linear infinite;"><div style="position: absolute; width: 5px; height: 2px; background-color: rgb(0, 0, 0); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(166deg) translate(7px, 0px); border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px; background-position: initial initial; background-repeat: initial initial;"></div></div><div style="position: absolute; top: -1px; opacity: 0.25; -webkit-animation: opacity-72-25-7-13 1.4285714285714286s linear infinite;"><div style="position: absolute; width: 5px; height: 2px; background-color: rgb(0, 0, 0); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(193deg) translate(7px, 0px); border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px; background-position: initial initial; background-repeat: initial initial;"></div></div><div style="position: absolute; top: -1px; opacity: 0.25; -webkit-animation: opacity-72-25-8-13 1.4285714285714286s linear infinite;"><div style="position: absolute; width: 5px; height: 2px; background-color: rgb(0, 0, 0); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(221deg) translate(7px, 0px); border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px; background-position: initial initial; background-repeat: initial initial;"></div></div><div style="position: absolute; top: -1px; opacity: 0.25; -webkit-animation: opacity-72-25-9-13 1.4285714285714286s linear infinite;"><div style="position: absolute; width: 5px; height: 2px; background-color: rgb(0, 0, 0); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(249deg) translate(7px, 0px); border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px; background-position: initial initial; background-repeat: initial initial;"></div></div><div style="position: absolute; top: -1px; opacity: 0.25; -webkit-animation: opacity-72-25-10-13 1.4285714285714286s linear infinite;"><div style="position: absolute; width: 5px; height: 2px; background-color: rgb(0, 0, 0); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(276deg) translate(7px, 0px); border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px; background-position: initial initial; background-repeat: initial initial;"></div></div><div style="position: absolute; top: -1px; opacity: 0.25; -webkit-animation: opacity-72-25-11-13 1.4285714285714286s linear infinite;"><div style="position: absolute; width: 5px; height: 2px; background-color: rgb(0, 0, 0); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(304deg) translate(7px, 0px); border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px; background-position: initial initial; background-repeat: initial initial;"></div></div><div style="position: absolute; top: -1px; opacity: 0.25; -webkit-animation: opacity-72-25-12-13 1.4285714285714286s linear infinite;"><div style="position: absolute; width: 5px; height: 2px; background-color: rgb(0, 0, 0); box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; -webkit-transform-origin: 0% 50%; -webkit-transform: rotate(332deg) translate(7px, 0px); border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px; background-position: initial initial; background-repeat: initial initial;"></div></div></div></button></form>
+</div></div>        </div>
+
+                
+        <a id="comments"></a>
+        
+<div id="disqus_thread"><iframe id="dsq-2" data-disqus-uid="2" allowtransparency="true" frameborder="0" tabindex="0" title="Disqus" width="100%" src="./Twitter Bootstrap Tutorial_files/saved_resource.htm" scrolling="no" horizontalscrolling="no" verticalscrolling="no" style="width: 100% !important; border: none !important; overflow: hidden !important; height: 6479px !important;"></iframe></div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var disqus_url = 'http://www.sitepoint.com/twitter-bootstrap-tutorial-handling-complex-designs/';
+    var disqus_identifier = '68194 http://www.sitepoint.com/?p=67442';
+    var disqus_container_id = 'disqus_thread';
+    var disqus_domain = 'disqus.com';
+    var disqus_shortname = 'sitepointproduction';
+    var disqus_title = "Twitter Bootstrap Tutorial &#8211; Handling Complex Designs";
+        var disqus_config = function () {
+        var config = this; // Access to the config object
+        config.language = '';
+
+        /*
+           All currently supported events:
+            * preData — fires just before we request for initial data
+            * preInit - fires after we get initial data but before we load any dependencies
+            * onInit  - fires when all dependencies are resolved but before dtpl template is rendered
+            * afterRender - fires when template is rendered but before we show it
+            * onReady - everything is done
+         */
+
+        config.callbacks.preData.push(function() {
+            // clear out the container (its filled for SEO/legacy purposes)
+            document.getElementById(disqus_container_id).innerHTML = '';
+        });
+                config.callbacks.onReady.push(function() {
+            // sync comments in the background so we don't block the page
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = '?cf_action=sync_comments&post_id=68194';
+
+            var firstScript = document.getElementsByTagName( "script" )[0];
+            firstScript.parentNode.insertBefore(script, firstScript);
+        });
+                    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var DsqLocal = {
+        'trackbacks': [
+        ],
+        'trackback_url': "http:\/\/www.sitepoint.com\/twitter-bootstrap-tutorial-handling-complex-designs\/trackback\/"    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.' + 'disqus.com' + '/embed.js?pname=wordpress&pver=2.74';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+/* ]]> */
+</script>
+
+      </article>
+    </div>
+  
+  <aside class="page_aside article_aside">
+    <div class="adrow--top">
+      <div class="widget maestro maestro-content-type-ad hide-for-mobile-SP" id="maestro-product-1"><!-- SP2013_Articles_300x250_1 -->
+<div id="div-gpt-ad-1392428092543-0" style="width:300px; height:250px;" class="adspot">
+    <script type="text/javascript">googletag.cmd.push(function() { googletag.display("div-gpt-ad-1392428092543-0"); });</script>
+ <div id="google_ads_iframe_/7448792/SP2013_Articles_300x250_1_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/7448792/SP2013_Articles_300x250_1_0" name="google_ads_iframe_/7448792/SP2013_Articles_300x250_1_0" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:"<html><body style='background:transparent'></body></html>"" style="border: 0px; vertical-align: bottom;"></iframe></div><iframe id="google_ads_iframe_/7448792/SP2013_Articles_300x250_1_0__hidden__" name="google_ads_iframe_/7448792/SP2013_Articles_300x250_1_0__hidden__" width="0" height="0" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:"<html><body style='background:transparent'></body></html>"" style="border: 0px; vertical-align: bottom; visibility: hidden; display: none;"></iframe></div></div>    </div>
+    <div class="adrow--middle">
+      <div class="widget maestro maestro-content-type-ad hide-for-mobile-SP" id="maestro-product-154"><!-- Sitepoint_125x125_1 -->
+<div id="div-gpt-ad-1398796977286-0" style="width: 125px; height: 125px; display: none;" class="adspot">
+    <script type="text/javascript">googletag.cmd.push(function() { googletag.display("div-gpt-ad-1398796977286-0"); });</script>
+ <div id="google_ads_iframe_/7448792/Sitepoint_125x125_1_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/7448792/Sitepoint_125x125_1_0" name="google_ads_iframe_/7448792/Sitepoint_125x125_1_0" width="125" height="125" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:"<html><body style='background:transparent'></body></html>"" style="border: 0px; vertical-align: bottom;"></iframe></div></div></div><div class="widget maestro maestro-content-type-ad hide-for-mobile-SP" id="maestro-product-155"><!-- Sitepoint_125x125_2 -->
+<div id="div-gpt-ad-1398885102914-0" style="width: 125px; height: 125px; display: none;" class="adspot">
+    <script type="text/javascript">googletag.cmd.push(function() { googletag.display("div-gpt-ad-1398885102914-0"); });</script>
+ <div id="google_ads_iframe_/7448792/Sitepoint_125x125_2_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/7448792/Sitepoint_125x125_2_0" name="google_ads_iframe_/7448792/Sitepoint_125x125_2_0" width="125" height="125" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:"<html><body style='background:transparent'></body></html>"" style="border: 0px; vertical-align: bottom;"></iframe></div></div></div><div class="widget maestro maestro-content-type-ad hide-for-mobile-SP" id="maestro-product-156"><!-- Sitepoint_125x125_3 -->
+<div id="div-gpt-ad-1399402885093Â­-0" style="width: 125px; height: 125px; display: none;" class="adspot">
+    <script type="text/javascript">googletag.cmd.push(function() { googletag.display("div-gpt-ad-1399402885093Â­-0"); });</script>
+ <div id="google_ads_iframe_/7448792/Sitepoint_125x125_3_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/7448792/Sitepoint_125x125_3_0" name="google_ads_iframe_/7448792/Sitepoint_125x125_3_0" width="125" height="125" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:"<html><body style='background:transparent'></body></html>"" style="border: 0px; vertical-align: bottom;"></iframe></div></div></div><div class="widget maestro maestro-content-type-ad hide-for-mobile-SP" id="maestro-product-157"><!-- Sitepoint_125x125_4 -->
+<div id="div-gpt-ad-Â­1399402967001Â­-0" style="width: 125px; height: 125px; display: none;" class="adspot">
+    <script type="text/javascript">googletag.cmd.push(function() { googletag.display("div-gpt-ad-Â­1399402967001Â­-0"); });</script>
+ <div id="google_ads_iframe_/7448792/Sitepoint_125x125_4_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/7448792/Sitepoint_125x125_4_0" name="google_ads_iframe_/7448792/Sitepoint_125x125_4_0" width="125" height="125" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:"<html><body style='background:transparent'></body></html>"" style="border: 0px; vertical-align: bottom;"></iframe></div></div></div><div class="widget maestro maestro-content-type-ad hide-for-mobile-SP" id="maestro-product-158"><!-- Sitepoint_125x125_5 -->
+<div id="div-gpt-ad-1399403011406-Â­0" style="width: 125px; height: 125px; display: none;" class="adspot">
+    <script type="text/javascript">googletag.cmd.push(function() { googletag.display("div-gpt-ad-1399403011406-Â­0"); });</script>
+ <div id="google_ads_iframe_/7448792/Sitepoint_125x125_5_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/7448792/Sitepoint_125x125_5_0" name="google_ads_iframe_/7448792/Sitepoint_125x125_5_0" width="125" height="125" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:"<html><body style='background:transparent'></body></html>"" style="border: 0px; vertical-align: bottom;"></iframe></div></div></div><div class="widget maestro maestro-content-type-ad hide-for-mobile-SP" id="maestro-product-159"><!-- Sitepoint_125x125_6 -->
+<div id="div-gpt-ad-1399403050173-Â­0" style="width: 125px; height: 125px; display: none;" class="adspot">
+    <script type="text/javascript">googletag.cmd.push(function() { googletag.display("div-gpt-ad-1399403050173-Â­0"); });</script>
+ <div id="google_ads_iframe_/7448792/Sitepoint_125x125_6_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/7448792/Sitepoint_125x125_6_0" name="google_ads_iframe_/7448792/Sitepoint_125x125_6_0" width="125" height="125" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:"<html><body style='background:transparent'></body></html>"" style="border: 0px; vertical-align: bottom;"></iframe></div></div></div>    </div>
+    <div class="adrow--bottom">
+      <div class="widget maestro maestro-content-type-ad hide-for-mobile-SP" id="maestro-product-49"><!-- SP2013_Articles_300x600_1 -->
+<div id="div-gpt-ad-1392428092543-4" style="width:300px; height:600px;" class="adspot">
+    <script type="text/javascript">googletag.cmd.push(function() { googletag.display("div-gpt-ad-1392428092543-4"); });</script>
+ <div id="google_ads_iframe_/7448792/SP2013_Articles_300x600_1_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/7448792/SP2013_Articles_300x600_1_0" name="google_ads_iframe_/7448792/SP2013_Articles_300x600_1_0" width="300" height="600" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:"<html><body style='background:transparent'></body></html>"" style="border: 0px; vertical-align: bottom;"></iframe></div></div></div>    </div>
+  </aside>
+
+</main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="row">
+
+        <ul class="footer-links">
+          <li class="foot-link_item">
+            <h3>About</h3>
+          </li>
+          <li class="foot-link_item">
+            <a href="http://www.sitepoint.com/about-us/">About us</a>
+          </li>
+          <li class="foot-link_item">
+            <a href="http://www.sitepoint.com/advertising">Advertise</a>
+          </li>
+          <li class="foot-link_item">
+            <a href="http://www.sitepoint.com/legals">Legals</a>
+          </li>
+          <li class="foot-link_item">
+            <a href="mailto:feedback@sitepoint.com">Feedback</a>
+          </li>
+        </ul>
+
+        <ul class="footer-links">
+          <li class="foot-link_item">
+            <h3>Our Sites</h3>
+          </li>
+          <li class="foot-link_item">
+            <a href="https://learnable.com/" target="_blank">Learnable</a>
+          </li>
+          <li class="foot-link_item">
+            <a href="http://reference.sitepoint.com/" target="_blank">Reference</a>
+          </li>
+          <li class="foot-link_item">
+            <a href="http://www.sitepoint.com/hosting-reviews/" target="_blank">Hosting Reviews</a>
+          </li>
+          <li class="foot-link_item">
+            <a href="http://www.sitepoint.com/web-foundations/">Web Foundations</a>
+          </li>
+        </ul>
+
+        <ul class="footer-links">
+          <li class="foot-link_item">
+            <h3>Connect</h3>
+          </li>
+          <li class="foot-link_item foot-link_item--icons">
+            <a href="http://www.sitepoint.com/feed"><i class="icon-rss icon-blocks icon-blocks--rss"></i></a>
+            <a href="http://www.sitepoint.com/newsletter"><i class="icon-envelope-alt icon-blocks icon-blocks--newsletter"></i></a>
+            <a href="https://www.facebook.com/sitepoint" target="_blank"><i class="icon-facebook icon-blocks icon-blocks--facebook"></i></a>
+            <a href="http://twitter.com/sitepointdotcom" target="_blank"><i class="icon-twitter icon-blocks icon-blocks--twitter"></i></a>
+            <a href="https://plus.google.com/+sitepoint" target="_blank"><i class="icon-google-plus icon-blocks icon-blocks--google-plus"></i></a>
+          </li>
+        </ul>
+
+        <p class="site-footer_copyright">
+          © 2000 – 2014 SitePoint Pty. Ltd.
+        </p>
+
+      </div>
+    </footer>
+
+    <div id="search-dropdown" style="top: 60px; left: auto; right: 20px;">
+      <div data-role="search-for">
+        <a class="search-link" href="http://www.sitepoint.com/twitter-bootstrap-tutorial-handling-complex-designs/#">Search for...</a>
+      </div>
+      <ul data-role="results"></ul>
+    </div>
+
+    				<script type="text/javascript"><!--
+			var seriesdropdown = document.getElementById("orgseries_dropdown");
+			if (seriesdropdown) { 
+			 function onSeriesChange() {
+					if ( seriesdropdown.options[seriesdropdown.selectedIndex].value != ( 0 || -1 ) ) {
+						location.href = "http://www.sitepoint.com/series/"+seriesdropdown.options[seriesdropdown.selectedIndex].value;
+					}
+				}
+				seriesdropdown.onchange = onSeriesChange;
+			}
+			--></script>
+			<div class="triggered-cta-box-wrapper-bg" style="display: none;"></div>
+<div id="triggered-cta-box-wrapper" class="triggered-cta-box-wrapper triggered-cta-box-wrapper--fullpage" style="display: none;"><a href="http://www.sitepoint.com/twitter-bootstrap-tutorial-handling-complex-designs/#close" id="triggered-cta-box-close">x</a><div><!-- Learnable Free Trial (201405-free-trial) --><div class="close-link-wrapper">  <a href="http://www.sitepoint.com/twitter-bootstrap-tutorial-handling-complex-designs/#" class="triggered-cta-box-close-link">Go to SitePoint.com</a></div><div class="triggered-cta-box campaign-free-trial">  <div class="campaign-free-trial__row1">    <h1>Learn HTML5, Angular.js<br>Responsive Design &amp;&nbsp;more</h1>  </div>  <div class="campaign-free-trial__row2">    <a class="submit-btn btn-buy button" href="https://learnable.com/join/231/account?utm_source=sitepoint&utm_medium=modal&utm_content=005&utm_campaign=free-trial">Start Free 14 Day Trial</a>  </div>  <div class="campaign-free-trial__row3">    <img class="logo-learnable" src="./Twitter Bootstrap Tutorial_files/1399438357popup-logo-learnable-white-90x21.png" alt="Learnable logo">    <img src="./Twitter Bootstrap Tutorial_files/1399438359popup-logo-sitepoint-white-109x24.png" alt="Sitepoint logo">  </div></div></div></div>
+<script type="text/javascript">
+  (function () {
+    var variant = (Math.random() < 0.5 ? "a" : "b");
+    var boxContents = {
+      a: '<!-- Free ebook: Triggered CTA Box custom style (201403-free-ebook-popup) --><div class="close-link-wrapper">  <a href="#" class="triggered-cta-box-close-link">Go to SitePoint.com</a></div><div class="triggered-cta-box campaign-free-ebook">  <div class="campaign-free-ebook__row1">    <div class="campaign-free-ebook__row1__column1">      <p class="logo-wrapper"><img src="http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2014/02/1392770725sp-logo-42x50.png" alt="SitePoint logo" /></p>      <h1>Free book: Jump Start HTML5 Basics</h1>      <p>Grab a free copy of one our latest ebooks! Packed with hints and tips on HTML5&#39;s most powerful new features.</p>    </div>    <div class="campaign-free-ebook__row1__column2">      <img class="books-image" src="//d2sis3lil8ndrq.cloudfront.net/books/jshtml-basics1_medium_3d.png" alt="Jump Start HTML Basics book cover image" />    </div>  </div>  <div class="campaign-free-ebook__row2">    <form>      <div class="campaign-free-ebook__row2__div1">        <div class="campaign-free-ebook__row2__div1__column1">          <input type="email" name="email" id="email" placeholder="Email address">        </div>        <div class="campaign-free-ebook__row2__div1__column2">          <input type="hidden" name="submitted" id="submitted" value="true" />          <input type="hidden" name="content" value="29">          <button id="triggered-cta-box-submit" class="btn-buy button success">Claim Book</button>        </div>      </div>      <div class="campaign-free-ebook__row2__div2">        <div class="campaign-free-ebook__row2__div2__column1">          <p id="triggered-cta-box-message"></p>        </div>      </div>    </form>  </div></div>',
+      b: '<!-- Learnable Free Trial (201405-free-trial) --><div class="close-link-wrapper">  <a href="#" class="triggered-cta-box-close-link">Go to SitePoint.com</a></div><div class="triggered-cta-box campaign-free-trial">  <div class="campaign-free-trial__row1">    <h1>Learn HTML5, Angular.js<br/>Responsive Design &amp;&nbsp;more</h1>  </div>  <div class="campaign-free-trial__row2">    <a class="submit-btn btn-buy button" href="https://learnable.com/join/231/account?utm_source=sitepoint&utm_medium=modal&utm_content=005&utm_campaign=free-trial">Start Free 14 Day Trial</a>  </div>  <div class="campaign-free-trial__row3">    <img class="logo-learnable" src="//dab1nmslvvntp.cloudfront.net/wp-content/uploads/2014/05/1399438357popup-logo-learnable-white-90x21.png" alt="Learnable logo" />    <img src="//dab1nmslvvntp.cloudfront.net/wp-content/uploads/2014/05/1399438359popup-logo-sitepoint-white-109x24.png" alt="Sitepoint logo" />  </div></div>'
+    };
+    var campaigns = {
+      a: "201404-free-ebook-popup",
+      b: "201405-free-trial"
+    };
+    var triggeredCtaBoxWrapperEl = document.getElementById("triggered-cta-box-wrapper");
+    var boxContentsEl = document.createElement("div");
+
+    boxContentsEl.innerHTML = boxContents[variant];
+    triggeredCtaBoxWrapperEl.appendChild(boxContentsEl);
+
+    window.triggeredCtaBox = {
+      variant: variant,
+      boxSelector: "#triggered-cta-box-wrapper",
+      bgSelector: ".triggered-cta-box-wrapper-bg",
+      closeSelector: "#triggered-cta-box-close",
+      closeLinkSelector: ".triggered-cta-box-close-link",
+      campaign: campaigns[variant],
+      boxType: "fullpage",
+      mobileEnabled: false,
+      cookieLife: 14,
+      triggerType: "time",
+      triggerRequiredPages: 1,
+      triggerValue: 4,
+      slideSpeed: 1000,
+      ajaxUrl: "https://www.sitepoint.com/wp-admin/admin-ajax.php"
+    };
+  })();
+</script>
+<!--Plugin WP Missed Schedule 2013.1231.2013 Active - Tag 6707293c0218e2d8b7aa38d418ffa608-->
+
+<!-- This site is patched which an important unfixed problem since WordPress 2.5+ to 3.9+ -->
+
+
+
+<!-- START Parse.ly Include: Standard -->
+<div id="parsely-root" style="display: none">
+  <div id="parsely-cfg" data-parsely-site="sitepoint.com"></div>
+<script id="parsely-script" async="" src="./Twitter Bootstrap Tutorial_files/p.js"></script></div>
+<script>
+(function(s, p, d) {
+  var h=d.location.protocol, i=p+"-"+s,
+      e=d.getElementById(i), r=d.getElementById(p+"-root"),
+      u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+      :"static."+p+".com";
+  if (e) return;
+  e = d.createElement(s); e.id = i; e.async = true;
+  e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+})("script", "parsely", document);
+</script>
+<!-- END Parse.ly Include: Standard -->
+
+<script type="text/javascript" src="./Twitter Bootstrap Tutorial_files/shCore.js"></script>
+<script type="text/javascript" src="./Twitter Bootstrap Tutorial_files/shBrushXml.js"></script>
+<script type="text/javascript">
+	(function(){
+		var corecss = document.createElement('link');
+		var themecss = document.createElement('link');
+		var corecssurl = "http://www.sitepoint.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shCore.css?ver=3.0.83c";
+		if ( corecss.setAttribute ) {
+				corecss.setAttribute( "rel", "stylesheet" );
+				corecss.setAttribute( "type", "text/css" );
+				corecss.setAttribute( "href", corecssurl );
+		} else {
+				corecss.rel = "stylesheet";
+				corecss.href = corecssurl;
+		}
+		document.getElementsByTagName("head")[0].insertBefore( corecss, document.getElementById("syntaxhighlighteranchor") );
+		var themecssurl = "http://www.sitepoint.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shThemeDefault.css?ver=3.0.83c";
+		if ( themecss.setAttribute ) {
+				themecss.setAttribute( "rel", "stylesheet" );
+				themecss.setAttribute( "type", "text/css" );
+				themecss.setAttribute( "href", themecssurl );
+		} else {
+				themecss.rel = "stylesheet";
+				themecss.href = themecssurl;
+		}
+		//document.getElementById("syntaxhighlighteranchor").appendChild(themecss);
+		document.getElementsByTagName("head")[0].insertBefore( themecss, document.getElementById("syntaxhighlighteranchor") );
+	})();
+	SyntaxHighlighter.config.strings.expandSource = '+ expand source';
+	SyntaxHighlighter.config.strings.help = '?';
+	SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+	SyntaxHighlighter.config.strings.noBrush = 'Can\'t find brush for: ';
+	SyntaxHighlighter.config.strings.brushNotHtmlScript = 'Brush wasn\'t configured for html-script option: ';
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+	SyntaxHighlighter.defaults['wrap-lines'] = false;
+	SyntaxHighlighter.all();
+</script>
+<script type="text/javascript" src="./Twitter Bootstrap Tutorial_files/scripts-foot-c8a0ec73e59e2ffba7cd12638f61110f.js"></script>
+<script>
+                    $(document).ready(function() {
+                      $(".article_header__buttons .twitter-share-button").on("click", function (evt) {
+                        evt.preventDefault();
+
+                        var url = "https://twitter.com/intent/tweet?" + $.param({
+                          url: "http://www.sitepoint.com/twitter-bootstrap-tutorial-handling-complex-designs/",
+                          text: "Twitter Bootstrap Tutorial &#8211; Handling Complex Designs",
+                          via: "sitepointdotcom"
+                        });
+
+                        var popupWidth = 550,
+                            popupHeight = 420,
+                            screenWidth = screen.width,
+                            screenHeight = screen.height,
+                            popupLeftOffset = Math.round(screenWidth / 2 - popupWidth / 2),
+                            popupTopOffset = 0;
+                        if (screenHeight > popupHeight) {
+                          popupTopOffset = Math.round(screenHeight / 2 - popupHeight / 2);
+                        }
+                        window.open(url, null, "scrollbars=yes,resizable=yes,toolbar=no,location=yes" + ", width=" + popupWidth + ", height=" + popupHeight + ", left=" + popupLeftOffset + ",top=" + popupTopOffset);
+                      });
+                    });
+                  </script><script>
+                    $(document).ready(function() {
+                      $(".article_header__buttons .subscribe-button").on("click", function (evt) {
+                        evt.preventDefault();
+
+                        var url = evt.target.href;
+
+                        var popupWidth = 550,
+                            popupHeight = 720,
+                            screenWidth = screen.width,
+                            screenHeight = screen.height,
+                            popupLeftOffset = Math.round(screenWidth / 2 - popupWidth / 2),
+                            popupTopOffset = 0;
+                        if (screenHeight > popupHeight) {
+                          popupTopOffset = Math.round(screenHeight / 2 - popupHeight / 2);
+                        }
+                        window.open(url, null, "scrollbars=yes,resizable=yes,toolbar=no,location=yes" + ", width=" + popupWidth + ", height=" + popupHeight + ", left=" + popupLeftOffset + ",top=" + popupTopOffset);
+                      });
+                    });
+                  </script><script>(function($){$(document).ready(function(){ if(typeof DISQUSWIDGETS != "undefined"){DISQUSWIDGETS.loadCount($, "sitepointproduction")} });})(jQuery);</script>
+  
+
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using memcached
+Object Caching 993/1090 objects using memcached
+Content Delivery Network via Amazon Web Services: CloudFront: dab1nmslvvntp.cloudfront.net
+
+ Served from: www.sitepoint.com @ 2014-05-10 02:50:23 by W3 Total Cache --><iframe id="google_osd_static_frame_1431443069595" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;"></iframe></body></html>

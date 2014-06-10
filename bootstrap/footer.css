@@ -1,0 +1,26 @@
+.footer{
+position:absolute;
+width:1520px;
+left:-180px;
+top:1120px;
+background:url(img/tex1.1.jpg);
+font-family:Stencil;
+font-size:1.1em;
+letter-spacing:2px;
+color:black;
+-webkit-transition:all 0.1s;
+border-top:2px dashed black;
+}
+.footer a{
+color:black;
+}
+.footer  a:hover{
+color:red;
+font-size:1.2em;
+text-decoration:none;
+}
+.footer  h3,p,a{
+margin-left:30px;
+font-size:1.3em;
+color:black;
+}
