@@ -1287,4 +1287,7 @@ color:gold;
 0%{ background-color:lime;}
 100%{background-color:red;}
 }
-
+.updates ul li.update-info{
+font-size:1em;
+color:white;
+}

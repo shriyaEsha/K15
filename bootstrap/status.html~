@@ -36,16 +36,12 @@ $(".container").css({'-webkit-filter':"grayscale(0%)",'-moz-filter':"grayscale(0
 });
 
 
-
-
 });
 </script>
-
-
 <style>
 
 body{
-background:url(img/tri.jpg);
+background:url(img/bg.jpg);
 background-size:cover;
 
 -webkit-perspective:8000;
@@ -57,12 +53,6 @@ background-size:cover;
    -moz-transform: scale(0.9);
 
 
-}
-
-.ch-img-3{
-background:url(img/peace.jpg);
-background-size:500px 500px;
-background-repeat:no-repeat;
 }
 
 </style>
@@ -84,7 +74,7 @@ background-repeat:no-repeat;
 	</form>
 </div>
 <div class="container">
-<a href="modal.html"><div class="main-header" id="main-header"></div></a>
+<a href="#"><div class="main-header" id="main-header"></div></a>
 <div class="btn" id="loginNow" style="top:25px; right:40px;"><a href="#">LOGIN</a></div>
 <div class="btn" style="top:25px; right:-125px;"><a href="login-modal.html">REGISTER</a></div>
 
@@ -101,7 +91,7 @@ background-repeat:no-repeat;
 <div class="black-circle" style="top:170px; right:-135px"></div>
 <div class="navbar img-1">
 <ul>
-<li class="nav-element" ><a href="status.html"><div class="nav-text">STATUS</div></a></li>
+<li class="nav-element" ><a href="#"><div class="nav-text">STATUS</div></a></li>
 <li class="nav-element"><a href="#"><div class="nav-text">HONE YOUR SKILLS</div></a>
 	<ul>
 		<li class="dd"><a href="problems.html"><div class="nav-text">EASY</div></a></li>
@@ -127,8 +117,7 @@ background-repeat:no-repeat;
 
 
 <div class="updates img-dark-wood">
-	<h3 style="color:#330099; margin-left:10px; font-size:2em; -webkit-animation:blink 0.6s infinite; -webkit-transition:all 0.4s;
-	">LATEST<i class="fa fa-flash fa-animated" style="-webkit-animation:flash 0.8s infinite"></i></h3>
+	<h3>HOT STUFF <i class="fa fa-flash fa-2x fa-animated" style="-webkit-animation:flash 0.8s infinite; -moz-animation:flash 0.8s infinite"></i></h3>
 	<ul>
 		<li class="update-info"><a href="#">PUT SOME CRAZY STUFF HERE!</a></li>
 		<li class="update-info"><a href="#">PUT SOME CRAZY STUFF HERE!</a></li>
@@ -158,52 +147,64 @@ background-repeat:no-repeat;
 <table style="left:260px">
 	<tr>
 	<thead>
-		<th>ID<i class="fa fa-key fa-2x fa-animated" id="icons"></i></th><th>NAME<i class="fa fa-tag fa-2x fa-animated" id="icons"></i></th><th>CODE<i class="fa fa-gear fa-2x fa-animated" id="icons"></i></th>
-		<th>USERS<i class="fa fa-group fa-2x fa-animated" id="icons"></i></th>
-		<th>ACC%<i class="fa fa-check-square-o fa-2x fa-animated" id="icons"></i></th>
-	
+		<th>ID</th><th>DATE</th><th>USER</th><th>PROBLEM</th><th>RESULT</th><th>TIME</th><th>MEM</th><th>LANG</th>
 	</thead>
 	</tr>
 	<tr>
-		<td>ID</td>
-		<td class="prob"><a href="compete-problem.html">ATOMIC SHELTERS</a></td>
-		<td class="prob"><a href="compete-problem.html">ATSHELT</a></td>
-		<td class="users"><a href="#">99</a></td>
-		<td class="acc"><a href="#">66.77</a></td>
+		
+			<td>12345</td><td>2014-06-08 07:08:24</td><td  class="user"><a href="#">CodeWhiz</a></td><td class="prob"><a href="compete-problem.html">ABCDE</a></td><td>NZEC</td><td>-</td><td>-</td><td>C++</td>
 	</tr>
 	<tr>
-		<td>ID</td>
-		<td class="prob"><a href="compete-problem.html">ATOMIC SHELTERS</a></td>
-		<td class="prob"><a href="compete-problem.html">ATSHELT</a></td>
-		<td class="users"><a href="#">99</a></td>
-		<td class="acc"><a href="#">66.77</a></td>
+		
+			<td>12345</td><td>2014-06-08 07:08:24</td><td  class="user"><a href="#">CodeWhiz</a></td><td class="prob"><a href="compete-problem.html">ABCDE</a></td><td>NZEC</td><td>-</td><td>-</td><td>C++</td>
+	</tr><tr>
+		
+			<td>12345</td><td>2014-06-08 07:08:24</td><td  class="user"><a href="#">CodeWhiz</a></td><td class="prob"><a href="compete-problem.html">ABCDE</a></td><td>NZEC</td><td>-</td><td>-</td><td>C++</td>
+	</tr><tr>
+		
+			<td>12345</td><td>2014-06-08 07:08:24</td><td  class="user"><a href="#">CodeWhiz</a></td><td class="prob"><a href="compete-problem.html">ABCDE</a></td><td>NZEC</td><td>-</td><td>-</td><td>C++</td>
+	</tr><tr>
+		
+			<td>12345</td><td>2014-06-08 07:08:24</td><td  class="user"><a href="#">CodeWhiz</a></td><td class="prob"><a href="compete-problem.html">ABCDE</a></td><td>NZEC</td><td>-</td><td>-</td><td>C++</td>
+	</tr><tr>
+		
+			<td>12345</td><td>2014-06-08 07:08:24</td><td  class="user"><a href="#">CodeWhiz</a></td><td class="prob"><a href="compete-problem.html">ABCDE</a></td><td>NZEC</td><td>-</td><td>-</td><td>C++</td>
+	</tr><tr>
+		
+			<td>12345</td><td>2014-06-08 07:08:24</td><td  class="user"><a href="#">CodeWhiz</a></td><td class="prob"><a href="compete-problem.html">ABCDE</a></td><td>NZEC</td><td>-</td><td>-</td><td>C++</td>
+	</tr><tr>
+		
+			<td>12345</td><td>2014-06-08 07:08:24</td><td  class="user"><a href="#">CodeWhiz</a></td><td class="prob"><a href="compete-problem.html">ABCDE</a></td><td>NZEC</td><td>-</td><td>-</td><td>C++</td>
 	</tr>
 	<tr>
-		<td>ID</td>
-		<td class="prob"><a href="compete-problem.html">ATOMIC SHELTERS</a></td>
-		<td class="prob"><a href="compete-problem.html">ATSHELT</a></td>
-		<td class="users"><a href="#">99</a></td>
-		<td class="acc"><a href="#">66.77</a></td>
+		
+			<td>12345</td><td>2014-06-08 07:08:24</td><td  class="user"><a href="#">CodeWhiz</a></td><td class="prob"><a href="compete-problem.html">ABCDE</a></td><td>NZEC</td><td>-</td><td>-</td><td>C++</td>
 	</tr>
 	<tr>
-		<td>ID</td>
-		<td class="prob"><a href="compete-problem.html">ATOMIC SHELTERS</a></td>
-		<td class="prob"><a href="compete-problem.html">ATSHELT</a></td>
-		<td class="users"><a href="#">99</a></td>
-		<td class="acc"><a href="#">66.77</a></td>
+		
+			<td>12345</td><td>2014-06-08 07:08:24</td><td  class="user"><a href="#">CodeWhiz</a></td><td class="prob"><a href="compete-problem.html">ABCDE</a></td><td>NZEC</td><td>-</td><td>-</td><td>C++</td>
+	</tr><tr>
+		
+			<td>12345</td><td>2014-06-08 07:08:24</td><td  class="user"><a href="#">CodeWhiz</a></td><td class="prob"><a href="compete-problem.html">ABCDE</a></td><td>NZEC</td><td>-</td><td>-</td><td>C++</td>
+	</tr><tr>
+		
+			<td>12345</td><td>2014-06-08 07:08:24</td><td  class="user"><a href="#">CodeWhiz</a></td><td class="prob"><a href="compete-problem.html">ABCDE</a></td><td>NZEC</td><td>-</td><td>-</td><td>C++</td>
+	</tr><tr>
+		
+			<td>12345</td><td>2014-06-08 07:08:24</td><td  class="user"><a href="#">CodeWhiz</a></td><td class="prob"><a href="compete-problem.html">ABCDE</a></td><td>NZEC</td><td>-</td><td>-</td><td>C++</td>
+	</tr><tr>
+		
+			<td>12345</td><td>2014-06-08 07:08:24</td><td  class="user"><a href="#">CodeWhiz</a></td><td class="prob"><a href="compete-problem.html">ABCDE</a></td><td>NZEC</td><td>-</td><td>-</td><td>C++</td>
+	</tr><tr>
+		
+			<td>12345</td><td>2014-06-08 07:08:24</td><td  class="user"><a href="#">CodeWhiz</a></td><td class="prob"><a href="compete-problem.html">ABCDE</a></td><td>NZEC</td><td>-</td><td>-</td><td>C++</td>
+	</tr><tr>
+		
+			<td>12345</td><td>2014-06-08 07:08:24</td><td  class="user"><a href="#">CodeWhiz</a></td><td class="prob"><a href="compete-problem.html">ABCDE</a></td><td>NZEC</td><td>-</td><td>-</td><td>C++</td>
 	</tr>
-	<tr>
-		<td>ID</td>
-		<td class="prob"><a href="compete-problem.html">ATOMIC SHELTERS</a></td>
-		<td class="prob"><a href="compete-problem.html">ATSHELT</a></td>
-		<td class="users"><a href="#">99</a></td>
-		<td class="acc"><a href="#">66.77</a></td>
-	</tr>
-	
-	
 </table>	
 
-<h1 class="rubberBand" style="top:20px;right:250px;font-size:2em">TUTORIALS</h1>
+<h1 class="tada" style="top:20px;right:250px;font-size:2em">STATUS PAGE</h1>
 
 
 <!--profile-->
@@ -224,7 +225,11 @@ background-repeat:no-repeat;
 					
 					</ul>
 					
-
+					
+<!--rank-->
+<div class="circles" id="slide" style="top:500px;right:-150px">RANK
+<div class="text-inner"><a href="#">My Rank</a></div>
+</div>
 
 <div class="footer" style="z-index:-2">
 

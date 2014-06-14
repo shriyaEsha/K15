@@ -1,7 +1,7 @@
 <html>
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.mt" src="js/jquery.min.js"></script>
 <script src="js/codegeeks.js"></script>
 
 <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -37,36 +37,59 @@ $(".container").css({'-webkit-filter':"grayscale(0%)",'-moz-filter':"grayscale(0
 
 
 
+//info-box
+
+$("#info").click(function(){
+$(".info-box").css({'opacity':"1",'webkit-transform':"scale(1)",'-moz-transform':"scale(1)"},"slow");
+$(".container").css({'-webkit-filter':"grayscale(50%) blur(5px)",'-moz-filter':"grayscale(50%) blur(5px)"});
+});
+$(".info-box .btn-x").click(function(){
+$(".info-box").css({'opacity':"0",'-webkit-transform':"scale(0)",'-moz-transform':"scale(0)"},"slow");
+$(".container").css({'-webkit-filter':"grayscale(0%)"});
+});
+
+//contest-box
+
+$("#contest").click(function(){
+$(".contest-box").css({'opacity':"1",'webkit-transform':"scale(1)"},"slow");
+$(".container").css({'-webkit-filter':"grayscale(50%) blur(5px)"});
+});
+$(".contest-box .btn-c-x").click(function(){
+$(".contest-box").css({'opacity':"0",'-webkit-transform':"scale(0)",'-moz-transform':"scale(0)",'transform':"scale(0)"},"slow");
+$(".container").css({'-webkit-filter':"grayscale(0%)"});
+});
+
 
 });
 </script>
-
-
 <style>
 
 body{
-background:url(img/tri.jpg);
+background:url(img/tex6.jpg);
 background-size:cover;
 
 -webkit-perspective:8000;
 -moz-perspective:8000;
+perspective:8000;
 }
 .container{
 
    -webkit-transform: scale(0.9);
-   -moz-transform: scale(0.9);
-
+	-moz-transform:scale(0.9);
+	transform:scale(0.9);
 
 }
-
-.ch-img-3{
-background:url(img/peace.jpg);
-background-size:500px 500px;
-background-repeat:no-repeat;
+.btn a:hover{
+color:black;
 }
-
 </style>
 
+<style>
+#blue{
+width:80px; height:80px;
+background-color:rgba(0,0,255,0.3);
+}
+</style>
 <body>
 <!--login-form-->
 <div class="login-form">
@@ -83,10 +106,42 @@ background-repeat:no-repeat;
 	</div>	
 	</form>
 </div>
+
+<!--rules-modal-->
+<div class="info-box">
+	<div class="details">
+		
+		<h3>RULES AND REGULATIONS:</h3>
+		<h3>Do you have anything awesome to contribute? Some unanswered questions you KNOW you can solve?</h3>
+		<h3>Then you've come to the right place!</h3>
+		<h3>Or are you stuck with a problem?</h3>
+		<h3>Any questions? Just hit the 'Ask a Question' link and get your queries answered in a jiffy.</h3>
+	</div>
+	<div class="btn-x" style="position:relative; top:100px; left:280px">
+	<div class="elem">I GOT IT!</div>
+	</div>	
+	
+</div>
+<!--contest-info modal-->
+<div class="contest-box">
+	<div class="details">
+		
+		<h3><u>CONTEST INFORMATION</u></h3>
+		<h3>Do you have anything awesome to contribute? Some unanswered questions you KNOW you can solve?</h3>
+		<h3>Then you've come to the right place!</h3>
+		<h3>Or are you stuck with a problem?</h3>
+		<h3>Any questions? Just hit the 'Ask a Question' link and get your queries answered in a jiffy.</h3>
+	</div>
+	<div class="btn-c-x" style="position:relative; top:100px; left:280px">
+	<div class="elem">I GOT IT!</div>
+	</div>	
+	
+</div>
+
 <div class="container">
-<a href="modal.html"><div class="main-header" id="main-header"></div></a>
-<div class="btn" id="loginNow" style="top:25px; right:40px;"><a href="#">LOGIN</a></div>
-<div class="btn" style="top:25px; right:-125px;"><a href="login-modal.html">REGISTER</a></div>
+<a href="#"><div class="main-header" id="main-header" style="color:white"></div></a>
+<div class="btn" id="loginNow" style="top:25px; right:40px;background-color:orange"><a href="#">LOGIN</a></div>
+<div class="btn" style="top:25px; right:-125px; background-color:orange"><a href="login-modal.html">REGISTER</a></div>
 
 
 
@@ -110,7 +165,7 @@ background-repeat:no-repeat;
 		<li class="dd"><a href="#"><div class="nav-text">CHALLENGE</div></a></li>
    </ul>
 </li>
-<li class="nav-element"><a href="compete.html"><div class="nav-text">THE ARENA</div></a></li>
+<li class="nav-element"><a href="#"><div class="nav-text">THE ARENA</div></a></li>
 <li class="nav-element"><a href="#"><div class="nav-text">COMMUNICODERS</div></a>
 <ul>
 	<li class="dd"><a href="blog.html"><div class="nav-text">BLOG POSTS</div></a></li>
@@ -153,61 +208,74 @@ background-repeat:no-repeat;
 	<div class="flop"><i class="fa fa-google-plus fa-3x" id="google"></i></div>
 </div>
 
+<!--links-->
+<div class="quick-links" style="top:235px; left:150px;">
+	<ul>
+		<a href="#"><li>CONTEST RANKINGS</li></a>
+		<a href="#" id="contest"><li>CONTEST INFO</li></a>
+		
+		<a href="#" id="info"><li>RULES <i class="fa fa-bullhorn" style="color:orange"></i></li></a>
+	</ul>
+</div>
+
+
 
 <!--table-->
-<table style="left:260px">
+<table style="left:260px;top:300px">
 	<tr>
 	<thead>
-		<th>ID<i class="fa fa-key fa-2x fa-animated" id="icons"></i></th><th>NAME<i class="fa fa-tag fa-2x fa-animated" id="icons"></i></th><th>CODE<i class="fa fa-gear fa-2x fa-animated" id="icons"></i></th>
-		<th>USERS<i class="fa fa-group fa-2x fa-animated" id="icons"></i></th>
+		<th>NAME<i class="fa fa-tag fa-2x fa-animated" id="icons"></i></th><th>CODE<i class="fa fa-gear fa-2x fa-animated" id="icons"></i></th>
+		<th>SUCCESSFUL SUB<i class="fa fa-group fa-2x fa-animated" id="icons"></i></th>
 		<th>ACC%<i class="fa fa-check-square-o fa-2x fa-animated" id="icons"></i></th>
 	
 	</thead>
 	</tr>
 	<tr>
-		<td>ID</td>
+		
 		<td class="prob"><a href="compete-problem.html">ATOMIC SHELTERS</a></td>
 		<td class="prob"><a href="compete-problem.html">ATSHELT</a></td>
 		<td class="users"><a href="#">99</a></td>
 		<td class="acc"><a href="#">66.77</a></td>
 	</tr>
 	<tr>
-		<td>ID</td>
+		
 		<td class="prob"><a href="compete-problem.html">ATOMIC SHELTERS</a></td>
 		<td class="prob"><a href="compete-problem.html">ATSHELT</a></td>
 		<td class="users"><a href="#">99</a></td>
 		<td class="acc"><a href="#">66.77</a></td>
 	</tr>
 	<tr>
-		<td>ID</td>
+		
 		<td class="prob"><a href="compete-problem.html">ATOMIC SHELTERS</a></td>
 		<td class="prob"><a href="compete-problem.html">ATSHELT</a></td>
 		<td class="users"><a href="#">99</a></td>
 		<td class="acc"><a href="#">66.77</a></td>
 	</tr>
 	<tr>
-		<td>ID</td>
+		
 		<td class="prob"><a href="compete-problem.html">ATOMIC SHELTERS</a></td>
 		<td class="prob"><a href="compete-problem.html">ATSHELT</a></td>
 		<td class="users"><a href="#">99</a></td>
 		<td class="acc"><a href="#">66.77</a></td>
 	</tr>
 	<tr>
-		<td>ID</td>
+		
 		<td class="prob"><a href="compete-problem.html">ATOMIC SHELTERS</a></td>
 		<td class="prob"><a href="compete-problem.html">ATSHELT</a></td>
 		<td class="users"><a href="#">99</a></td>
 		<td class="acc"><a href="#">66.77</a></td>
 	</tr>
-	
 	
 </table>	
 
-<h1 class="rubberBand" style="top:20px;right:250px;font-size:2em">TUTORIALS</h1>
 
+<div class="bubble" id="blue" style="top:250px; left:1000px; -webkit-animation:hover-up 1s linear infinite 0s">YOU'RE</div>
+<div class="bubble" id="blue" style="top:250px; left:1080px; -webkit-animation:hover-up 1s linear infinite 0.2s">IN</div>
+<div class="bubble" id="blue" style="top:250px; left:1160px; -webkit-animation:hover-up 1s linear infinite 0.3s">THE</div>
+<div class="bubble" id="blue" style="top:250px; left:1240px; -webkit-animation:hover-up 1s linear infinite 0.4s">ARENA!</div>
 
 <!--profile-->
-<ul class="ch-grid" style="top:200px; left:630px">
+<ul class="ch-grid" style="top:300px; left:630px">
 					<li>
 						<div class="ch-item ch-img-1">				
 							<div class="ch-info-wrap">
@@ -223,8 +291,6 @@ background-repeat:no-repeat;
 					</li>
 					
 					</ul>
-					
-
 
 <div class="footer" style="z-index:-2">
 

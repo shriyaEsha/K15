@@ -16,6 +16,18 @@
 <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
 <script>
 $(document).ready(function(){
+//accordion
+$("li .header").closest("ul").find(".acc-list").hide();
+$("li .header").closest("ul").find(".acc-list").first().show();
+
+$("li .header").click(function(){ $(this).next().closest("ul").slideToggle("fast");
+ });
+ 
+//text
+$(".awesome-text").hover(function(){
+$("#blog").animate({'opacity':"0"});
+},function(){$("#blog").animate({'opacity':"1"});});
+
 //updates
 $(".updates ul").css({'list-style':"none"});
 $(".updates ul li a").css({'color':"gold", 'font-family':"GoodDog",'text-decoration':"none"});
@@ -31,21 +43,20 @@ $(".login-form").css({'opacity':"1",'webkit-transform':"scale(1)",'-moz-transfor
 $(".container").css({'-webkit-filter':"grayscale(50%) blur(5px)",'-moz-filter':"grayscale(50%) blur(5px)"});
 });
 $(".login-form .btn-login").click(function(){
-$(".login-form").css({'opacity':"0",'-webkit-transform':"scale(0)"},"slow");
-$(".container").css({'-webkit-filter':"grayscale(0%)",'-moz-filter':"grayscale(0%)"});
+$(".login-form").css({'opacity':"0",'-webkit-transform':"scale(0)",'-moz-transform':"scale(0)"},"slow");
+$(".container").css({'-webkit-filter':"grayscale(0%)"});
 });
 
-
-
+$(".cool-text").hover(function(){
+$(".bord").css({'opacity':"1",'-webkit-transform':"scaleX(1)",'-moz-transform':"scaleX(1)"});},function(){
+$(".bord").css({'opacity':"0",'-webkit-transform':"scaleX(0)",'-moz-transform':"scaleX(0)"});});
 
 });
 </script>
-
-
 <style>
 
 body{
-background:url(img/tri.jpg);
+background:url(img/tex3.1.jpg);
 background-size:cover;
 
 -webkit-perspective:8000;
@@ -59,12 +70,43 @@ background-size:cover;
 
 }
 
-.ch-img-3{
-background:url(img/peace.jpg);
-background-size:500px 500px;
-background-repeat:no-repeat;
-}
 
+.ch-img-3{
+background:url(img/tri.jpg);
+background-size:300px 300px;
+}
+</style>
+
+<style>
+.wrap{
+width:50%; height:25%;
+overflow:hidden;
+margin:0px;
+float:left;
+position:relative;
+border:1px solid black;
+opacity:1;
+-webkit-transition:all 0.5s;
+-moz-transition:all 0.5s;
+}
+.wrap:hover{
+-webkit-animation:fadeio 0.5s forwards;
+-moz-animation:fadeio 0.5s forwards;
+}
+@-webkit-keyframes fadeio{
+01%{ opacity:1;}
+33%{ opacity:0.5;}
+66%{opacity:0;}
+100%{ opacity:1;}
+}
+@-moz-keyframes fadeio{
+01%{ opacity:1;}
+33%{ opacity:0.5;}
+66%{opacity:0;}
+100%{ opacity:1;}
+}
+.btn a:hover{color:black;
+}
 </style>
 
 <body>
@@ -83,12 +125,16 @@ background-repeat:no-repeat;
 	</div>	
 	</form>
 </div>
+
+
 <div class="container">
-<a href="modal.html"><div class="main-header" id="main-header"></div></a>
-<div class="btn" id="loginNow" style="top:25px; right:40px;"><a href="#">LOGIN</a></div>
-<div class="btn" style="top:25px; right:-125px;"><a href="login-modal.html">REGISTER</a></div>
+<a href="#"><div class="main-header" id="main-header" style="color:white"></div></a>
+<div class="btn" id="loginNow" style="top:25px; right:40px; background-color:orange;color:orange"><a href="#">LOGIN</a></div>
+<div class="btn" style="top:25px; right:-125px;  background-color:orange;color:orange"><a href="login-modal.html">REGISTER</a></div>
 
 
+<h1 class="awesome-text" style="top:-50px;left:650px;">BLOG</h1>
+<div class="bubble" style="top:0px; left:655px" id="blog">HOVER</div>
 
 
 
@@ -127,8 +173,8 @@ background-repeat:no-repeat;
 
 
 <div class="updates img-dark-wood">
-	<h3 style="color:#330099; margin-left:10px; font-size:2em; -webkit-animation:blink 0.6s infinite; -webkit-transition:all 0.4s;
-	">LATEST<i class="fa fa-flash fa-animated" style="-webkit-animation:flash 0.8s infinite"></i></h3>
+	<h3 style="color:#330099; margin-left:10px; font-size:1.8em; -webkit-animation:blink 0.6s infinite; -webkit-transition:all 0.4s; -moz-transition:all 0.4s;
+	-moz-animation:blink 0.6s infinite;">LATEST<i class="fa fa-flash fa-animated" style="-webkit-animation:flash 0.8s infinite; -moz-animation:flash 0.8s infinite"></i></h3>
 	<ul>
 		<li class="update-info"><a href="#">PUT SOME CRAZY STUFF HERE!</a></li>
 		<li class="update-info"><a href="#">PUT SOME CRAZY STUFF HERE!</a></li>
@@ -153,77 +199,53 @@ background-repeat:no-repeat;
 	<div class="flop"><i class="fa fa-google-plus fa-3x" id="google"></i></div>
 </div>
 
+<!--blog-sidebar-->
 
-<!--table-->
-<table style="left:260px">
-	<tr>
-	<thead>
-		<th>ID<i class="fa fa-key fa-2x fa-animated" id="icons"></i></th><th>NAME<i class="fa fa-tag fa-2x fa-animated" id="icons"></i></th><th>CODE<i class="fa fa-gear fa-2x fa-animated" id="icons"></i></th>
-		<th>USERS<i class="fa fa-group fa-2x fa-animated" id="icons"></i></th>
-		<th>ACC%<i class="fa fa-check-square-o fa-2x fa-animated" id="icons"></i></th>
-	
-	</thead>
-	</tr>
-	<tr>
-		<td>ID</td>
-		<td class="prob"><a href="compete-problem.html">ATOMIC SHELTERS</a></td>
-		<td class="prob"><a href="compete-problem.html">ATSHELT</a></td>
-		<td class="users"><a href="#">99</a></td>
-		<td class="acc"><a href="#">66.77</a></td>
-	</tr>
-	<tr>
-		<td>ID</td>
-		<td class="prob"><a href="compete-problem.html">ATOMIC SHELTERS</a></td>
-		<td class="prob"><a href="compete-problem.html">ATSHELT</a></td>
-		<td class="users"><a href="#">99</a></td>
-		<td class="acc"><a href="#">66.77</a></td>
-	</tr>
-	<tr>
-		<td>ID</td>
-		<td class="prob"><a href="compete-problem.html">ATOMIC SHELTERS</a></td>
-		<td class="prob"><a href="compete-problem.html">ATSHELT</a></td>
-		<td class="users"><a href="#">99</a></td>
-		<td class="acc"><a href="#">66.77</a></td>
-	</tr>
-	<tr>
-		<td>ID</td>
-		<td class="prob"><a href="compete-problem.html">ATOMIC SHELTERS</a></td>
-		<td class="prob"><a href="compete-problem.html">ATSHELT</a></td>
-		<td class="users"><a href="#">99</a></td>
-		<td class="acc"><a href="#">66.77</a></td>
-	</tr>
-	<tr>
-		<td>ID</td>
-		<td class="prob"><a href="compete-problem.html">ATOMIC SHELTERS</a></td>
-		<td class="prob"><a href="compete-problem.html">ATSHELT</a></td>
-		<td class="users"><a href="#">99</a></td>
-		<td class="acc"><a href="#">66.77</a></td>
-	</tr>
-	
-	
-</table>	
-
-<h1 class="rubberBand" style="top:20px;right:250px;font-size:2em">TUTORIALS</h1>
-
-
-<!--profile-->
-<ul class="ch-grid" style="top:200px; left:630px">
-					<li>
-						<div class="ch-item ch-img-1">				
-							<div class="ch-info-wrap">
-								<div class="ch-info">
-									<div class="ch-info-front ch-img-1">PROFILE</div>
-									<div class="ch-info-back">
-										<h3>username</h3>
-										<h3 id="mine" style="font-size:2em; color:white">myname</h3>
-									</div>	
-								</div>
-							</div>
-						</div>
-					</li>
-					
-					</ul>
-					
+<ul id="acc">
+<li><div class="header">RECENT POSTS</div>
+	<ul class="acc-list">
+	<li><a href="#">GREAT STUFF</a></li>
+	<li><a href="#">GREAT STUFF</a></li>
+	<li><a href="#">GREAT STUFF</a></li>
+	</ul>
+</li>
+<li><div class="header">CATEGORIES</div>
+	<ul class="acc-list">
+	<li><a href="#">GREEDY</a></li>
+	<li><a href="#">DYNAMIC</a></li>
+	<li><a href="#">TREES</a></li>
+	</ul>
+</li>
+<li><div class="header">RECENT COMMENTS</div>
+	<ul class="acc-list">
+	<li><a href="#">HMM..</a></li>
+	<li><a href="#">COOL!</a></li>
+	<li><a href="#">WICKED STUFF</a></li>
+	</ul>
+</li>
+<li><div class="header">ARCHIVES</div>
+	<ul class="acc-list">
+	<li><a href="#">OLD STUFF</a></li>
+	<li><a href="#">VERY OLD</a></li>
+	<li><a href="#">ANCIENT</a></li>
+	</ul>
+</li>
+<li><div class="header">GALLERY</div>
+	<ul class="acc-list">
+	<li style="height:500px; overflow:auto; width:300px;">
+		<img class="wrap" src="img/Koala.jpg"></h1>
+	    <img class="wrap" src="img/orchid1.jpg"></img>
+	    <img class="wrap" src="img/hibiscus1.jpg"></img>
+	    <img class="wrap" src="img/peace.jpg"></img>
+	    <img class="wrap" src="img/tri.jpg"></img>
+	    <img class="wrap" src="img/Cake.jpg"></img>
+	    <img class="wrap" src="img/seascape1.jpg"></img>
+	    <img class="wrap" src="img/ryoStand.png"></img>
+	    
+	</li>
+	</ul>
+</li>
+</ul>
 
 
 <div class="footer" style="z-index:-2">

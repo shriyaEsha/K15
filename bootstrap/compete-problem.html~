@@ -36,29 +36,25 @@ $(".container").css({'-webkit-filter':"grayscale(0%)",'-moz-filter':"grayscale(0
 });
 
 
-//bubs
-
-$("#bub-text").hover(function(){
-$(this).animate({'opacity':"0"},"fast");
-$(".bord").css({'opacity':"1",'-webkit-transform':"scaleX(1)",'-moz-transform':"scaleX(1)"},"fast");},function(){ $(this).animate({'opacity':"1"},"fast");
-$(".bord").css({'opacity':"0",'-webkit-transform':"scaleX(0)",'-moz-transform':"scaleX(0)"},"fast");});
-
-//info-box
+//contest-box
 
 
-$("#info").click(function(){
-$(".info-box").css({'opacity':"1",'webkit-transform':"scale(1)",'-moz-transform':"scale(1)"},"slow");
+$("#contest").click(function(){
+$(".contest-box").css({'opacity':"1",'webkit-transform':"scale(1)",'-moz-transform':"scale(1)"},"slow");
 $(".container").css({'-webkit-filter':"grayscale(50%) blur(5px)",'-moz-filter':"grayscale(50%) blur(5px)"});
 });
-$(".info-box .btn-x").click(function(){
-$(".info-box").css({'opacity':"0",'-webkit-transform':"scale(0)"},"slow");
+$(".contest-box .btn-c-x").click(function(){
+$(".contest-box").css({'opacity':"0",'-webkit-transform':"scale(0)"},"slow");
 $(".container").css({'-webkit-filter':"grayscale(0%)",'-moz-filter':"grayscale(0%)"});
 });
+
+
 });
 </script>
 <style>
+
 body{
-background:url(img/tex8.jpg);
+background:url(img/tex6.jpg);
 background-size:cover;
 
 -webkit-perspective:8000;
@@ -68,18 +64,26 @@ background-size:cover;
 
    -webkit-transform: scale(0.9);
    -moz-transform: scale(0.9);
+
+
 }
 
 .btn a:hover{
-
 color:black;
 }
-.ch-img-3{
-background:url(img/tri.jpg);
-background-size:300px 300px;
+#blue1{
+font-size:1.5em;
+line-height:4;
+width:200px; height:80px;
+background-color:rgba(0,0,255,0.3);
+}
+#blue{
+font-size:1.5em;
+line-height:4;
+width:80px; height:80px;
+background-color:rgba(0,0,255,0.3);
 }
 </style>
-
 <body>
 <!--login-form-->
 <div class="login-form">
@@ -96,27 +100,26 @@ background-size:300px 300px;
 	</div>	
 	</form>
 </div>
-
-
-<!--info-box-->
-<div class="info-box">
+<!--contest-info modal-->
+<div class="contest-box">
 	<div class="details">
 		
-		<h3>Hi There! The Forum is here to help you unravel convoluted conundrums collaboratively!</h3>
+		<h3><u>CONTEST INFORMATION</u></h3>
 		<h3>Do you have anything awesome to contribute? Some unanswered questions you KNOW you can solve?</h3>
 		<h3>Then you've come to the right place!</h3>
 		<h3>Or are you stuck with a problem?</h3>
 		<h3>Any questions? Just hit the 'Ask a Question' link and get your queries answered in a jiffy.</h3>
 	</div>
-	<div class="btn-x" style="position:relative; top:100px; left:280px">
+	<div class="btn-c-x" style="position:relative; top:100px; left:280px">
 	<div class="elem">I GOT IT!</div>
 	</div>	
 	
 </div>
+
 <div class="container">
-<a href="modal.html"><div class="main-header" id="main-header" style="color:gold"></div></a>
-<div class="btn" id="loginNow" style="top:25px; right:40px; background-color:orange"><a href="#">LOGIN</a></div>
-<div class="btn" style="top:25px; right:-125px;  background-color:orange"><a href="login-modal.html">REGISTER</a></div>
+<a href="#"><div class="main-header" id="main-header" style="top:-50px;color:white"></div></a>
+<div class="btn" id="loginNow" style="top:-50px; right:40px;background-color:orange"><a href="#">LOGIN</a></div>
+<div class="btn" style="top:-50px; right:-125px; background-color:orange"><a href="login-modal.html">REGISTER</a></div>
 
 
 
@@ -144,7 +147,7 @@ background-size:300px 300px;
 <li class="nav-element"><a href="#"><div class="nav-text">COMMUNICODERS</div></a>
 <ul>
 	<li class="dd"><a href="blog.html"><div class="nav-text">BLOG POSTS</div></a></li>
-	<li class="dd"><a href="#"><div class="nav-text">FORUM</div></a></li>
+	<li class="dd"><a href="forum.html"><div class="nav-text">FORUM</div></a></li>
 </ul>
 
 </li>
@@ -157,7 +160,7 @@ background-size:300px 300px;
 
 
 <div class="updates img-dark-wood">
-	<h3>HOT STUFF <i class="fa fa-flash fa-2x fa-animated" style="-webkit-animation:flash 0.8s infinite; -moz-animation:flash 0.8s infinite"></i></h3>
+	<h3 style="font-size:1.8em">HOT STUFF <i class="fa fa-flash fa-2x fa-animated" style="-webkit-animation:flash 0.8s infinite; -moz-animation:flash 0.8s infinite"></i></h3>
 	<ul>
 		<li class="update-info"><a href="#">PUT SOME CRAZY STUFF HERE!</a></li>
 		<li class="update-info"><a href="#">PUT SOME CRAZY STUFF HERE!</a></li>
@@ -182,30 +185,111 @@ background-size:300px 300px;
 	<div class="flop"><i class="fa fa-google-plus fa-3x" id="google"></i></div>
 </div>
 
-
-<div class="bubble" style="top:-10px; line-height:4;left:460px; width:65x; height:65px" id="bub-text">HOVER</div>
-<h1 class="cool-text" style="top:-50px;left:500px;">THE FORUM</h1>
-<div class="bord" style="top:-40px; left:470px"></div>
-<div class="quick-links" style="top:240px; left:250px">
+<!--links-->
+<div class="quick-links" style="top:235px; left:150px;">
 	<ul>
-		<a href="#"><li>ASK A QUESTION</li></a>
-		<a href="#"><li>TAGS</li></a>
-		<a href="#"><li>QUESTIONS</li></a>
-		<a href="#"><li>UNANSWERED</li></a>
-		<a href="#"><li>USERS</li></a>
-		<a href="#" id="info"><li>INFO <i class="fa fa-info" style="color:pink"></i></li></a>
+		<a href="#"><li>CONTEST RANKINGS</li></a>
+		<a href="#" id="contest"><li>CONTEST INFO</li></a>
+		<a href="#" id="contest"><li>SUCCESSFUL SUB</li></a>
+		<a href="#" id="contest"><li>COMMENTS</li></a>
+		
 	</ul>
 </div>
 
 
 
+<!--problem-->
+<div class="problem-box" style="position:relative;top:300px;left:250px">
+<div class="header">THE TRUNK FROM TIMBUCTOO</div>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+	</div>
+
+	<br><br><br>
+<!--solution-->
+<div class="bubble" id="blue1" style="top:1070px; left:300px; -webkit-animation:hover-up 1s linear infinite 0s;
+ -moz-animation:hover-up 1s linear infinite 0s">YOUR</div>
+<div class="bubble" id="blue1" style="top:1070px; left:500px; -webkit-animation:hover-up 1s linear infinite 0.2s;
+-moz-animation:hover-up 1s linear infinite 0.2s">SOLUTION</div>
+<div class="bubble" id="blue1" style="top:1070px; left:700px; -webkit-animation:hover-up 1s linear infinite 0.3s;
+ -moz-animation:hover-up 1s linear infinite 0.3s">GOES</div>
+<div class="bubble" id="blue1" style="top:1070px; left:900px; -webkit-animation:hover-up 1s linear infinite 0.4s;
+ -webkit-animation:hover-up 1s linear infinite 0.4s;">HERE</div>
+
+<div class="problem-box" style="position:relative;top:300px;left:250px">
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+<h1>Long ago in ancient China...</h1>
+
+</div>	
+	
+<!--you can do it-->
+<div class="bubble" id="blue" style="top:250px; left:1000px; -webkit-animation:hover-up 1s linear infinite 0s;
+-moz-animation:hover-up 1s linear infinite 0s">YOU</div>
+<div class="bubble" id="blue" style="top:250px; left:1080px; -webkit-animation:hover-up 1s linear infinite 0.2s;
+ -moz-animation:hover-up 1s linear infinite 0.2s;">CAN</div>
+<div class="bubble" id="blue" style="top:250px; left:1160px; -webkit-animation:hover-up 1s linear infinite 0.3s;
+ -moz-animation:hover-up 1s linear infinite 0.3s">DO</div>
+<div class="bubble" id="blue" style="top:250px; left:1240px; -webkit-animation:hover-up 1s linear infinite 0.4s;
+-moz-animation:hover-up 1s linear infinite 0.4s;">IT!</div>
+
 <!--profile-->
 <ul class="ch-grid" style="top:300px; left:600px">
 					<li>
-						<div class="ch-item ch-img-3">				
+						<div class="ch-item ch-img-1">				
 							<div class="ch-info-wrap">
 								<div class="ch-info">
-									<div class="ch-info-front ch-img-3">PROFILE</div>
+									<div class="ch-info-front ch-img-1">PROFILE</div>
 									<div class="ch-info-back">
 										<h3>username</h3>
 										<h3 id="mine" style="font-size:2em; color:white">myname</h3>
@@ -217,7 +301,8 @@ background-size:300px 300px;
 					
 					</ul>
 
-
+<!--submit button-->
+<div class="btn" style="position:absolute;top:1450px; left:1100px; background-color:pink;">SUBMIT</div>
 <div class="footer" style="z-index:-2">
 
 		<h3>CodeGeeks Inc.</h3>

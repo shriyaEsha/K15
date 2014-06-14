@@ -84,7 +84,7 @@ background-repeat:no-repeat;
 	</form>
 </div>
 <div class="container">
-<a href="modal.html"><div class="main-header" id="main-header"></div></a>
+<a href="#"><div class="main-header" id="main-header"></div></a>
 <div class="btn" id="loginNow" style="top:25px; right:40px;"><a href="#">LOGIN</a></div>
 <div class="btn" style="top:25px; right:-125px;"><a href="login-modal.html">REGISTER</a></div>
 

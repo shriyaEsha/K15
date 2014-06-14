@@ -7,14 +7,12 @@
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/bootstrap-theme.min.css">
 
-<link rel="stylesheet" href="ribbon.css">
 <link rel="stylesheet" href="footer.css">
 <link rel="stylesheet" href="navbar.css">
-<link rel="stylesheet" href="table.css">
-
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
-<script>
+
+<script type="text/javascript">
 $(document).ready(function(){
 //updates
 $(".updates ul").css({'list-style':"none"});
@@ -25,71 +23,126 @@ $(this).css({'color':"white"}).addClass("shake-class");
 $(".updates ul li a").css({'color':"gold"}).removeClass("shake-class");
 });
 
-//login-form
-$("#loginNow").click(function(){
-$(".login-form").css({'opacity':"1",'webkit-transform':"scale(1)",'-moz-transform':"scale(1)"},"slow");
-$(".container").css({'-webkit-filter':"grayscale(50%) blur(5px)",'-moz-filter':"grayscale(50%) blur(5px)"});
-});
-$(".login-form .btn-login").click(function(){
-$(".login-form").css({'opacity':"0",'-webkit-transform':"scale(0)"},"slow");
-$(".container").css({'-webkit-filter':"grayscale(0%)",'-moz-filter':"grayscale(0%)"});
-});
-
-
-
-
 });
 </script>
+
+<style>
+
+.login-form{
+position:absolute;
+left:260px; top:250px;
+width:800px; height:600px;
+background:url(img/tex1.1.jpg);
+-webkit-border-radius:20px;
+-moz-border-radius:20px;
+-webkit-transform-origin:50% 50%;
+-moz-transform-origin:50% 50%;
+-webkit-animation:fadeup 1s linear 0.5s forwards;
+-moz-animation:fadeup 1s linear 0.5s forwards;
+opacity:0;
+-webkit-transform:scale(0);
+-moz-transform:scale(0);
+z-index:-1;
+border:2px solid black;
+box-shadow:3px 3px 5px black;
+}
+
+</style>
 
 
 <style>
 
 body{
-background:url(img/tri.jpg);
-background-size:cover;
+background:url(img/tex3.1.jpg);
 
+background-size:cover;
 -webkit-perspective:8000;
--moz-perspective:8000;
 }
 .container{
-
-   -webkit-transform: scale(0.9);
-   -moz-transform: scale(0.9);
-
-
+ -webkit-transform: scale(0.9);
 }
 
-.ch-img-3{
-background:url(img/peace.jpg);
-background-size:500px 500px;
+.box{
+position:absolute;
+-webkit-border-radius:200px;
+-moz-border-radius:200px;
+-webkit-box-shadow:0 3px 0 #ffcc66;
+-moz-box-shadow:0 3px 0 #ffcc66;
+text-align:center;
+color:white;
+font-size:2.2em;
+line-height:6;
+width:400px; height:400px;
+z-index:-2;
+}
+
+#circle{
+background-image:url('img/tex1.jpg'),url('img/tex1.jpg'),url('img/tex9.jpg');
+background-size:400px 400px;
 background-repeat:no-repeat;
+background-position:-200px 0px,200px 0px,0px 0px;
+-webkit-animation:roll 1s linear forwards; 
+-moz-animation:roll 1s linear forwards; 
+}
+@-webkit-keyframes roll{
+0%{
+background-position:-100px 0px,100px 0px,0px 0px;
+-webkit-transform:translate(100px) rotate(90deg) scale(1.5) ;
+}
+33%{
+background-position:-200px 0px,200px 0px,0px 0px;
+-webkit-transform: translate(200px) rotate(180deg) scale(1.9);
+}
+66%{
+background-position:-300px 0px,300px 0px,0px 0px;
+-webkit-transform: translate(350px) rotate(270deg) scale(2.3);
+}
+100%{
+background-position:-400px 0px,400px 0px,0px 0px;
+-webkit-transform: translate(400px) rotate(360deg) scale(2.7);
+}
 }
 
+@-moz-keyframes roll{
+0%{
+background-position:-100px 0px,100px 0px,0px 0px;
+-moz-transform:translate(100px) rotate(90deg) scale(1.5) ;
+}
+33%{
+background-position:-200px 0px,200px 0px,0px 0px;
+-moz-transform: translate(200px) rotate(180deg) scale(1.9);
+}
+66%{
+background-position:-300px 0px,300px 0px,0px 0px;
+-moz-transform: translate(350px) rotate(270deg) scale(2.3);
+}
+100%{
+background-position:-400px 0px,400px 0px,0px 0px;
+-moz-transform: translate(400px) rotate(360deg) scale(2.7);
+}
+}
+a:hover{
+cursor:pointer;
+}
 </style>
 
+<script>
+function validate(){
+
+//just inserting name into profile
+var myName=document.getElementById("user").value;
+document.getElementById("mine").style.color="white";
+document.getElementById("mine").innerHTML=myName;
+}
+
+</script>
+
 <body>
-<!--login-form-->
-<div class="login-form">
-	<div class="details">
-		<form name="loginForm" action="#" method="post">
-		<h3>EMAIL ID:</h3> <input type="text" class="text" id="username"/>
-		<h3>USERNAME:</h3> <input type="text" class="text" id="user"/>
-		<h3>PASSWORD:</h3> <input type="password" class="text" id="password"/>
-		<h3>NAME :D	:</h3> <input type="text" class="text" />
-		<h3>COUNTRY	:</h3> <input type="text" class="text"/>
-	</div>
-	<div class="btn-login" onclick="validate()">
-	<div class="elem">SIGN UP!</div>
-	</div>	
-	</form>
-</div>
+
 <div class="container">
-<a href="modal.html"><div class="main-header" id="main-header"></div></a>
-<div class="btn" id="loginNow" style="top:25px; right:40px;"><a href="#">LOGIN</a></div>
-<div class="btn" style="top:25px; right:-125px;"><a href="login-modal.html">REGISTER</a></div>
+<a href="#"><div class="main-header" id="main-header" style="color:white;border:1.5px dashed white"></div></a>
 
-
-
+<div class="box" id="circle" style="top:420px"></div>
 
 
 <!--navbar-->
@@ -122,13 +175,19 @@ background-repeat:no-repeat;
 <li class="nav-element"><a href="ranks.html"><div class="nav-text">LEADERBOARD</div></a></li>
 <li class="nav-element"><div class="nav-text"><input type="text" id="searchbox" placeholder="FIND SOMETHING"/></div></li>
 
+
 </ul>
 </div>
 
 
+<!--updates-->
+
 <div class="updates img-dark-wood">
-	<h3 style="color:#330099; margin-left:10px; font-size:2em; -webkit-animation:blink 0.6s infinite; -webkit-transition:all 0.4s;
-	">LATEST<i class="fa fa-flash fa-animated" style="-webkit-animation:flash 0.8s infinite"></i></h3>
+	<h3 style="color:#330099; margin-left:75px; font-size:2em; -webkit-animation:blink 0.6s infinite; -webkit-transition:all 0.4s;
+	-moz-animation:blink 0.6s infinite; -moz-transition:all 0.4s;
+	">LATEST PROBLEMS<i class="fa fa-flash fa-2x fa-animated" style="-webkit-animation:flash 0.8s infinite;
+	-moz-animation:flash 0.8s infinite;
+	"></i></h3>
 	<ul>
 		<li class="update-info"><a href="#">PUT SOME CRAZY STUFF HERE!</a></li>
 		<li class="update-info"><a href="#">PUT SOME CRAZY STUFF HERE!</a></li>
@@ -136,78 +195,48 @@ background-repeat:no-repeat;
 		<li class="update-info"><a href="#">PUT SOME CRAZY STUFF HERE!</a></li>
 	</ul>
 </div>
+
+
+
 <!--social icons-->
 
-<div class="cube" style="top:800px; left:-160px">
+<div class="cube" style="top:20px; right:-140px">
 	<div class="flip"><font color=#6666ff>Twitter</font></div>
 	<div class="flop"><i class="fa fa-twitter fa-3x" id="twitter"></i></div>
 </div>
 
-<div class="cube" style="top:800px; left:-55px">
+<div class="cube" style="top:20px; right:-45px">
 	<div class="flip"><font color=#0000cc>Facebook</font></div>
 	<div class="flop"><i class="fa fa-facebook fa-3x" id="facebook"></i></div>
 </div>
 
-<div class="cube" style="top:800px; left:50px">
+<div class="cube" style="top:20px; right:50px">
 	<div class="flip"><font color=red>Google+</font></div>
 	<div class="flop"><i class="fa fa-google-plus fa-3x" id="google"></i></div>
 </div>
 
+<!--login-form-->
+<div class="login-form">
+	<div class="details">
+		<form name="loginForm" action="#" method="post">
+		<h3>EMAIL ID:</h3> <input type="text" class="text" id="username"/>
+		<h3>USERNAME:</h3> <input type="text" class="text" id="user"/>
+		<h3>PASSWORD:</h3> <input type="password" class="text" id="password"/>
+		<h3>NAME :D	:</h3> <input type="text" class="text" />
+		<h3>COUNTRY	:</h3> <input type="text" class="text"/>
+	</div>
+	<div class="btn-login" onclick="validate()">
+	<div class="elem">SIGN UP!</div>
+	</div>	
+	</form>
+</div>
 
-<!--table-->
-<table style="left:260px">
-	<tr>
-	<thead>
-		<th>ID<i class="fa fa-key fa-2x fa-animated" id="icons"></i></th><th>NAME<i class="fa fa-tag fa-2x fa-animated" id="icons"></i></th><th>CODE<i class="fa fa-gear fa-2x fa-animated" id="icons"></i></th>
-		<th>USERS<i class="fa fa-group fa-2x fa-animated" id="icons"></i></th>
-		<th>ACC%<i class="fa fa-check-square-o fa-2x fa-animated" id="icons"></i></th>
-	
-	</thead>
-	</tr>
-	<tr>
-		<td>ID</td>
-		<td class="prob"><a href="compete-problem.html">ATOMIC SHELTERS</a></td>
-		<td class="prob"><a href="compete-problem.html">ATSHELT</a></td>
-		<td class="users"><a href="#">99</a></td>
-		<td class="acc"><a href="#">66.77</a></td>
-	</tr>
-	<tr>
-		<td>ID</td>
-		<td class="prob"><a href="compete-problem.html">ATOMIC SHELTERS</a></td>
-		<td class="prob"><a href="compete-problem.html">ATSHELT</a></td>
-		<td class="users"><a href="#">99</a></td>
-		<td class="acc"><a href="#">66.77</a></td>
-	</tr>
-	<tr>
-		<td>ID</td>
-		<td class="prob"><a href="compete-problem.html">ATOMIC SHELTERS</a></td>
-		<td class="prob"><a href="compete-problem.html">ATSHELT</a></td>
-		<td class="users"><a href="#">99</a></td>
-		<td class="acc"><a href="#">66.77</a></td>
-	</tr>
-	<tr>
-		<td>ID</td>
-		<td class="prob"><a href="compete-problem.html">ATOMIC SHELTERS</a></td>
-		<td class="prob"><a href="compete-problem.html">ATSHELT</a></td>
-		<td class="users"><a href="#">99</a></td>
-		<td class="acc"><a href="#">66.77</a></td>
-	</tr>
-	<tr>
-		<td>ID</td>
-		<td class="prob"><a href="compete-problem.html">ATOMIC SHELTERS</a></td>
-		<td class="prob"><a href="compete-problem.html">ATSHELT</a></td>
-		<td class="users"><a href="#">99</a></td>
-		<td class="acc"><a href="#">66.77</a></td>
-	</tr>
-	
-	
-</table>	
-
-<h1 class="rubberBand" style="top:20px;right:250px;font-size:2em">TUTORIALS</h1>
+<!--place-->
+<h1 class="tada" style="top:250px;right:-120px">JUMP IN!</h1>
 
 
 <!--profile-->
-<ul class="ch-grid" style="top:200px; left:630px">
+<ul class="ch-grid" style="top:300px; left:600px">
 					<li>
 						<div class="ch-item ch-img-1">				
 							<div class="ch-info-wrap">
@@ -221,12 +250,16 @@ background-repeat:no-repeat;
 							</div>
 						</div>
 					</li>
-					
 					</ul>
+<!--sticky note-->
+<ul id="sticky" style="position:absolute;top:630px; left:1000px;">
+	<li><a href="#">After you've filled in the form, check your profile for your username!</a></li>
+	
+</ul>
+
 					
-
-
-<div class="footer" style="z-index:-2">
+					
+<div class="footer">
 
 		<h3>CodeGeeks Inc.</h3>
 			<p>It's a place where you can let your brain go wild with exciting challenges.</p>
@@ -234,12 +267,6 @@ background-repeat:no-repeat;
 			<p>And for all you newbies out there, it can be a jumping-off point for your genius to take flight!</p>
 			<p>So, don't be scared! Jump right in and explore!</p>
 			<a href="#">CODEGEEKS INC. </a>
-			
-
-
-
-			
-			
 </div>
 </div>
 </body>

@@ -18,11 +18,11 @@
 $(document).ready(function(){
 //updates
 $(".updates ul").css({'list-style':"none"});
-$(".updates ul li a").css({'font-size':"1.8em",'color':"gold", 'font-family':"GoodDog",'text-decoration':"none"});
+$(".updates ul li a").css({'color':"gold", 'font-family':"GoodDog",'text-decoration':"none"});
 $(".updates ul li a").hover(function(){
-$(this).css({'color':"white",'font-size':"2em"}).addClass("shake-class");
+$(this).css({'color':"white"}).addClass("shake-class");
 },function(){
-$(".updates ul li a").css({'font-size':"1.8em",'color':"gold"}).removeClass("shake-class");
+$(".updates ul li a").css({'color':"gold"}).removeClass("shake-class");
 });
 
 //login-form
@@ -73,7 +73,7 @@ background-size:cover;
 	</form>
 </div>
 <div class="container">
-<a href="#"><div class="main-header" id="main-header"></div></a>
+<a href="modal.html"><div class="main-header" id="main-header"></div></a>
 <div class="btn" id="loginNow" style="top:25px; right:40px;"><a href="#">LOGIN</a></div>
 <div class="btn" style="top:25px; right:-125px;"><a href="login-modal.html">REGISTER</a></div>
 

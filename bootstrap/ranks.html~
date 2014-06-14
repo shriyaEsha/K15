@@ -40,12 +40,9 @@ $(".container").css({'-webkit-filter':"grayscale(0%)",'-moz-filter':"grayscale(0
 
 });
 </script>
-
-
 <style>
-
 body{
-background:url(img/tri.jpg);
+background:url(img/tex2.1.jpg);
 background-size:cover;
 
 -webkit-perspective:8000;
@@ -58,15 +55,7 @@ background-size:cover;
 
 
 }
-
-.ch-img-3{
-background:url(img/peace.jpg);
-background-size:500px 500px;
-background-repeat:no-repeat;
-}
-
 </style>
-
 <body>
 <!--login-form-->
 <div class="login-form">
@@ -84,7 +73,7 @@ background-repeat:no-repeat;
 	</form>
 </div>
 <div class="container">
-<a href="modal.html"><div class="main-header" id="main-header"></div></a>
+<a href="#"><div class="main-header" id="main-header"></div></a>
 <div class="btn" id="loginNow" style="top:25px; right:40px;"><a href="#">LOGIN</a></div>
 <div class="btn" style="top:25px; right:-125px;"><a href="login-modal.html">REGISTER</a></div>
 
@@ -114,7 +103,7 @@ background-repeat:no-repeat;
 <li class="nav-element"><a href="#"><div class="nav-text">COMMUNICODERS</div></a>
 <ul>
 	<li class="dd"><a href="blog.html"><div class="nav-text">BLOG POSTS</div></a></li>
-	<li class="dd"><a href="forum.html"><div class="nav-text">FORUM</div></a></li>
+	<li class="dd"><a href="compete.html"><div class="nav-text">FORUM</div></a></li>
 </ul>
 
 </li>
@@ -153,58 +142,101 @@ background-repeat:no-repeat;
 	<div class="flop"><i class="fa fa-google-plus fa-3x" id="google"></i></div>
 </div>
 
+<!--ribbon-->
+<div class="ribbon" style="top:240px; left:290px; font-size:0.8em">
+
+<div class="ribbon-content">
+<h1>
+	<i class="fa fa-star" style="color:gold" id="icons"></i> WELCOME TO THE HALL OF FAME <i class="fa fa-star" style="color:gold" id="icons"></i>
+	</h1>
+</div>
+</div>
+
+
 
 <!--table-->
-<table style="left:260px">
+<table style="top:330px;left:260px">
 	<tr>
 	<thead>
-		<th>ID<i class="fa fa-key fa-2x fa-animated" id="icons"></i></th><th>NAME<i class="fa fa-tag fa-2x fa-animated" id="icons"></i></th><th>CODE<i class="fa fa-gear fa-2x fa-animated" id="icons"></i></th>
-		<th>USERS<i class="fa fa-group fa-2x fa-animated" id="icons"></i></th>
-		<th>ACC%<i class="fa fa-check-square-o fa-2x fa-animated" id="icons"></i></th>
-	
+		<th>RANK    <i class="fa fa-trophy fa-2x fa-animated" id="icons"></i></th><th>NAME    <i class="fa fa-laptop fa-2x fa-animated" id="icons"></i></th><th>SCORE    <i class="fa fa-certificate fa-2x fa-animated" id="icons"></i></th>
 	</thead>
 	</tr>
 	<tr>
-		<td>ID</td>
-		<td class="prob"><a href="compete-problem.html">ATOMIC SHELTERS</a></td>
-		<td class="prob"><a href="compete-problem.html">ATSHELT</a></td>
-		<td class="users"><a href="#">99</a></td>
-		<td class="acc"><a href="#">66.77</a></td>
+		
+			<td>1</td><td  class="user"><a href="#">CodeWhiz</a></td><td>1234.5</td>
 	</tr>
 	<tr>
-		<td>ID</td>
-		<td class="prob"><a href="compete-problem.html">ATOMIC SHELTERS</a></td>
-		<td class="prob"><a href="compete-problem.html">ATSHELT</a></td>
-		<td class="users"><a href="#">99</a></td>
-		<td class="acc"><a href="#">66.77</a></td>
+		
+			<td>2</td><td  class="user"><a href="#">CodeWhiz</a></td><td>1200.5</td>
+	</tr><tr>
+		
+			<td>3</td><td  class="user"><a href="#">CodeWhiz</a></td><td>1100.5</td>
 	</tr>
 	<tr>
-		<td>ID</td>
-		<td class="prob"><a href="compete-problem.html">ATOMIC SHELTERS</a></td>
-		<td class="prob"><a href="compete-problem.html">ATSHELT</a></td>
-		<td class="users"><a href="#">99</a></td>
-		<td class="acc"><a href="#">66.77</a></td>
+		
+			<td>1</td><td  class="user"><a href="#">CodeWhiz</a></td><td>1234.5</td>
 	</tr>
 	<tr>
-		<td>ID</td>
-		<td class="prob"><a href="compete-problem.html">ATOMIC SHELTERS</a></td>
-		<td class="prob"><a href="compete-problem.html">ATSHELT</a></td>
-		<td class="users"><a href="#">99</a></td>
-		<td class="acc"><a href="#">66.77</a></td>
+		
+			<td>2</td><td  class="user"><a href="#">CodeWhiz</a></td><td>1200.5</td>
+	</tr><tr>
+		
+			<td>3</td><td  class="user"><a href="#">CodeWhiz</a></td><td>1100.5</td>
+	</tr><tr>
+		
+			<td>1</td><td  class="user"><a href="#">CodeWhiz</a></td><td>1234.5</td>
 	</tr>
 	<tr>
-		<td>ID</td>
-		<td class="prob"><a href="compete-problem.html">ATOMIC SHELTERS</a></td>
-		<td class="prob"><a href="compete-problem.html">ATSHELT</a></td>
-		<td class="users"><a href="#">99</a></td>
-		<td class="acc"><a href="#">66.77</a></td>
+		
+			<td>2</td><td  class="user"><a href="#">CodeWhiz</a></td><td>1200.5</td>
+	</tr><tr>
+		
+			<td>3</td><td  class="user"><a href="#">CodeWhiz</a></td><td>1100.5</td>
+	</tr><tr>
+		
+			<td>1</td><td  class="user"><a href="#">CodeWhiz</a></td><td>1234.5</td>
 	</tr>
-	
+	<tr>
+		
+			<td>2</td><td  class="user"><a href="#">CodeWhiz</a></td><td>1200.5</td>
+	</tr><tr>
+		
+			<td>3</td><td  class="user"><a href="#">CodeWhiz</a></td><td>1100.5</td>
+	</tr><tr>
+		
+			<td>1</td><td  class="user"><a href="#">CodeWhiz</a></td><td>1234.5</td>
+	</tr>
+	<tr>
+		
+			<td>2</td><td  class="user"><a href="#">CodeWhiz</a></td><td>1200.5</td>
+	</tr><tr>
+		
+			<td>3</td><td  class="user"><a href="#">CodeWhiz</a></td><td>1100.5</td>
+	</tr><tr>
+		
+			<td>1</td><td  class="user"><a href="#">CodeWhiz</a></td><td>1234.5</td>
+	</tr>
+	<tr>
+		
+			<td>2</td><td  class="user"><a href="#">CodeWhiz</a></td><td>1200.5</td>
+	</tr><tr>
+		
+			<td>3</td><td  class="user"><a href="#">CodeWhiz</a></td><td>1100.5</td>
+	</tr><tr>
+		
+			<td>1</td><td  class="user"><a href="#">CodeWhiz</a></td><td>1234.5</td>
+	</tr>
+	<tr>
+		
+			<td>2</td><td  class="user"><a href="#">CodeWhiz</a></td><td>1200.5</td>
+	</tr><tr>
+		
+			<td>3</td><td  class="user"><a href="#">CodeWhiz</a></td><td>1100.5</td>
+	</tr>
 	
 </table>	
 
-<h1 class="rubberBand" style="top:20px;right:250px;font-size:2em">TUTORIALS</h1>
-
+<h1 class="tada" style="top:20px;right:250px;font-size:2em">RANKS PAGE</h1>
 
 <!--profile-->
 <ul class="ch-grid" style="top:200px; left:630px">
@@ -225,8 +257,7 @@ background-repeat:no-repeat;
 					</ul>
 					
 
-
-<div class="footer" style="z-index:-2">
+<div class="footer" style="z-index:-2;bottom:-2000px">
 
 		<h3>CodeGeeks Inc.</h3>
 			<p>It's a place where you can let your brain go wild with exciting challenges.</p>
