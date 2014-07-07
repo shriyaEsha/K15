@@ -1,0 +1,107 @@
+<html>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+$(document).ready(function(){
+});
+</script>
+
+<style>
+body{
+background:url(img/tex3.1.jpg);
+background-size:cover;
+background-repeat:no-repeat;
+}
+.navbar{
+width:100%; height:60px;
+position:sticky;
+background-color:rgba(255,255,255,0.5);
+
+-webkit-transition:all 0.4s;
+-moz-transition:all 0.4s;
+}
+.navbar .navhead{
+list-style:none;
+width:10%; height:100%;
+font-family:Budmo Jiggler;
+font-size:1.8em;
+text-align:center;
+line-height:3;
+color:rgba(10,100,200,1);
+display:block;
+float:left;
+-webkit-transition:all 0.4s;
+-moz-transition:all 0.4s;
+}
+.navbar .navelem{
+list-style:none;
+width:15%; height:100%;
+font-family:Stencil;
+font-size:1.5em;
+text-align:center;
+line-height:3;
+color:rgba(10,100,210,1);
+display:block;
+float:left;
+-webkit-transition:all 0.4s;
+-moz-transition:all 0.4s;
+}
+.navbar:hover{
+cursor:pointer;
+background-color:rgba(255,255,255,1);
+}
+li ul li{
+visibility:hidden;
+list-style:none;
+background-color:rgba(10,100,220,0.6);
+color:white;
+font-size:0.8em;
+font-family:Showcard Gothic;
+text-align:center;
+-webkit-transition:all 0.01s;
+-moz-transition:all 0.01s;
+border:1px solid rgba(255,255,255,0.3);
+}
+.navelem:hover ul li{
+visibility:visible;
+}
+#bull{
+line-height:1;
+color:white;
+}
+.navbar:hover #bull{
+color:teal;
+}
+li ul li:hover{background-color:rgba(10,100,220,0.9);
+}
+</style>
+<body>
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="navbar">
+			<ul>
+				<li class="navhead">FITERAZZI</li>
+				<li class="navelem">HOME</li>
+				<li class="navelem">RECIPES</li>
+				<li class="navelem">FITNESS
+					<ul>
+						<li>WOW</li>
+						<li>LATEST</li>
+					</ul>
+				</li>
+				<li class="navelem">RD</li>
+				<li class="navelem"><i id="bull" class="fa fa-bullhorn fa-2x "></i></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

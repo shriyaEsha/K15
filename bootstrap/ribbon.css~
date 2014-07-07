@@ -3,7 +3,7 @@
    width: 700px;
 	height:70px;
    position: absolute;
-  
+  z-index:5;
    text-align: center;
 
   

@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/stickynotes.css" type="text/css">
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link href="navbar.css" rel="stylesheet">
+<script src="js/codegeeks.js"></script>
+<link rel="stylesheet" href="ribbon.css">
+<link rel="stylesheet" href="footer.css">
+<script>
+$(document).ready(function(){
+//login-form
+$("#loginNow").click(function(){
+$(".login-form").css({'opacity':"1",'webkit-transform':"scale(1)",'-moz-transform':"scale(1)"},"slow");
+$(".container").css({'-webkit-filter':"grayscale(50%) blur(5px)",'-moz-filter':"grayscale(50%) blur(5px)"});
+});
+$(".login-form .btn-login").click(function(){
+$(".login-form").css({'opacity':"0",'-webkit-transform':"scale(0)"},"slow");
+$(".container").css({'-webkit-filter':"grayscale(0%)",'-moz-filter':"grayscale(0%)"});
+});
+});
+</script>
+<style>
+
+body{
+background:url(img/tex1.1.jpg);
+background-size:cover;
+
+-webkit-perspective:8000;
+-moz-perspective:8000;
+}
+
+</style>
+<body>
+<!--login-form-->
+<div class="login-form">
+	<div class="details">
+		<form name="loginForm" action="#" method="post">
+		<h3>EMAIL ID:</h3> <input type="text" class="text" id="username"/>
+		<h3>USERNAME:</h3> <input type="text" class="text" id="user"/>
+		<h3>PASSWORD:</h3> <input type="password" class="text" id="password"/>
+		<h3>NAME :D	:</h3> <input type="text" class="text" />
+		<h3>COUNTRY	:</h3> <input type="text" class="text"/>
+	</div>
+	<div class="btn-login" onclick="validate()">
+	<div class="elem">SIGN UP!</div>
+	</div>	
+	</form>
+</div>
+
+<div class="container">
+
+<!--main-header-->
+<div class="row">
+	<div class="col-md-4 col-md-push-3">
+	<a href="#"><div class="main-header" id="main-header"></div></a>
+	</div>
+<!--login and register btns-->
+	<div class="col-md-6 col-md-push-2">
+	<div class="btn" id="loginNow" style="top:25px; right:40px;"><a href="#">LOGIN</a></div>
+<div class="btn" style="top:25px; right:-125px;"><a href="login-modal.html">REGISTER</a></div>
+	</div>
+</div>
+
+<br><br>
+<br><br>
+<br><br>
+
+<div class="row">
+<div class="col-md-6">
+	<!--navbar-->
+	<div class="navbar img-1">	
+	<ul>
+	<li class="nav-element" ><a href="status.html"><div class="nav-text">PROBLEMS</div></a></li>
+	<li class="nav-element"><a href="#"><div class="nav-text">RANKS</div></a>
+		<!--
+		<ul>
+			<li class="dd"><a href="problems.html"><div class="nav-text">EASY</div></a></li>
+			<li class="dd"><a href="#"><div class="nav-text">MEDIUM</div></a></li>
+			<li class="dd"><a href="#"><div class="nav-text">HARD</div></a></li>
+			<li class="dd"><a href="#"><div class="nav-text">CHALLENGE</div></a></li>
+	   </ul>
+	   -->
+	</li>
+	<li class="nav-element"><a href="compete.html"><div class="nav-text">MY SUBMISSIONS</div></a></li>
+	<li class="nav-element"><a href="#"><div class="nav-text">COMMUNICODERS</div></a>
+	<!--
+	<ul>
+		<li class="dd"><a href="blog.html"><div class="nav-text">BLOG POSTS</div></a></li>
+		<li class="dd"><a href="forum.html"><div class="nav-text">FORUM</div></a></li>
+	</ul>
+	-->
+
+	</li>
+	<li class="nav-element"><a href="tutorials.html"><div class="nav-text">PROFILE</div></a></li>
+	<!--<li class="nav-element"><a href="ranks.html"><div class="nav-text">LEADERBOARD</div></a></li>
+	<li class="nav-element"><div class="nav-text"><input type="text" id="searchbox" placeholder="FIND SOMETHING"/></div></li>
+	-->
+
+	</ul>
+	</div>
+</div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="row">
+	<div class="footer">
+
+		<h3>CodeGeeks Inc.</h3>
+			<p>It's a place where you can let your brain go wild with exciting challenges.</p>
+			<p>Train yourself with the best problems pooled in by the best minds on the planet!</p>
+			<p>And for all you newbies out there, it can be a jumping-off point for your genius to take flight!</p>
+			<p>So, don't be scared! Jump right in and explore!</p>
+			<a href="#">CODEGEEKS INC. </a>
+	</div>
+</div>
+</div><!--container-->
+</body>
+</html>
+
+

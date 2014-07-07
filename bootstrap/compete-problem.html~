@@ -16,29 +16,7 @@
 <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
 <script>
 $(document).ready(function(){
-//updates
-$(".updates ul").css({'list-style':"none"});
-$(".updates ul li a").css({'color':"gold", 'font-family':"GoodDog",'text-decoration':"none"});
-$(".updates ul li a").hover(function(){
-$(this).css({'color':"white"}).addClass("shake-class");
-},function(){
-$(".updates ul li a").css({'color':"gold"}).removeClass("shake-class");
-});
-
-//login-form
-$("#loginNow").click(function(){
-$(".login-form").css({'opacity':"1",'webkit-transform':"scale(1)",'-moz-transform':"scale(1)"},"slow");
-$(".container").css({'-webkit-filter':"grayscale(50%) blur(5px)",'-moz-filter':"grayscale(50%) blur(5px)"});
-});
-$(".login-form .btn-login").click(function(){
-$(".login-form").css({'opacity':"0",'-webkit-transform':"scale(0)"},"slow");
-$(".container").css({'-webkit-filter':"grayscale(0%)",'-moz-filter':"grayscale(0%)"});
-});
-
-
 //contest-box
-
-
 $("#contest").click(function(){
 $(".contest-box").css({'opacity':"1",'webkit-transform':"scale(1)",'-moz-transform':"scale(1)"},"slow");
 $(".container").css({'-webkit-filter':"grayscale(50%) blur(5px)",'-moz-filter':"grayscale(50%) blur(5px)"});
@@ -47,59 +25,9 @@ $(".contest-box .btn-c-x").click(function(){
 $(".contest-box").css({'opacity':"0",'-webkit-transform':"scale(0)"},"slow");
 $(".container").css({'-webkit-filter':"grayscale(0%)",'-moz-filter':"grayscale(0%)"});
 });
-
-
 });
 </script>
-<style>
-
-body{
-background:url(img/tex6.jpg);
-background-size:cover;
-
--webkit-perspective:8000;
--moz-perspective:8000;
-}
-.container{
-
-   -webkit-transform: scale(0.9);
-   -moz-transform: scale(0.9);
-
-
-}
-
-.btn a:hover{
-color:black;
-}
-#blue1{
-font-size:1.5em;
-line-height:4;
-width:200px; height:80px;
-background-color:rgba(0,0,255,0.3);
-}
-#blue{
-font-size:1.5em;
-line-height:4;
-width:80px; height:80px;
-background-color:rgba(0,0,255,0.3);
-}
-</style>
 <body>
-<!--login-form-->
-<div class="login-form">
-	<div class="details">
-		<form name="loginForm" action="#" method="post">
-		<h3>EMAIL ID:</h3> <input type="text" class="text" id="username"/>
-		<h3>USERNAME:</h3> <input type="text" class="text" id="user"/>
-		<h3>PASSWORD:</h3> <input type="password" class="text" id="password"/>
-		<h3>NAME :D	:</h3> <input type="text" class="text" />
-		<h3>COUNTRY	:</h3> <input type="text" class="text"/>
-	</div>
-	<div class="btn-login" onclick="validate()">
-	<div class="elem">SIGN UP!</div>
-	</div>	
-	</form>
-</div>
 <!--contest-info modal-->
 <div class="contest-box">
 	<div class="details">
@@ -117,89 +45,96 @@ background-color:rgba(0,0,255,0.3);
 </div>
 
 <div class="container">
-<a href="#"><div class="main-header" id="main-header" style="top:-50px;color:white"></div></a>
-<div class="btn" id="loginNow" style="top:-50px; right:40px;background-color:orange"><a href="#">LOGIN</a></div>
-<div class="btn" style="top:-50px; right:-125px; background-color:orange"><a href="login-modal.html">REGISTER</a></div>
+
+<!--main-header-->
+<div class="row">
+	<div class="col-md-4 col-md-push-3">
+	<a href="#"><div class="main-header" id="main-header"></div></a>
+	</div>
+	</div>
 
 
+<br><br>
+<br><br>
+<br><br>
 
-
-
-<!--navbar-->
-
-
-<div class="black-circle" style="top:170px; left:-160px"></div>
-<div class="black-circle" style="top:200px; left:-160px"></div>
-<div class="black-circle" style="top:200px; right:-135px"></div>
-<div class="black-circle" style="top:170px; right:-135px"></div>
-<div class="navbar img-1">
-<ul>
-<li class="nav-element" ><a href="status.html"><div class="nav-text">STATUS</div></a></li>
-<li class="nav-element"><a href="#"><div class="nav-text">HONE YOUR SKILLS</div></a>
+<div class="row">
+<div class="col-md-6">
+	<!--navbar-->
+	<div class="navbar img-1">	
 	<ul>
-		<li class="dd"><a href="problems.html"><div class="nav-text">EASY</div></a></li>
-		<li class="dd"><a href="#"><div class="nav-text">MEDIUM</div></a></li>
-		<li class="dd"><a href="#"><div class="nav-text">HARD</div></a></li>
-		<li class="dd"><a href="#"><div class="nav-text">CHALLENGE</div></a></li>
-   </ul>
-</li>
-<li class="nav-element"><a href="compete.html"><div class="nav-text">THE ARENA</div></a></li>
-<li class="nav-element"><a href="#"><div class="nav-text">COMMUNICODERS</div></a>
-<ul>
-	<li class="dd"><a href="blog.html"><div class="nav-text">BLOG POSTS</div></a></li>
-	<li class="dd"><a href="forum.html"><div class="nav-text">FORUM</div></a></li>
-</ul>
-
-</li>
-<li class="nav-element"><a href="tutorials.html"><div class="nav-text">TUTORIALS</div></a></li>
-<li class="nav-element"><a href="ranks.html"><div class="nav-text">LEADERBOARD</div></a></li>
-<li class="nav-element"><div class="nav-text"><input type="text" id="searchbox" placeholder="FIND SOMETHING"/></div></li>
-
-</ul>
-</div>
-
-
-<div class="updates img-dark-wood">
-	<h3 style="font-size:1.8em">HOT STUFF <i class="fa fa-flash fa-2x fa-animated" style="-webkit-animation:flash 0.8s infinite; -moz-animation:flash 0.8s infinite"></i></h3>
+	<li class="nav-element" ><a href="status.html"><div class="nav-text">PROBLEMS</div></a></li>
+	<li class="nav-element"><a href="#"><div class="nav-text">RANKS</div></a>
+		<!--
+		<ul>
+			<li class="dd"><a href="problems.html"><div class="nav-text">EASY</div></a></li>
+			<li class="dd"><a href="#"><div class="nav-text">MEDIUM</div></a></li>
+			<li class="dd"><a href="#"><div class="nav-text">HARD</div></a></li>
+			<li class="dd"><a href="#"><div class="nav-text">CHALLENGE</div></a></li>
+	   </ul>
+	   -->
+	</li>
+	<li class="nav-element"><a href="compete.html"><div class="nav-text">MY SUBMISSIONS</div></a></li>
+	<li class="nav-element"><a href="#"><div class="nav-text">COMMUNICODERS</div></a>
+	<!--
 	<ul>
-		<li class="update-info"><a href="#">PUT SOME CRAZY STUFF HERE!</a></li>
-		<li class="update-info"><a href="#">PUT SOME CRAZY STUFF HERE!</a></li>
-		<li class="update-info"><a href="#">PUT SOME CRAZY STUFF HERE!</a></li>
-		<li class="update-info"><a href="#">PUT SOME CRAZY STUFF HERE!</a></li>
+		<li class="dd"><a href="blog.html"><div class="nav-text">BLOG POSTS</div></a></li>
+		<li class="dd"><a href="forum.html"><div class="nav-text">FORUM</div></a></li>
 	</ul>
-</div>
-<!--social icons-->
+	-->
 
-<div class="cube" style="top:800px; left:-160px">
-	<div class="flip"><font color=#6666ff>Twitter</font></div>
-	<div class="flop"><i class="fa fa-twitter fa-3x" id="twitter"></i></div>
-</div>
+	</li>
+	<li class="nav-element"><a href="tutorials.html"><div class="nav-text">PROFILE</div></a></li>
+	<!--<li class="nav-element"><a href="ranks.html"><div class="nav-text">LEADERBOARD</div></a></li>
+	<li class="nav-element"><div class="nav-text"><input type="text" id="searchbox" placeholder="FIND SOMETHING"/></div></li>
+	-->
 
-<div class="cube" style="top:800px; left:-55px">
-	<div class="flip"><font color=#0000cc>Facebook</font></div>
-	<div class="flop"><i class="fa fa-facebook fa-3x" id="facebook"></i></div>
+	</ul>
+	</div>
 </div>
-
-<div class="cube" style="top:800px; left:50px">
-	<div class="flip"><font color=red>Google+</font></div>
-	<div class="flop"><i class="fa fa-google-plus fa-3x" id="google"></i></div>
 </div>
 
-<!--links-->
-<div class="quick-links" style="top:235px; left:150px;">
-	<ul>
-		<a href="#"><li>CONTEST RANKINGS</li></a>
-		<a href="#" id="contest"><li>CONTEST INFO</li></a>
-		<a href="#" id="contest"><li>SUCCESSFUL SUB</li></a>
-		<a href="#" id="contest"><li>COMMENTS</li></a>
+<div class="row">
+	<div class="col-md-4 col-md-push-2">
+	<!--links-->
+	<div class="quick-links">
+		<ul>
+			<a href="#"><li>CONTEST RANKINGS</li></a>
+			<a href="#" id="contest"><li>CONTEST INFO</li></a>
+			<a href="#" id="contest"><li>SUCCESSFUL SUB</li></a>
+			<a href="#" id="contest"><li>COMMENTS</li></a>
 		
-	</ul>
+		</ul>
+	</div>
+</div>
 </div>
 
+<!--you can do it-->
+<div class=row">
+	<div class="col-md-2 col-md-push-2">
+<div class="bubble" id="blue" style="-webkit-animation:hover-up 1s linear infinite 0s;
+-moz-animation:hover-up 1s linear infinite 0s">YOU</div>
+</div>
+<div class="col-md-2 col-md-push-2">
+<div class="bubble" id="blue" style="-webkit-animation:hover-up 1s linear infinite 0.2s;
+ -moz-animation:hover-up 1s linear infinite 0.2s;">CAN</div>
+</div>
+<div class="col-md-2 col-md-push-2">
 
+<div class="bubble" id="blue" style="-webkit-animation:hover-up 1s linear infinite 0.3s;
+ -moz-animation:hover-up 1s linear infinite 0.3s">DO</div>
+</div>
+<div class="col-md-2 col-md-push-2">
 
+<div class="bubble" id="blue" style="-webkit-animation:hover-up 1s linear infinite 0.4s;
+-moz-animation:hover-up 1s linear infinite 0.4s;">IT!</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-6 col-md-push-1">
 <!--problem-->
-<div class="problem-box" style="position:relative;top:300px;left:250px">
+<div class="problem-box">
 <div class="header">THE TRUNK FROM TIMBUCTOO</div>
 <h1>Long ago in ancient China...</h1>
 <h1>Long ago in ancient China...</h1>
@@ -211,43 +146,31 @@ background-color:rgba(0,0,255,0.3);
 <h1>Long ago in ancient China...</h1>
 <h1>Long ago in ancient China...</h1>
 <h1>Long ago in ancient China...</h1>
-<h1>Long ago in ancient China...</h1>
-<h1>Long ago in ancient China...</h1>
-<h1>Long ago in ancient China...</h1>
-<h1>Long ago in ancient China...</h1>
-<h1>Long ago in ancient China...</h1>
-<h1>Long ago in ancient China...</h1>
-<h1>Long ago in ancient China...</h1>
-<h1>Long ago in ancient China...</h1>
-<h1>Long ago in ancient China...</h1>
-<h1>Long ago in ancient China...</h1>
-<h1>Long ago in ancient China...</h1>
-<h1>Long ago in ancient China...</h1>
-<h1>Long ago in ancient China...</h1>
-<h1>Long ago in ancient China...</h1>
-<h1>Long ago in ancient China...</h1>
-<h1>Long ago in ancient China...</h1>
-<h1>Long ago in ancient China...</h1>
-<h1>Long ago in ancient China...</h1>
-<h1>Long ago in ancient China...</h1>
-<h1>Long ago in ancient China...</h1>
-<h1>Long ago in ancient China...</h1>
-<h1>Long ago in ancient China...</h1>
-<h1>Long ago in ancient China...</h1>
 	</div>
+</div>
+</div>
 
-	<br><br><br>
+<div class="row">
+<div class="col-md-2 col-md-push-2">
+	<div class="bubble">YOUR</div>
+</div>
+<div class="col-md-2 col-md-push-2">
+	<div class="bubble">CODE</div>
+</div>
+<div class="col-md-2 col-md-push-2">
+	<div class="bubble">GOES</div>
+</div>
+<div class="col-md-2 col-md-push-2">
+	<div class="bubble">HERE</div>
+</div>
+
+</div>
+
+<br><br><br>
+<div class="row">
+<div class="col-md-6 col-md-push-1">
 <!--solution-->
-<div class="bubble" id="blue1" style="top:1070px; left:300px; -webkit-animation:hover-up 1s linear infinite 0s;
- -moz-animation:hover-up 1s linear infinite 0s">YOUR</div>
-<div class="bubble" id="blue1" style="top:1070px; left:500px; -webkit-animation:hover-up 1s linear infinite 0.2s;
--moz-animation:hover-up 1s linear infinite 0.2s">SOLUTION</div>
-<div class="bubble" id="blue1" style="top:1070px; left:700px; -webkit-animation:hover-up 1s linear infinite 0.3s;
- -moz-animation:hover-up 1s linear infinite 0.3s">GOES</div>
-<div class="bubble" id="blue1" style="top:1070px; left:900px; -webkit-animation:hover-up 1s linear infinite 0.4s;
- -webkit-animation:hover-up 1s linear infinite 0.4s;">HERE</div>
-
-<div class="problem-box" style="position:relative;top:300px;left:250px">
+<div class="problem-box">
 <h1>Long ago in ancient China...</h1>
 <h1>Long ago in ancient China...</h1>
 <h1>Long ago in ancient China...</h1>
@@ -272,38 +195,19 @@ background-color:rgba(0,0,255,0.3);
 <h1>Long ago in ancient China...</h1>
 
 </div>	
-	
-<!--you can do it-->
-<div class="bubble" id="blue" style="top:250px; left:1000px; -webkit-animation:hover-up 1s linear infinite 0s;
--moz-animation:hover-up 1s linear infinite 0s">YOU</div>
-<div class="bubble" id="blue" style="top:250px; left:1080px; -webkit-animation:hover-up 1s linear infinite 0.2s;
- -moz-animation:hover-up 1s linear infinite 0.2s;">CAN</div>
-<div class="bubble" id="blue" style="top:250px; left:1160px; -webkit-animation:hover-up 1s linear infinite 0.3s;
- -moz-animation:hover-up 1s linear infinite 0.3s">DO</div>
-<div class="bubble" id="blue" style="top:250px; left:1240px; -webkit-animation:hover-up 1s linear infinite 0.4s;
--moz-animation:hover-up 1s linear infinite 0.4s;">IT!</div>
-
-<!--profile-->
-<ul class="ch-grid" style="top:300px; left:600px">
-					<li>
-						<div class="ch-item ch-img-1">				
-							<div class="ch-info-wrap">
-								<div class="ch-info">
-									<div class="ch-info-front ch-img-1">PROFILE</div>
-									<div class="ch-info-back">
-										<h3>username</h3>
-										<h3 id="mine" style="font-size:2em; color:white">myname</h3>
-									</div>	
-								</div>
-							</div>
-						</div>
-					</li>
-					
-					</ul>
-
+</div>
+</div>
+<br><br>
 <!--submit button-->
-<div class="btn" style="position:absolute;top:1450px; left:1100px; background-color:pink;">SUBMIT</div>
-<div class="footer" style="z-index:-2">
+<div class="row">
+	<div class="col-md-2 col-md-push-3">
+<div class="btn" style=" background-color:pink;">SUBMIT</div>
+</div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="row">
+	<div class="footer">
 
 		<h3>CodeGeeks Inc.</h3>
 			<p>It's a place where you can let your brain go wild with exciting challenges.</p>
@@ -311,13 +215,9 @@ background-color:rgba(0,0,255,0.3);
 			<p>And for all you newbies out there, it can be a jumping-off point for your genius to take flight!</p>
 			<p>So, don't be scared! Jump right in and explore!</p>
 			<a href="#">CODEGEEKS INC. </a>
-			
-
-
-
-			
-			
+	</div>
 </div>
-</div>
+</div><!--container-->
 </body>
 </html>
+
